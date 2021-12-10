@@ -22,7 +22,6 @@
                 large
                 dark
                 to="/distribuidoras"
-                target="_blank"
                 elevation="0"
               >
                 Ver distribuidores
