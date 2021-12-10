@@ -1,11 +1,12 @@
 <template>
-  <div style="background-color: red; height: 100%">
-  </div>
+  <banner />
 </template>
 
 <script>
 export default {
-
+  components: {
+    Banner: () => import("@/components/shared/banner"),
+  },
 }
 </script>
 

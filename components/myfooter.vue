@@ -8,7 +8,7 @@
         <!-- -----------------------------------------------
         First Column
       ----------------------------------------------- -->
-        <v-col cols="12" sm="12" md="12" lg="3" class="px-xs-0">
+        <v-col cols="12" sm="12" md="12" lg="3" >
           <h4 class="font-weight-regular font-18">Endereço</h4>
           <p class="mt-10">
             José Peixoto da Silveira QD. 52, LT 05, Rua 89 - CORA CORALINA, Goianira - GO, 75370-000
@@ -17,7 +17,7 @@
         <!-- -----------------------------------------------
         Second Column
       ----------------------------------------------- -->
-        <v-col cols="12" sm="12" md="12" lg="3" class="px-xs-0">
+        <v-col cols="12" sm="12" md="12" lg="3" >
           <h4 class="font-weight-regular font-18">Telefones</h4>
           <p class="mt-10 mb-0">Luziânia : +55 (61) 99644-2450</p>
           <p>Goianira : +55 (62) 3516-3297</p>
@@ -25,7 +25,7 @@
         <!-- -----------------------------------------------
         Third Column
       ----------------------------------------------- -->
-        <v-col cols="12" sm="12" md="12" lg="3" class="px-xs-0">
+        <v-col cols="12" sm="12" md="12" lg="3" >
           <h4 class="font-weight-regular font-18">Email</h4>
           <p class="mt-10 mb-0">
             Escritório : <a class="dark-link" href="/">cremozinn@cremozinn.com.br</a>
@@ -40,7 +40,7 @@
         <!-- -----------------------------------------------
         Fourth Column
       ----------------------------------------------- -->
-        <v-col cols="12" sm="12" md="12" lg="3" class="px-xs-0">
+        <v-col cols="12" sm="12" md="12" lg="3" >
           <h4 class="font-weight-regular font-18">Social</h4>
 
           <div class="social-icons mt-10">

@@ -3,21 +3,24 @@
     <!-- -----------------------------------------------
           Start Header
     ----------------------------------------------- -->
-    <v-app-bar app absolute class="app-header" flat elevate-on-scroll>
+    <v-app-bar app class="app-header" flat elevate-on-scroll>
       <v-container class="py-0 fill-height">
         <!-- Logo -->
-        <Logo />
-
+        <NLink to="/">
+            <img src="logo.svg" style="height: 50px;">
+        </NLink>
         <v-spacer></v-spacer>
-        <v-btn class="d-block d-md-none" text @click="toggleClass()">
-          <v-app-bar-nav-icon class="white--text" />
+        <v-btn
+          fab
+          v-if="$vuetify.breakpoint.mobile"
+          class="d-fixed btn-mobile-icon"
+          text
+          @click="toggleMenu()"
+        >
+          <v-icon color="primary">mdi-menu</v-icon>
         </v-btn>
         <!-- Desktop view Navigation -->
-        <div
-          class="navigation"
-          v-bind:class="[isActive ? 'd-block' : '']"
-          @click="isActive = !isActive"
-        >
+        <div class="navigation" v-else>
           <ul class="navbar-nav">
             <li class="nav-item" text>
               <n-link class="nav-link" nuxt to="/fabrica"> A Fábrica </n-link>
@@ -28,13 +31,7 @@
               </n-link>
             </li>
             <li class="nav-item">
-              <v-btn
-                color="white"
-                nuxt
-                target="_blank"
-                href=""
-                elevation="0"
-              >
+              <v-btn color="white" nuxt target="_blank" href="" elevation="0">
                 Contato
               </v-btn>
             </li>
@@ -45,6 +42,25 @@
     <!-- -----------------------------------------------
           End Header
     ----------------------------------------------- -->
+    <v-row justify="center">
+      <v-dialog
+        v-model="menuMb"
+        max-width="400"
+        origin="top right"
+        content-class="menu-mb-dialog"
+        fullscreen
+      >
+        <v-card class="pa-4">
+          <v-card-title class="text-h5 justify-center align-center mb-4"> MENU </v-card-title>
+          <v-card-text>
+            <v-btn class="mb-3" depressed block to="/fabrica"> Fornecedores </v-btn>
+            <v-btn class="mb-3" depressed block to="/fornecedores"> A Fábrica </v-btn>
+            <v-btn class="mb-3" depressed block> Contato </v-btn>
+            <v-btn depressed block @click="toggleMenu()"> <v-icon size="15px">mdi-arrow-u-left-top</v-icon> Voltar </v-btn>
+          </v-card-text>
+        </v-card>
+      </v-dialog>
+    </v-row>
   </div>
 </template>
 
@@ -53,14 +69,19 @@ export default {
   name: "Header",
   data() {
     return {
-      isActive: false
+      menuMb: false,
     };
   },
   methods: {
-    toggleClass(){
-      this.isActive = !this.isActive;
+    toggleMenu() {
+      this.menuMb = !this.menuMb;
+    },
+  },
+  watch:{
+    $route (to, from){
+        this.menuMb ? this.toggleMenu() : null
     }
-  }
+} 
 };
 </script>
 
@@ -95,55 +116,6 @@ export default {
   &.three-part li {
     width: 33%;
     display: inline-block;
-  }
-}
-@media (max-width: 767px) {
-  .app-header {
-    .navigation {
-      display: none;
-    }
-    .navbar-nav {
-      position: absolute;
-      left: 0;
-      top: 80px;
-      width: 100%;
-      background-color: #607df9;
-      flex-direction: column !important;
-      box-shadow: 0px 15px 30px rgb(0 0 0 / 12%);
-      .nav-item {
-        text-align: center;
-        .nav-link {
-          line-height: 55px !important;
-        }
-      }
-    }
-  }
-  .common-links {
-    &.three-part li {
-      width: 50%;
-      a {
-        font-size: 13px;
-      }
-    }
-  }
-  .px-sm-0 {
-    padding-left: 0;
-    padding-right: 0;
-  }
-  .mob-imagesetter {
-    background-size: unset;
-    background-position: unset !important;
-    margin-top: 29px;
-    // background-image: url(~assets/images/banner-bg-sm.png) !important;
-  }
-  .banner-title {
-    margin-top: -30px;
-  }
-}
-
-@media (max-width: 991px) {
-  .mob-header-fixed {
-    position: fixed;
   }
 }
 </style>
