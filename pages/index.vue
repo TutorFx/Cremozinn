@@ -1,13 +1,15 @@
 <template>
   <div style="margin-bottom: 5000px;">
     <banner />
+    <bannerform />
   </div>
 </template>
 
 <script>
 export default {
   components: {
-    Banner: () => import("@/components/shared/banner"),
+    banner: () => import("../components/shared/banner"),
+    bannerform: () => import("../components/shared/bannerform")
   },
 }
 </script>

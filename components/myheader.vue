@@ -3,7 +3,7 @@
     <!-- -----------------------------------------------
           Start Header
     ----------------------------------------------- -->
-    <v-app-bar app class="app-header" flat elevate-on-scroll>
+    <v-app-bar app class="app-header" flat elevate-on-scroll height="105px" v-scroll="onScroll" :style="isontop ? 'background: white!important;' : undefined">
       <v-container class="py-0 fill-height">
         <!-- Logo -->
         <NLink to="/">
@@ -23,15 +23,15 @@
         <div class="navigation" v-else>
           <ul class="navbar-nav">
             <li class="nav-item" text>
-              <n-link class="nav-link" nuxt to="/fabrica"> A Fábrica </n-link>
+              <n-link class="nav-link" :style="isontop ? 'color: black!important;' : undefined" nuxt to="/fabrica"> A Fábrica </n-link>
             </li>
             <li class="nav-item" text>
-              <n-link class="nav-link" nuxt to="/fornecedores">
+              <n-link class="nav-link" :style="isontop ? 'color: black!important;' : undefined" nuxt to="/fornecedores">
                 Fornecedores
               </n-link>
             </li>
             <li class="nav-item">
-              <v-btn color="white" nuxt target="_blank" href="" elevation="0">
+              <v-btn :color="isontop ? 'error': 'white'" nuxt target="_blank" href="" elevation="0">
                 Contato
               </v-btn>
             </li>
@@ -70,17 +70,27 @@ export default {
   data() {
     return {
       menuMb: false,
+      isontop: false,
     };
   },
   methods: {
     toggleMenu() {
       this.menuMb = !this.menuMb;
     },
+    onScroll(e) {
+      if (process.client) {
+        if(!this.$vuetify.breakpoint.mobile){
+          if (typeof window === "undefined") return;
+          const top = window.pageYOffset || e.target.scrollTop || 0;
+          this.isontop = top > 20;
+        }
+      }
+    },
   },
   watch:{
     $route (to, from){
         this.menuMb ? this.toggleMenu() : null
-    }
+    },
 } 
 };
 </script>

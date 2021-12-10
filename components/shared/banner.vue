@@ -16,7 +16,7 @@
             </h4>
             <div class="mt-16 pt-2 ">
               <v-btn
-                color="#c62828"
+                color="error"
                 class="mr-0 mr-md-8 mb-5 mb-md-0 btn-custom-md"
                 nuxt
                 large
