@@ -73,7 +73,7 @@ export default {
   },
   loading: {
     color: '#c62828',
-    height: '1px',
+    height: '4px',
     continuous: true,
     duration: 1000,
     throttle: 0,

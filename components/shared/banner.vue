@@ -1,11 +1,11 @@
 <template>
-  <div class="banner-wrapper" style="background-color: #55c0ef">
+  <div class="banner-wrapper" style="background-color: #607df9">
     <v-container>
       <!-- -----------------------------------------------
             Start Banner
         ----------------------------------------------- -->
       <v-row justify="center">
-        <v-col cols="12" md="7" lg="6" class="d-flex align-center">
+        <v-col cols="12" md="7" lg="7" xl="8" class="d-flex align-center">
           <div class="text-center text-md-left">
             <h1 class="banner-title font-weight-bold white--text">
               CTA TEXTO 1
@@ -14,13 +14,14 @@
               Bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla
               bla bla bla
             </h4>
-            <div class="mt-16 pt-2">
+            <div class="mt-16 pt-2 ">
               <v-btn
                 color="#c62828"
                 class="mr-0 mr-md-8 mb-5 mb-md-0 btn-custom-md"
                 nuxt
                 large
                 dark
+                to="/distribuidoras"
                 target="_blank"
                 elevation="0"
               >
@@ -29,8 +30,8 @@
               <v-btn
                 nuxt
                 large
-                to="/coming-soon"
-                class="btn-custom-md"
+                @click="videoDetectado()"
+                class="btn-custom-md mb-5 mb-md-0"
                 outlined
                 color="white"
                 elevation="0"
@@ -40,8 +41,12 @@
             </div>
           </div>
         </v-col>
-        <v-col cols="12" md="5" lg="6">
-          <v-img alt="banner" :src="require('@/assets/img/banner-img.png')" />
+        <v-col cols="12" md="5" lg="5" xl="4">
+          <div class="video-wrapper">
+            <video id="video" v-intersect="onIntersect" ref="videoCima" playsinline="true" muted autoplay>
+              <source src="1.mp4" style="width: 100%" type="video/mp4" id="video">
+            </video>
+          </div>
         </v-col>
       </v-row>
 
@@ -51,14 +56,6 @@
     </v-container>
   </div>
 </template>
-<script>
-export default {
-  name: "Banner",
-  data() {
-    return {};
-  },
-};
-</script>
 
 <style lang="scss">
 // ---------------------------------------------------------------------
@@ -77,7 +74,7 @@ export default {
 
 .banner-wrapper {
   padding: 20px 0 20px;
-  min-height: 600px;
+  min-height: 700px;
   display: flex;
   align-items: center;
 }
@@ -177,7 +174,7 @@ export default {
     box-shadow: -5px 0 30px 0 rgb(0 0 0 / 5%);
   }
   .v-btn {
-    border-radius: 0 36px 36px 0;
+    border-radius: 0 36px 36px 0!important;
     height: 72px !important;
     padding: 0 30px !important;
   }
@@ -203,21 +200,45 @@ export default {
     }
   }
 }
+// video
+video:focus, video{ outline:none; }
+
+.video-wrapper{
+    overflow: hidden;
+    width: 101%;
+    height: 100%;
+}
+
+.video-wrapper #video{
+    position: relative; /* could be absolute if needed */
+    width: 100%;
+    height: 100%;
+}
+
 </style>
 
 <script>
 export default {
-  name: "Header",
+  name: "banner",
 
   data() {
     return {
-      isActive: false,
+      isIntersecting: false,
     };
   },
   methods: {
-    toggleClass() {
-      this.isActive = !this.isActive;
+    videoDetectado(){
+      this.$refs.videoCima.play();
+    },
+    onIntersect (entries, observer) {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          this.videoDetectado();
+        }
+      });
     },
   },
+
 };
+
 </script>

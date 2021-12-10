@@ -1,5 +1,7 @@
 <template>
-  <banner />
+  <div style="margin-bottom: 5000px;">
+    <banner />
+  </div>
 </template>
 
 <script>
