@@ -6,13 +6,11 @@
             Start Banner2
         ----------------------------------------------- -->
         <v-row justify="center">
-          <v-col cols="12" md="8" class="d-flex align-center">
+          <v-col cols="12" md="8" xl="6" class="d-flex align-center">
             <div class="text-center">
               <h2 class="banner2-title font-weight-light">
-                Gostaria de uma
-                <span class="font-weight-bold">
-                  parceria comercial?
-                </span>
+                Gostaria de
+                <span class="font-weight-bold"> Fazer um orçamento? </span>
                 vamos conversar!
               </h2>
 
@@ -25,6 +23,7 @@
                   depressed
                   color="error"
                   elevation="0"
+                  @click="$store.commit('contatoToggle')"
                 >
                   <span>Entre em contato</span>
                   <i class="mdi mdi-arrow-right"></i>

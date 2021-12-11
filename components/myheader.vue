@@ -31,7 +31,7 @@
               </n-link>
             </li>
             <li class="nav-item">
-              <v-btn :color="isontop ? 'error': 'white'" nuxt target="_blank" href="" elevation="0">
+              <v-btn :color="isontop ? 'error': 'white'" nuxt target="_blank" href="" elevation="0" @click="$store.commit('contatoToggle')">
                 Contato
               </v-btn>
             </li>
@@ -55,7 +55,7 @@
           <v-card-text>
             <v-btn class="mb-3" depressed block to="/fabrica"> Fornecedores </v-btn>
             <v-btn class="mb-3" depressed block to="/fornecedores"> A Fábrica </v-btn>
-            <v-btn class="mb-3" depressed block> Contato </v-btn>
+            <v-btn class="mb-3" depressed block @click="$store.commit('contatoToggle')"> Contato </v-btn>
             <v-btn depressed block @click="toggleMenu()"> <v-icon size="15px">mdi-arrow-u-left-top</v-icon> Voltar </v-btn>
           </v-card-text>
         </v-card>
