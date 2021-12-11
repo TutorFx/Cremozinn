@@ -21,10 +21,10 @@
                 nuxt
                 large
                 dark
-                to="/distribuidoras"
+                to="/fornecedores"
                 elevation="0"
               >
-                Ver distribuidores
+                Ver fornecedores
               </v-btn>
               <v-btn
                 nuxt

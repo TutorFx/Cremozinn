@@ -9,7 +9,7 @@
 </template>
 
 <script>
-import Dialogs from '../components/dialogs.vue'
+import dialogs from '../components/dialogs.vue'
 export default {
 }
 </script>
