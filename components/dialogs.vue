@@ -67,6 +67,17 @@
                     class="my-0 py-0"
                   ></v-text-field>
                 </v-col>
+                <v-col cols="12" md="12" class="py-0 my-0">
+                <v-select
+                  :items="['Seja um distribuidor', 'Seja um Representante', 'Seja um P. de Vendas']"
+                  filled
+                  chips
+                  dense
+                  label="Seu interesse"
+                  color="secondary"
+                  multiple
+                ></v-select>
+                </v-col>
                 <v-col cols="12" md="6" class="py-0 my-0">
                   <v-text-field
                     filled

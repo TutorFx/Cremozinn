@@ -22,12 +22,9 @@
         <!-- Desktop view Navigation -->
         <div class="navigation" v-else>
           <ul class="navbar-nav">
-            <li class="nav-item" text>
-              <n-link class="nav-link" :style="isontop ? 'color: black!important;' : undefined" nuxt to="/fabrica"> A Fábrica </n-link>
-            </li>
-            <li class="nav-item" text>
-              <n-link class="nav-link" :style="isontop ? 'color: black!important;' : undefined" nuxt to="/fornecedores">
-                Fornecedores
+            <li class="nav-item" text v-for="(item, i) in $store.state.menu" :key="i">
+              <n-link class="nav-link" :style="isontop ? 'color: black!important;' : undefined" nuxt :to="item[1]">
+                {{item[0]}}
               </n-link>
             </li>
             <li class="nav-item">
@@ -53,9 +50,7 @@
         <v-card class="pa-4">
           <v-card-title class="text-h5 justify-center align-center mb-4"> MENU </v-card-title>
           <v-card-text>
-            <v-btn class="mb-3" depressed block to="/fabrica"> Fornecedores </v-btn>
-            <v-btn class="mb-3" depressed block to="/fornecedores"> A Fábrica </v-btn>
-            <v-btn class="mb-3" depressed block @click="$store.commit('contatoToggle')"> Contato </v-btn>
+            <v-btn class="mb-3" v-for="(item, i) in $store.state.menu" :key="i" depressed block :to="item[1]"> {{item[0]}} </v-btn>
             <v-btn depressed block @click="toggleMenu()"> <v-icon size="15px">mdi-arrow-u-left-top</v-icon> Voltar </v-btn>
           </v-card-text>
         </v-card>

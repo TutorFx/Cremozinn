@@ -182,22 +182,23 @@ h6 {
   color: $accent !important;
 }
 
+
 .bg-info-grediant {
   background: $primary;
   background: -webkit-linear-gradient(
     legacy-direction(to right),
     $primary,
-    $accent
+    $corDate
   );
   background: -webkit-gradient(
     linear,
     left top,
     right top,
     from($primary),
-    to($accent)
+    to($corDate)
   );
-  background: -webkit-linear-gradient(left, $primary, $accent);
-  background: linear-gradient(90deg, $primary 0, $accent);
+  background: -webkit-linear-gradient(left, $primary, $corDate);
+  background: linear-gradient(90deg, $primary 0, $corDate);
 }
 
 .bg-danger-grediant {
