@@ -3,11 +3,12 @@
     <!-- -----------------------------------------------
           Start Header
     ----------------------------------------------- -->
-    <v-app-bar app class="app-header" flat elevate-on-scroll height="105px" v-scroll="onScroll" :style="isontop || !$store.state.isMenuOpaque ? 'background: white!important;' : undefined">
+    <div v-if="!$store.state.isMenuOpaque" style="height: 105px"></div>
+    <v-app-bar app class="app-header" flat elevate-on-scroll height="155px" v-scroll="onScroll" :style="isontop || !$store.state.isMenuOpaque ? 'background: white!important;' : undefined">
       <v-container class="py-0 fill-height">
         <!-- Logo -->
         <NLink to="/">
-            <img src="/logo.svg" style="height: 50px;">
+            <v-img src="/logo.svg" height="75px" width="200px" position="left center" contain />
         </NLink>
         <v-spacer></v-spacer>
         <v-btn
@@ -21,9 +22,9 @@
         </v-btn>
         <!-- Desktop view Navigation -->
         <div class="navigation" v-else>
-          <ul class="navbar-nav">
+          <div style="height: 75px" class="navbar-nav">
             <li class="nav-item" text v-for="(item, i) in $store.state.menu" :key="i">
-              <n-link class="nav-link" :style="isontop ? 'color: black!important;' : undefined" nuxt :to="item[1]">
+              <n-link class="nav-link" :style="isontop || !$store.state.isMenuOpaque ? 'color: black!important;' : undefined" nuxt :to="item[1]">
                 {{item[0]}}
               </n-link>
             </li>
@@ -32,7 +33,7 @@
                 Contato
               </v-btn>
             </li>
-          </ul>
+          </div>
         </div>
       </v-container>
     </v-app-bar>

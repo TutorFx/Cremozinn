@@ -38,6 +38,9 @@ export default {
       ]
     };
   },
+  mounted(){
+    this.$store.commit('menuOpaque', true);
+  }
 }
 </script>
 

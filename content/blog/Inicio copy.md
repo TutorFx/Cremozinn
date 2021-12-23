@@ -2,6 +2,7 @@
 title: Teste de titulo
 description: 'Descrição ok'
 thumbnail: 'https://picsum.photos/500/300/?rando'
+header: 'https://picsum.photos/500/300/?rando'
 ---
 
 ## lorem ipsun

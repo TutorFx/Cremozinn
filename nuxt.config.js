@@ -77,5 +77,8 @@ export default {
     continuous: true,
     duration: 1000,
     throttle: 0,
-  }
+  },
+  router: {
+    middleware: 'domain'
+  },
 }

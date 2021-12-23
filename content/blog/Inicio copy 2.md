@@ -1,7 +1,9 @@
 ---
 title: Teste olar
-description: 'Descrição ok'
+description: 'Vestibulum varius pharetra ultrices. Integer vulputate sagittis magna, ac ultricies orci finibus at. Aliquam id tempor turpis. Maecenas lobortis, nisi vel mollis consectetur, est augue semper augue, quis facilisis est sapien a augue. Donec fermentum ipsum eget erat fermentum auctor. Praesent tincidunt, nulla et mattis imperdiet, metus elit euismod nulla, in facilisis augue nibh at leo. Aliquam erat volutpat. Etiam rutrum malesuada tellus ac lacinia. Morbi iaculis arcu eu urna auctor sagittis.'
+description2: 'Vestibulum varius pharetra ultrices. Integer vulputate sagittis magna, ac ultricies orci finibus at. Aliquam id tempor turpis. Maecenas lobortis, nisi vel mollis consectetur, est augue semper augue, quis facilisis est sapien a augue. Donec fermentum ipsum eget erat fermentum auctor. Praesent tincidunt, nulla et mattis imperdiet, metus elit euismod nulla, in facilisis augue nibh at leo. Aliquam erat volutpat. Etiam rutrum malesuada tellus ac lacinia. Morbi iaculis arcu eu urna auctor sagittis.'
 thumbnail: 'https://picsum.photos/500/300/?rando'
+header: 'https://picsum.photos/500/300/?rando'
 ---
 
 ## lorem ipsun
