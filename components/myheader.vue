@@ -3,11 +3,11 @@
     <!-- -----------------------------------------------
           Start Header
     ----------------------------------------------- -->
-    <v-app-bar app class="app-header" flat elevate-on-scroll height="105px" v-scroll="onScroll" :style="isontop ? 'background: white!important;' : undefined">
+    <v-app-bar app class="app-header" flat elevate-on-scroll height="105px" v-scroll="onScroll" :style="isontop || !$store.state.isMenuOpaque ? 'background: white!important;' : undefined">
       <v-container class="py-0 fill-height">
         <!-- Logo -->
         <NLink to="/">
-            <img src="logo.svg" style="height: 50px;">
+            <img src="/logo.svg" style="height: 50px;">
         </NLink>
         <v-spacer></v-spacer>
         <v-btn
@@ -28,7 +28,7 @@
               </n-link>
             </li>
             <li class="nav-item">
-              <v-btn :color="isontop ? 'error': 'white'" nuxt target="_blank" href="" elevation="0" @click="$store.commit('contatoToggle')">
+              <v-btn :color="isontop || !$store.state.isMenuOpaque ? 'error': 'white'" nuxt target="_blank" href="" elevation="0" @click="$store.commit('contatoToggle')">
                 Contato
               </v-btn>
             </li>

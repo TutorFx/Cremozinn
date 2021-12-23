@@ -25,37 +25,37 @@
             </div>
           </v-col>
           <v-col cols="12" md="7" lg="5" class="feature3-card">
-            <v-card class="card-shadow">
-              <v-card-text>
-                <div class="pa-10 text-center">
-                  <v-chip small color="info" text-color="white">
-                    Novidades
-                  </v-chip>
-                  <h3 class="feature3-title font-weight-medium">
-                    Toda hora pede um!
-                  </h3>
-                  <p>
-                    Bla bla bla bla bla bla bla bla bla bla bla bla blabla bla
-                    bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla
-                    bla bla bla bla blabla bla bla bla bla bla bla bla bla bla
-                    bla bla bla bla bla bla bla bla bla bla bla blabla bla bla
-                    bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla
-                    bla bla bla blabla bla bla bla bla bla bla bla bla bla bla
-                  </p>
-                  <v-btn
-                    color="error"
-                    class="btn-custom-lg linking mt-10 btn-arrow"
-                    nuxt
-                    large
-                    to="/"
-                    elevation="0"
-                  >
-                    <span>Explore More</span>
-                    <i class="mdi mdi-arrow-right"></i>
-                  </v-btn>
-                </div>
-              </v-card-text>
-            </v-card>
+            <reveal>
+              <v-card class="card-shadow">
+                <v-card-text>
+                  <div class="pa-10 text-center">
+                    <h3 class="feature3-title font-weight-medium">
+                      Toda hora pede um!
+                    </h3>
+                    <p>
+                      Bla bla bla bla bla bla bla bla bla bla bla bla blabla bla
+                      bla bla bla bla bla bla bla bla bla bla bla bla bla bla
+                      bla bla bla bla bla blabla bla bla bla bla bla bla bla bla
+                      bla bla bla bla bla bla bla bla bla bla bla bla blabla bla
+                      bla bla bla bla bla bla bla bla bla bla bla bla bla bla
+                      bla bla bla bla bla blabla bla bla bla bla bla bla bla bla
+                      bla bla
+                    </p>
+                    <v-btn
+                      color="error"
+                      class="btn-custom-lg linking mt-10 btn-arrow"
+                      nuxt
+                      large
+                      to="/"
+                      elevation="0"
+                    >
+                      <span>Contato</span>
+                      <i class="mdi mdi-arrow-right"></i>
+                    </v-btn>
+                  </div>
+                </v-card-text>
+              </v-card>
+            </reveal>
           </v-col>
         </v-row>
 

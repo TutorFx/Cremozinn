@@ -5,7 +5,7 @@
             Start Banner
         ----------------------------------------------- -->
       <v-row justify="center">
-        <v-col cols="12" md="7" lg="7" xl="8" class="d-flex align-center">
+        <v-col cols="12" md="6" lg="6" xl="6" class="d-flex align-center">
           <div class="text-center text-md-left">
             <h1 class="banner-title font-weight-bold white--text">
               CTA TEXTO 1
@@ -40,7 +40,7 @@
             </div>
           </div>
         </v-col>
-        <v-col cols="12" md="5" lg="5" xl="4">
+        <v-col cols="12" md="6" lg="6" xl="6">
           <div class="video-wrapper">
             <video id="video" v-intersect="onIntersect" ref="videoCima" playsinline="true" muted autoplay>
               <source src="1.mp4" style="width: 100%" type="video/mp4" id="video">

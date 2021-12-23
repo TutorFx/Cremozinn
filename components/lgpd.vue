@@ -52,7 +52,6 @@ export default {
         },
     },
     mounted(){
-        console.log('mounted')
         const cookie = window.localStorage.getItem('lgpd')
         if (cookie == 'proxima') {
             this.lgpd = false
