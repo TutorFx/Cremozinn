@@ -51,7 +51,7 @@
                   >{{ post.title }}</a
                 >
                 <p class="mt-10 mb-10">
-                  {{ post.description.replace(/^(.{300}[^\s]*).*/, "$1") }}
+                  {{ post.description.replace(/^(.{150}[^\s]*).*/, "$1") }}
                 </p>
                 <NuxtLink
                   :to="post.path"

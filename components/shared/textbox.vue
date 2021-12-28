@@ -33,13 +33,10 @@
                       Toda hora pede um!
                     </h3>
                     <p>
-                      Bla bla bla bla bla bla bla bla bla bla bla bla blabla bla
-                      bla bla bla bla bla bla bla bla bla bla bla bla bla bla
-                      bla bla bla bla bla blabla bla bla bla bla bla bla bla bla
-                      bla bla bla bla bla bla bla bla bla bla bla bla blabla bla
-                      bla bla bla bla bla bla bla bla bla bla bla bla bla bla
-                      bla bla bla bla bla blabla bla bla bla bla bla bla bla bla
-                      bla bla
+                      O Sorvete de Iogurte Cremozinn surge de uma grande vontade
+                      e desejo de propor às famílias momentos agradáveis ​​e
+                      deliciosos, momentos esses, cheios de sabores e
+                      criatividade.
                     </p>
                     <v-btn
                       color="error"

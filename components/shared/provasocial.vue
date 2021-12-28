@@ -13,12 +13,7 @@
                   Veja o que os nossos clientes estão dizendo
                 </h2>
                 <p>
-                  Bla bla bla bla bla bla bla bla bla bla bla bla blabla bla bla
-                  bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla
-                  bla bla bla blabla bla bla bla bla bla bla bla bla bla bla bla
-                  bla bla bla bla bla bla bla bla bla blabla bla bla bla bla bla
-                  bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla
-                  blabla bla bla bla bla bla bla bla bla bla bla
+                  Se comprar agora com o preço promocional direto da fábrica, lucre de até 100%. Postamos sua entrega em 24 horas.
                 </p>
               </div>
             </v-col>
@@ -35,9 +30,7 @@
               <v-card class="testimonial-card card-shadow">
                 <v-card-text>
                   <p class="font-weight-light mb-15">
-                    “Bla bla bla bla bla bla bla bla bla bla bla bla blabla bla
-                    bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla
-                    bla bla bla bla blabla bla bla bla”
+                    “Tive o prazer de experimentar essa delícia de Cremozinn hoje de manhã e realmente, é essa delícia que todos dizem.”
                   </p>
                   <div class="bottom-bar d-flex align-center">
                     <img
@@ -47,7 +40,7 @@
                     />
                     <div class="ml-10">
                       <h6 class="text-uppercase font-weight-medium font-14">
-                        Michelle Anderson
+                        Roberto Silva
                       </h6>
                       <div class="d-flex align-center font-13">
                         <a href="/" class="error--text">
@@ -75,9 +68,7 @@
               <v-card class="testimonial-card card-shadow">
                 <v-card-text>
                   <p class="font-weight-light mb-15">
-                    “Bla bla bla bla bla bla bla bla bla bla bla bla blabla bla
-                    bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla
-                    bla bla bla bla blabla bla bla bla”
+                    “Eu gosto por que é leve e fácil de transportar... Quando eu vou viajar, coloco em uma manta térmica e pronto. Já posso desfrutar de momentos agradáveis ​​e deliciosos com minha família no carro.”
                   </p>
                   <div class="bottom-bar d-flex align-center">
                     <img
@@ -115,9 +106,7 @@
               <v-card class="testimonial-card card-shadow">
                 <v-card-text>
                   <p class="font-weight-light mb-15">
-                    “Bla bla bla bla bla bla bla bla bla bla bla bla blabla bla
-                    bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla
-                    bla bla bla bla blabla bla bla bla”
+                    “É ótimo por que é fácil de consumir, você não precisa sujar um copo ou vasilha. Ele tem uma própria embalagem que facilita muito na hora de tomar”
                   </p>
                   <div class="bottom-bar d-flex align-center">
                     <img

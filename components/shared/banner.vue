@@ -1,5 +1,5 @@
 <template>
-  <div class="banner-wrapper" style="background-color: #6666FF">
+  <div class="banner-wrapper" style="background-color: #6666ff">
     <v-container>
       <!-- -----------------------------------------------
             Start Banner
@@ -8,13 +8,12 @@
         <v-col cols="12" md="6" lg="6" xl="6" class="d-flex align-center">
           <div class="text-center text-md-left">
             <h1 class="banner-title font-weight-bold white--text">
-              CTA TEXTO 1
+              Uma delícia para toda hora! 
             </h1>
             <h4 class="banner-subtitle white--text font-weight-regular">
-              Bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla
-              bla bla bla
+              100% natural, sem conservantes, sem gorduras trans, sem sabor artificial, sem corante, tamanho pequeno. Baixo custo de embalagem e transporte. Simples de usar e manusear.
             </h4>
-            <div class="mt-16 pt-2 ">
+            <div class="mt-16 pt-2">
               <v-btn
                 color="error"
                 class="mr-0 mr-md-8 mb-5 mb-md-0 btn-custom-md"
@@ -42,8 +41,20 @@
         </v-col>
         <v-col cols="12" md="6" lg="6" xl="6">
           <div class="video-wrapper">
-            <video id="video" v-intersect="onIntersect" ref="videoCima" playsinline="true" muted autoplay>
-              <source src="1.mp4" style="width: 100%" type="video/mp4" id="video">
+            <video
+              id="video"
+              v-intersect="onIntersect"
+              ref="videoCima"
+              playsinline="true"
+              muted
+              autoplay
+            >
+              <source
+                src="1.mp4"
+                style="width: 100%"
+                type="video/mp4"
+                id="video"
+              />
             </video>
           </div>
         </v-col>
@@ -173,7 +184,7 @@
     box-shadow: -5px 0 30px 0 rgb(0 0 0 / 5%);
   }
   .v-btn {
-    border-radius: 0 36px 36px 0!important;
+    border-radius: 0 36px 36px 0 !important;
     height: 72px !important;
     padding: 0 30px !important;
   }
@@ -200,20 +211,22 @@
   }
 }
 // video
-video:focus, video{ outline:none; }
-
-.video-wrapper{
-    overflow: hidden;
-    width: 101%;
-    height: 100%;
+video:focus,
+video {
+  outline: none;
 }
 
-.video-wrapper #video{
-    position: relative; /* could be absolute if needed */
-    width: 100%;
-    height: 100%;
+.video-wrapper {
+  overflow: hidden;
+  width: 101%;
+  height: 100%;
 }
 
+.video-wrapper #video {
+  position: relative; /* could be absolute if needed */
+  width: 100%;
+  height: 100%;
+}
 </style>
 
 <script>
@@ -226,10 +239,10 @@ export default {
     };
   },
   methods: {
-    videoDetectado(){
+    videoDetectado() {
       this.$refs.videoCima.play();
     },
-    onIntersect (entries, observer) {
+    onIntersect(entries, observer) {
       entries.forEach((entry) => {
         if (entry.isIntersecting) {
           this.videoDetectado();
@@ -237,7 +250,5 @@ export default {
       });
     },
   },
-
 };
-
 </script>
