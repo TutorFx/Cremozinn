@@ -37,7 +37,7 @@
                       to="/"
                       class="btn-custom-lg btn-arrow white--text ma-2"
                       depressed
-                      color="blue"
+                      color="info"
                       elevation="0"
                       v-bind="attrs"
                       v-on="on"
