@@ -2,35 +2,14 @@
   <div>
     <div class="blog-component mini-spacer">
       <v-container>
-        <!-- -----------------------------------------------
-            Start Blog Text
-        ----------------------------------------------- -->
-        <v-row justify="center">
-          <v-col cols="12" sm="10" md="9" lg="7">
-            <div class="text-center">
-              <h2 class="section-title font-weight-medium">Recent Blogs</h2>
-              <p>
-                Bla bla bla bla bla bla bla bla bla bla bla bla blabla bla bla
-                bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla
-                bla bla blabla bla bla bla bla bla bla bla bla bla bla bla bla
-                bla bla bla bla bla bla bla bla blabla bla bla bla bla bla bla
-                bla bla bla bla bla bla bla bla bla bla bla bla bla bla blabla
-                bla bla bla bla bla bla bla bla bla bla
-              </p>
-            </div>
-          </v-col>
-        </v-row>
 
-        <!-- -----------------------------------------------
-            End Blog Text
-        ----------------------------------------------- -->
         <!-- -----------------------------------------------
             Start Blog
         ----------------------------------------------- -->
 
         <v-row class="mt-13" justify="center">
           <v-col cols="12" md="6" lg="4" v-for="(post, i) in blog" :key="i">
-            <v-card elevation="0" class="blog-card overflow-hidden mb-15">
+            <v-card elevation="0" class="blog-card overflow-hidden">
               <div class="position-relative mb-15">
                 <NuxtLink :to="post.path">
                   <v-img :src="post.thumbnail" alt="blog" class="blog-img" />

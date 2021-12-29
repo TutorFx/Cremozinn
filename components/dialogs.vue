@@ -11,10 +11,11 @@
             <v-card-text>
               <h4 class="mb-3">Quase lá</h4>
               <h1 class="mb-3">Formulário de contato</h1>
-              <p class="mb-10">
+              <p class="mb-5">
                 Para falar com um de nossos agentes, preencha o formulário
                 abaixo e clique em enviar.
               </p>
+              <slider-dialog class="mb-10" :data="selected" />
               <v-row>
                 <v-col cols="12" md="6" class="py-0 my-0">
                   <v-text-field
@@ -69,7 +70,11 @@
                 </v-col>
                 <v-col cols="12" md="12" class="py-0 my-0">
                 <v-select
-                  :items="['Seja um distribuidor', 'Seja um Representante', 'Seja um P. de Vendas']"
+                  :items="select"
+                  v-model="selected"
+                  item-value="img"
+                  item-text="text"
+                  :return-object="true"
                   filled
                   chips
                   dense
@@ -78,8 +83,8 @@
                   multiple
                 ></v-select>
                 </v-col>
-                <v-col cols="12" md="6" class="py-0 my-0">
-                  <v-text-field
+                <v-col cols="6" md="3" class="py-0 my-0">
+                <input
                     filled
                     dense
                     name="state"
@@ -88,10 +93,9 @@
                     v-model="uf"
                     required
                     class="my-0 py-0"
-                  ></v-text-field>
-                </v-col>
-                <v-col cols="12" md="6" class="py-0 my-0">
-                  <v-text-field
+                    type="hidden"
+                  >
+                  <input
                     filled
                     dense
                     name="city"
@@ -100,10 +104,9 @@
                     v-model="cidade"
                     required
                     class="my-0 py-0"
-                  ></v-text-field>
-                </v-col>
-                <v-col cols="12" md="6" class="py-0 my-0">
-                  <v-text-field
+                    type="hidden"
+                  >
+                  <input
                     filled
                     dense
                     name="district"
@@ -112,10 +115,9 @@
                     v-model="bairro"
                     required
                     class="my-0 py-0"
-                  ></v-text-field>
-                </v-col>
-                <v-col cols="6" md="3" class="py-0 my-0">
-                  <v-text-field
+                    type="hidden"
+                  >
+                  <input
                     filled
                     dense
                     name="street"
@@ -124,10 +126,9 @@
                     v-model="rua"
                     required
                     class="my-0 py-0"
-                  ></v-text-field>
-                </v-col>
-                <v-col cols="6" md="3" class="py-0 my-0">
-                  <v-text-field
+                    type="hidden"
+                  >
+                  <input
                     filled
                     dense
                     name="numero da rua"
@@ -136,11 +137,14 @@
                     v-model="numero"
                     required
                     class="my-0 py-0"
-                  ></v-text-field>
+                    type="hidden"
+                  >
                 </v-col>
               </v-row>
               <v-textarea
                 filled
+                dense
+                height="70"
                 name="message"
                 label="Mensagem"
                 color="secondary"
@@ -221,6 +225,8 @@ export default {
     rua: "",
     numero: "",
     stepper: 1,
+    select: [{text: 'Seja um distribuidor', img: '1', url: 'https://i.imgur.com/wkXITtC.jpg'}, {text: 'Seja um Representante', img: '2', url: 'https://i.imgur.com/vmyPKPc.jpg'}, {text: 'Seja um P. de Vendas', img: '3', url: 'https://i.imgur.com/MrlObvt.jpg'}],
+    selected: [],
   }),
   methods: {
     buscarCep(cep) {
@@ -284,6 +290,9 @@ export default {
       ],
     };
   },
+   components: {
+    sliderDialog: () => import("../components/shared/slider-dialog.vue"),
+    }
 };
 </script>
 

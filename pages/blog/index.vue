@@ -1,22 +1,20 @@
 <template>
   <v-container>
-    <v-row>
-      <v-col v-for="(article, i) in articles" :key="i" cols="4">
-        <NuxtLink :to="article.path"> link </NuxtLink>
-        {{ article }} <v-img :src="article.thumbnail"></v-img>
-      </v-col>
-    </v-row>
+    <blog-wrapper :blog="articles" />
   </v-container>
 </template>
 
 <script>
 export default {
   async asyncData({ $content }) {
-    const articles = await $content("blog").fetch();
+    const articles = await $content("blog").sortBy('updatedAt', 'desc').fetch();
 
     return {
       articles,
     };
+  },
+  mounted() {
+    this.$store.commit("menuOpaque", false);
   },
 };
 </script>

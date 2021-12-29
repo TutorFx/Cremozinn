@@ -1,44 +1,10 @@
 <template>
-  <div class="banner-wrapper" style="background-color: #6666ff">
+  <div class="banner-wrapper" style="background-color: #EFE9D0">
     <v-container>
       <!-- -----------------------------------------------
             Start Banner
         ----------------------------------------------- -->
       <v-row justify="center">
-        <v-col cols="12" md="6" lg="6" xl="6" class="d-flex align-center">
-          <div class="text-center text-md-left">
-            <h1 class="banner-title font-weight-bold white--text">
-              Uma delícia para toda hora! 
-            </h1>
-            <h4 class="banner-subtitle white--text font-weight-regular">
-              100% natural, sem conservantes, sem gorduras trans, sem sabor artificial, sem corante, tamanho pequeno. Baixo custo de embalagem e transporte. Simples de usar e manusear.
-            </h4>
-            <div class="mt-16 pt-2">
-              <v-btn
-                color="error"
-                class="mr-0 mr-md-8 mb-5 mb-md-0 btn-custom-md"
-                nuxt
-                large
-                dark
-                to="/fornecedores"
-                elevation="0"
-              >
-                Ver fornecedores
-              </v-btn>
-              <v-btn
-                nuxt
-                large
-                @click="videoDetectado()"
-                class="btn-custom-md mb-5 mb-md-0"
-                outlined
-                color="white"
-                elevation="0"
-              >
-                O produto
-              </v-btn>
-            </div>
-          </div>
-        </v-col>
         <v-col cols="12" md="6" lg="6" xl="6">
           <div class="video-wrapper">
             <video
@@ -56,6 +22,41 @@
                 id="video"
               />
             </video>
+          </div>
+        </v-col>
+        <v-col cols="12" md="6" lg="6" xl="6" class="d-flex align-center justify-right">
+          <div class="text-center text-md-right">
+            <h1 class="banner-title font-weight-bold red--text text-sm-center text-md-right">
+              Pão de queijo!
+            </h1>
+            <h4 class="banner-subtitle mr-0 red--text font-weight-regular text-sm-center text-md-right offset-lg-4 offset-sm-0">
+              Agora na Cremozinn também tem algumas variedades de salgados e
+              mini churros, que delícia!
+            </h4>
+            <div class="mt-16 pt-2">
+              <v-btn
+                color="error"
+                class="mr-0 mr-md-8 mb-5 mb-md-0 btn-custom-md"
+                nuxt
+                large
+                dark
+                to="/fornecedores"
+                elevation="0"
+              >
+                Confira nosso catálogo
+              </v-btn>
+              <v-btn
+                nuxt
+                large
+                @click="videoDetectado()"
+                class="btn-custom-md mb-5 mb-md-0"
+                outlined
+                color="red"
+                elevation="0"
+              >
+                Fabricação
+              </v-btn>
+            </div>
           </div>
         </v-col>
       </v-row>
@@ -134,7 +135,7 @@
 
   .banner2-title {
     line-height: 50px;
-    font-size: 36px;
+    font-size: 46px;
     margin: 20px 0 15px;
   }
 }

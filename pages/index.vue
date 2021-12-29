@@ -1,10 +1,12 @@
 <template>
   <div>
-    <banner />
-    <bannerform />
-    <provasocial />
+    <banner-one />
+    <banner-two />
+    <banner-three />
     <textbox />
-    <blog-wrapper :blog="articles" />
+    <bannerform />
+    <grid />
+    <provasocial />
   </div>
 </template>
 
@@ -18,10 +20,13 @@ export default {
     };
   },
   components: {
-    banner: () => import("../components/shared/banner"),
+    bannerOne: () => import("../components/shared/banner-one"),
+    bannerTwo: () => import("../components/shared/banner-two"),
+    bannerThree: () => import("../components/shared/banner-three"),
     bannerform: () => import("../components/shared/bannerform"),
     textbox: () => import("../components/shared/textbox"),
-    provasocial: () => import("../components/shared/provasocial")
+    provasocial: () => import("../components/shared/provasocial"),
+    grid: () => import("../components/shared/grid"),
   },
   head() {
     return {

@@ -2,7 +2,7 @@
   <div>
     <div v-intersect="onIntersect">
         <transition name="reveal" class="revealWrapper">
-            <div v-show="isIntersecting">
+            <div v-show="$vuetify.breakpoint.mobile? true : isIntersecting">
                 <slot></slot>
             </div>
         </transition>

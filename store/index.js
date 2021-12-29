@@ -3,6 +3,7 @@ export const state = () => ({
   menu: [
     ["A Cremozinn", "/quem-somos"],
     ["Produtos", "/produtos"],
+    ["Onde Encontarar", "/onde-encontrar"],
     ["Distribuidores", "/distribuidores"],
     ["Downloads", "/downloads"],
     ["Blog", "/blog"],

@@ -30,7 +30,7 @@
                 <v-card-text>
                   <div class="pa-10 text-center">
                     <h3 class="feature3-title font-weight-medium">
-                      Toda hora pede um!
+                      Pede um, pede todos!
                     </h3>
                     <p>
                       O Sorvete de Iogurte Cremozinn surge de uma grande vontade
@@ -46,7 +46,7 @@
                       to="/"
                       elevation="0"
                     >
-                      <span>Contato</span>
+                      <span>Onde Encontrar</span>
                       <i class="mdi mdi-arrow-right"></i>
                     </v-btn>
                   </div>
