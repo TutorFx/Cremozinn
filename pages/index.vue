@@ -1,5 +1,6 @@
 <template>
   <div>
+    <slider />
     <banner-one />
     <banner-two />
     <banner-three />
