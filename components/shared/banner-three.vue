@@ -7,11 +7,11 @@
       <v-row justify="center">
         <v-col cols="12" md="6" lg="6" xl="6" class="d-flex align-center">
           <div class="text-center text-md-left">
-            <h1 class="banner-title font-weight-bold white--text">
-              Salgados!
-            </h1>
+            <h1 class="banner-title font-weight-bold white--text">Salgados!</h1>
             <h4 class="banner-subtitle white--text font-weight-regular">
-              100% natural, sem conservantes, sem gorduras trans, sem sabor artificial, sem corante, tamanho pequeno. Baixo custo de embalagem e transporte. Simples de usar e manusear.
+              Experimente nosso mix de salgados congelados. Tem coxinha,
+              risoles, kibes, mini churros e muito mais. Além de muito saborosos
+              é tudo fácil e rápido de preparar.
             </h4>
             <div class="mt-16 pt-2">
               <v-btn

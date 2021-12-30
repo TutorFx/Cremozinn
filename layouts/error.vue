@@ -39,7 +39,10 @@ export default {
     return {
       title
     }
-  }
+  },
+  mounted () {
+    this.$store.commit("menuOpaque", false);
+  },
 }
 </script>
 

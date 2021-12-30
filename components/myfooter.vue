@@ -70,9 +70,9 @@
           </p>
           <div class="ml-auto">
             <div class="d-flex align-center">
-              <a href="/" class="link px-4">Termos de uso</a>
-              <a href="/" class="link px-4">Aviso legal</a>
-              <a href="/" class="link px-4">Políticas de privacidade</a>
+              <NLink to="/pagina/politica-de-privacidade" class="link px-4">Termos de uso</NLink>
+              <NLink to="/pagina/politica-de-privacidade" class="link px-4">Aviso legal</NLink>
+              <NLink to="/pagina/politica-de-privacidade" class="link px-4">Políticas de privacidade</NLink>
             </div>
           </div>
         </div>
