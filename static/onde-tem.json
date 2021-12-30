@@ -1,0 +1,129 @@
+[
+    {
+        "empresa": "Bretas",
+        "endereco": "Jardim Ana Lúcia - Ana Lúcia",
+        "lat": -16.697191683844434,
+        "lng": -49.31451950538323
+    },
+    {
+        "empresa": "Bretas",
+        "endereco": "Sol Nascente - Sol Nascente",
+        "lat": -16.68445890840414,
+        "lng": -49.292770767317606,
+        "produtos": [
+            {
+                "nome": "Cremozinn"
+            }
+        ]
+    },
+    {
+        "empresa": "Bretas",
+        "endereco": "Setor Bueno - Goiânia Shopping",
+        "lat": -23.547,
+        "lng": -46.624,
+        "produtos": [
+            {
+                "nome": "Cremozinn"
+            }
+        ]
+    },
+    {
+        "empresa": "Bretas",
+        "endereco": "Bueno - Armazém",
+        "lat": -23.547,
+        "lng": -46.624,
+        "produtos": [
+            {
+                "nome": "Cremozinn"
+            }
+        ]
+    },
+    {
+        "empresa": "Bretas",
+        "endereco": "Morada do Sol - Finsocial",
+        "lat": -23.547,
+        "lng": -46.624,
+        "produtos": [
+            {
+                "nome": "Cremozinn"
+            }
+        ]
+    },
+    {
+        "empresa": "Bretas",
+        "endereco": "Vila Pedroso - Vila Pedroso",
+        "lat": -23.547,
+        "lng": -46.624,
+        "produtos": [
+            {
+                "nome": "Cremozinn"
+            }
+        ]
+    },
+    {
+        "empresa": "Bretas",
+        "endereco": "Bairro Goiás - Bairro Goiás",
+        "lat": -23.547,
+        "lng": -46.624,
+        "produtos": [
+            {
+                "nome": "Cremozinn"
+            }
+        ]
+    },
+    {
+        "empresa": "Bretas",
+        "endereco": "São José - Campinas São José",
+        "lat": -23.547,
+        "lng": -46.624,
+        "produtos": [
+            {
+                "nome": "Cremozinn"
+            }
+        ]
+    },
+    {
+        "empresa": "Bretas",
+        "endereco": "Água Branca - Alphaville",
+        "lat": -23.547,
+        "lng": -46.624,
+        "produtos": [
+            {
+                "nome": "Cremozinn"
+            }
+        ]
+    },
+    {
+        "empresa": "Bretas",
+        "endereco": "Vila Jaraguá - Vila Jaraguá",
+        "lat": -23.547,
+        "lng": -46.624,
+        "produtos": [
+            {
+                "nome": "Cremozinn"
+            }
+        ]
+    },
+    {
+        "empresa": "Bretas",
+        "endereco": "Vila Legionárias - Laranjeiras",
+        "lat": -23.547,
+        "lng": -46.624,
+        "produtos": [
+            {
+                "nome": "Cremozinn"
+            }
+        ]
+    },
+    {
+        "empresa": "Bretas",
+        "endereco": "Centro - Anhanguera",
+        "lat": -23.547,
+        "lng": -46.624,
+        "produtos": [
+            {
+                "nome": "Cremozinn"
+            }
+        ]
+    }
+]

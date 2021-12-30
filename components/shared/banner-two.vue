@@ -1,5 +1,5 @@
 <template>
-  <div class="banner-wrapper" style="background-color: #EFE9D0">
+  <div class="banner-wrapper" style="background-color: #efe9d0">
     <v-container>
       <!-- -----------------------------------------------
             Start Banner
@@ -24,14 +24,37 @@
             </video>
           </div>
         </v-col>
-        <v-col cols="12" md="6" lg="6" xl="6" class="d-flex align-center justify-right">
+        <v-col
+          cols="12"
+          md="6"
+          lg="6"
+          xl="6"
+          class="d-flex align-center justify-right"
+        >
           <div class="text-center text-md-right">
-            <h1 class="banner-title font-weight-bold red--text text-sm-center text-md-right">
+            <h1
+              class="
+                banner-title
+                font-weight-bold
+                red--text
+                text-sm-center text-md-right
+              "
+            >
               Pão de queijo!
             </h1>
-            <h4 class="banner-subtitle mr-0 red--text font-weight-regular text-sm-center text-md-right offset-lg-4 offset-sm-0">
-              Agora na Cremozinn também tem algumas variedades de salgados e
-              mini churros, que delícia!
+            <h4
+              class="
+                banner-subtitle
+                mr-0
+                red--text
+                font-weight-regular
+                text-sm-center text-md-right
+                offset-lg-4 offset-sm-0
+              "
+            >
+              A fabricação do pão de queijo e dos biscoitos são feitos com
+              ingredientes de primeira qualidade e se tornaram essenciais no
+              cotidiano dos consumidores.
             </h4>
             <div class="mt-16 pt-2">
               <v-btn

@@ -33,10 +33,10 @@
                       Pede um, pede todos!
                     </h3>
                     <p>
-                      O Sorvete de Iogurte Cremozinn surge de uma grande vontade
-                      e desejo de propor às famílias momentos agradáveis ​​e
-                      deliciosos, momentos esses, cheios de sabores e
-                      criatividade.
+                      Estamos nas principais redes de supermercados do país,
+                      presentes em vários mercadinhos, quiosques, lanchonetes e
+                      restaurantes. Veja a localização do ponto de venda mais
+                      próximo de você.
                     </p>
                     <v-btn
                       color="error"

@@ -24,8 +24,7 @@
                         </h2>
                         <div class="linha"></div>
                         <div class="mb-3">
-                          Reference site about Lorem Ipsum, giving information
-                          on its origins, as well as a random Lipsum generator.
+                          Há mais de 15 anos, somos a empresa líder na fabricação de alimentos congelados.
                         </div>
                         <v-btn outlined small color="white">Veja Mais</v-btn>
                       </div>
@@ -58,8 +57,7 @@
                         </h2>
                         <div class="linha"></div>
                         <div class="mb-3">
-                          Reference site about Lorem Ipsum, giving information
-                          on its origins, as well as a random Lipsum generator.
+                          Participe das nossas degustações no ponto de vendas mais próximo da sua casa.
                         </div>
                         <v-btn outlined small color="white">Veja Mais</v-btn>
                       </div>
@@ -94,8 +92,7 @@
                         </h2>
                         <div class="linha"></div>
                         <div class="mb-3">
-                          Reference site about Lorem Ipsum, giving information
-                          on its origins, as well as a random Lipsum generator.
+                          Combine nossos alimentos de várias maneiras, vem dá uma espiada em algumas receitas!
                         </div>
                         <v-btn outlined small color="white">Veja Mais</v-btn>
                       </div>
@@ -128,8 +125,7 @@
                         </h2>
                         <div class="linha"></div>
                         <div class="mb-3">
-                          Reference site about Lorem Ipsum, giving information
-                          on its origins, as well as a random Lipsum generator.
+                          Ética empresarial, cidadania, direitos humanos e responsabilidade com o meio ambiente. Nós Contribuímos!
                         </div>
                         <v-btn outlined small color="white">Veja Mais</v-btn>
                       </div>

@@ -40,6 +40,10 @@ export default {
     '@nuxtjs/pwa',
     // https://go.nuxtjs.dev/content
     '@nuxt/content',
+    ['nuxt-gmaps', {
+      key: 'AIzaSyAnRCnSdRI8MS7AWWZIVeTSU93TeBpm4kI',
+      libraries: ['places']
+    }]
   ],
 
   // Axios module configuration: https://go.nuxtjs.dev/config-axios
