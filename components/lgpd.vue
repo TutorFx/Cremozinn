@@ -3,7 +3,7 @@
     <v-dialog
       v-model="lgpd"
       persistent
-      max-width="400"
+      max-width="800"
       origin="bottom center"
       content-class="lgpd-dialog"
     >

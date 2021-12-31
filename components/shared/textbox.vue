@@ -41,7 +41,7 @@
                       class="btn-custom-lg linking mt-10 btn-arrow"
                       nuxt
                       large
-                      to="/"
+                      to="/onde-encontrar"
                       elevation="0"
                     >
                       <span>Onde Encontrar</span>

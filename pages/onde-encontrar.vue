@@ -1,6 +1,6 @@
 <template>
   <v-container fluid>
-    <v-row class="pa-0 ma-0">
+    <v-row class="pa-0 px-md-16 ma-0">
       <v-col cols="12" md="4" class="pa-0 ma-0">
         <div
           class="p-3"
