@@ -255,9 +255,9 @@ export default {
 </script>
 
 <style lang="scss">
-.GMap__Wrapper {
-  height: calc(100vh - 80px);
-  width: 100%;
+.GMap__Wrapper, .GMap {
+  height: calc(100vh - 80px)!important;
+  width: 100%!important;
 }
 .filtro {
   /* custom scrollbar */
