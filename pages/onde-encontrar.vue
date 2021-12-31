@@ -63,7 +63,7 @@
         </GMapMarker>
         <GMapCircle :options="circleOptions" />
       </GMap>
-      
+
     </v-col>
   </v-row>
   </v-container>
@@ -72,7 +72,7 @@
 <script>
 export default {
   async asyncData({ $axios }) {
-    const fornecedores = await $axios.$get("/onde-tem.json");
+    const fornecedores = await $axios.$get(`https://${$store.state.domain}/onde-tem.json`);
     return { fornecedores };
   },
   mounted() {
