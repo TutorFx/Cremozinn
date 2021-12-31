@@ -7,12 +7,10 @@
       <v-row justify="center">
         <v-col cols="12" md="6" lg="6" xl="6" class="d-flex align-center">
           <div class="text-center text-md-left">
-            <h1 class="banner-title font-weight-bold white--text">
-              Iogurte gelado
-            </h1>
+            <img width="300px" class="mb-5" src="/icons/c.png">
             <h4 class="banner-subtitle white--text font-weight-regular">
               Somos a marca líder na fabricação e distribuição de iogurte
-              congelado. São deliciosos tradicionais e ainda temos os sabores
+              congelado.<br> São deliciosos tradicionais e ainda temos os sabores
               gourmet
             </h4>
             <div class="mt-16 pt-2">

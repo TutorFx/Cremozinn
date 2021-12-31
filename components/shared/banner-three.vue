@@ -7,7 +7,7 @@
       <v-row justify="center">
         <v-col cols="12" md="6" lg="6" xl="6" class="d-flex align-center">
           <div class="text-center text-md-left">
-            <h1 class="banner-title font-weight-bold white--text">Salgados!</h1>
+            <img width="400px" height="auto" contain class="mb-5" src="/icons/sgd.png">
             <h4 class="banner-subtitle white--text font-weight-regular">
               Experimente nosso mix de salgados congelados. Tem coxinha,
               risoles, kibes, mini churros e muito mais. Além de muito saborosos

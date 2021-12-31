@@ -29,9 +29,7 @@
               <v-card class="card-shadow">
                 <v-card-text>
                   <div class="pa-10 text-center">
-                    <h3 class="feature3-title font-weight-medium">
-                      Pede um, pede todos!
-                    </h3>
+                    <img width="180px" height="auto" contain class="mb-5" src="/icons/p1pt.png">
                     <p>
                       Estamos nas principais redes de supermercados do país,
                       presentes em vários mercadinhos, quiosques, lanchonetes e

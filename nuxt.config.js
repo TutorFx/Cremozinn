@@ -86,6 +86,7 @@ export default {
     middleware: 'domain'
   },
   env: {
-    baseURL: (process.env.NODE_ENV === 'production' ? 'https://cremozinn.vercel.app' : 'http://localhost:3000')
+    baseURL: (process.env.NODE_ENV === 'production' ? 'https://cremozinn.vercel.app' : 'http://localhost:3000'),
+    googlekey: 'AIzaSyAnRCnSdRI8MS7AWWZIVeTSU93TeBpm4kI'
   }
 }

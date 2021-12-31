@@ -32,16 +32,7 @@
           class="d-flex align-center justify-right"
         >
           <div class="text-center text-md-right">
-            <h1
-              class="
-                banner-title
-                font-weight-bold
-                red--text
-                text-sm-center text-md-right
-              "
-            >
-              Pão de queijo!
-            </h1>
+            <img width="400px" height="auto" contain class="mb-5" src="/icons/pdq.png">
             <h4
               class="
                 banner-subtitle
@@ -49,7 +40,7 @@
                 red--text
                 font-weight-regular
                 text-sm-center text-md-right
-                offset-lg-4 offset-sm-0
+                offset-lg-1 offset-sm-0
               "
             >
               A fabricação do pão de queijo e dos biscoitos são feitos com

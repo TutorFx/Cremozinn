@@ -19,8 +19,8 @@
     {
         "empresa": "Bretas",
         "endereco": "Setor Bueno - Goiânia Shopping",
-        "lat": -23.547,
-        "lng": -46.624,
+        "lat": -16.708589641612715, 
+        "lng": -49.27370588181378,
         "produtos": [
             {
                 "nome": "Cremozinn"
