@@ -63,6 +63,7 @@
         </GMapMarker>
         <GMapCircle :options="circleOptions" />
       </GMap>
+      
     </v-col>
   </v-row>
   </v-container>
