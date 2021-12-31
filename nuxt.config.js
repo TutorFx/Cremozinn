@@ -85,4 +85,7 @@ export default {
   router: {
     middleware: 'domain'
   },
+  env: {
+    baseURL: (process.env.NODE_ENV === 'production' ? 'https://cremozinn.vercel.app' : 'http://localhost:3000')
+  }
 }
