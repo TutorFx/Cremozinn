@@ -1,16 +1,18 @@
 <template>
-  <v-container fluid>
-    <v-row class="pa-0 px-md-16 ma-0">
+  <v-container fluid style="background-color: #ededed">
+    <v-row class="pa-0 px-md-16 mx-md-16 ma-0">
       <v-col cols="12" md="4" class="pa-0 ma-0">
         <div
           class="p-3"
-          style="height: calc(100vh - 80px) !important; overflow-y: auto"
+          style="height: calc(100vh - 95px) !important; overflow-y: auto"
         >
           <v-card
-            class="mx-auto my-3 mr-3 filtro"
+            class="mx-auto my-3 mr-3 filtro rounded-lg"
             outlined
             v-for="(location, id) in fornecedores"
             :key="id"
+            @mouseover="upCard(id, true)"
+            @mouseleave="upCard(id, false)"
           >
             <v-list-item three-line>
               <v-list-item-content>
@@ -27,7 +29,12 @@
                         class="text-overline mb-4 text-right"
                         v-if="locationGps"
                       >
-                        {{ distancia(id) }}KM
+                        <h3>
+                          <span class="font-weight-black">{{
+                            distancia(id)
+                          }}</span
+                          ><span class="grey--text">KM</span>
+                        </h3>
                       </div>
                     </client-only>
                   </v-col>
@@ -39,16 +46,15 @@
                 <v-list-item-subtitle>Cremozinn</v-list-item-subtitle>
               </v-list-item-content>
 
-              <v-list-item-avatar
-                tile
-                size="80"
-                color="grey"
+              <v-list-item-avatar tile size="100">
+                <v-img :src="location.logo"></v-img
               ></v-list-item-avatar>
             </v-list-item>
             <v-card-actions>
               <v-btn
                 outlined
                 rounded
+                small
                 text
                 :href="`https://maps.google.com/?q=${location.lat},${location.lng}`"
                 target="_blank"
@@ -79,7 +85,6 @@
         <GMap
           ref="gMap"
           language="pt-BR"
-          :cluster="{ options: { styles: clusterStyle } }"
           :center="center"
           :options="{ fullscreenControl: false }"
           :zoom="13"
@@ -89,12 +94,23 @@
             :key="id"
             :position="{ lat: location.lat, lng: location.lng }"
             :options="{
-              icon:
-                location === currentLocation ? pins.selected : pins.notSelected,
+              icon: hoverCard == id ? pins.selected : pins.notSelected,
             }"
+            style="transform: scale(1.5)"
           >
             <GMapInfoWindow :options="{ maxWidth: 200 }">
               <div>{{ location.empresa + " " + location.endereco }}</div>
+              <v-btn
+                outlined
+                rounded
+                small
+                text
+                :href="`https://maps.google.com/?q=${location.lat},${location.lng}`"
+                target="_blank"
+                class="mt-3"
+              >
+                Rota para mercado
+              </v-btn>
             </GMapInfoWindow>
           </GMapMarker>
           <GMapCircle :options="circleOptions" />
@@ -122,6 +138,9 @@ export default {
   },
   mounted() {
     this.$store.commit("menuOpaque", false);
+    setTimeout(() => {
+      this.delay = true;
+    }, 1000);
   },
   created() {
     if (process.client) {
@@ -182,9 +201,13 @@ export default {
         this.fornecedores.sort(function (a, b) {
           i++;
           distA =
-            Math.round(getDistanceFromLatLonInKm(lat1, lng1, a.lat, a.lng) * 100) / 100;
+            Math.round(
+              getDistanceFromLatLonInKm(lat1, lng1, a.lat, a.lng) * 100
+            ) / 100;
           distB =
-            Math.round(getDistanceFromLatLonInKm(lat1, lng1, b.lat, b.lng) * 100) / 100;
+            Math.round(
+              getDistanceFromLatLonInKm(lat1, lng1, b.lat, b.lng) * 100
+            ) / 100;
           if (distA > distB) {
             return 1;
           }
@@ -198,7 +221,13 @@ export default {
     },
   },
   methods: {
-    verLocal(id) {},
+    upCard(id, Boolean) {
+      if (Boolean && this.delay) {
+        this.hoverCard = id;
+      } else {
+        this.hoverCard = null;
+      }
+    },
     distancia(id) {
       if (this.locationGps === null || this.fornecedores[id] === undefined) {
         return "";
@@ -231,15 +260,17 @@ export default {
   data() {
     return {
       currentLocation: {},
+      delay: false,
       snackbar: false,
       locationGps: null,
+      hoverCard: null,
       center: { lat: -16.68445890840414, lng: -49.292770767317606 },
       gettingLocation: false,
       errorStr: null,
       circleOptions: {},
       pins: {
         selected: "/icon-maps.svg",
-        notSelected: "/icon-maps.svg",
+        notSelected: "/icons/avatar.png",
       },
       clusterStyle: [
         {
@@ -255,9 +286,10 @@ export default {
 </script>
 
 <style lang="scss">
-.GMap__Wrapper, .GMap {
-  height: calc(100vh - 80px)!important;
-  width: 100%!important;
+.GMap__Wrapper,
+.GMap {
+  height: calc(100vh - 95px) !important;
+  width: 100% !important;
 }
 .filtro {
   /* custom scrollbar */

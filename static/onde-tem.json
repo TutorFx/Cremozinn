@@ -2,117 +2,111 @@
     {
         "empresa": "Bretas",
         "endereco": "Jardim Ana Lúcia - Ana Lúcia",
+        "logo": "/parceiros/bretas.png",
         "lat": -16.697191683844434,
-        "lng": -49.31451950538323
+        "lng": -49.31451950538323,
+        "produtos": [
+            "Cremozinn"
+        ]
     },
     {
         "empresa": "Bretas",
         "endereco": "Sol Nascente - Sol Nascente",
+        "logo": "/parceiros/bretas.png",
         "lat": -16.68445890840414,
         "lng": -49.292770767317606,
         "produtos": [
-            {
-                "nome": "Cremozinn"
-            }
+            "Cremozinn"
         ]
     },
     {
         "empresa": "Bretas",
         "endereco": "Setor Bueno - Goiânia Shopping",
-        "lat": -16.708589641612715, 
+        "logo": "/parceiros/bretas.png",
+        "lat": -16.708589641612715,
         "lng": -49.27370588181378,
         "produtos": [
-            {
-                "nome": "Cremozinn"
-            }
+            "Cremozinn"
         ]
     },
     {
         "empresa": "Bretas",
         "endereco": "Bueno - Armazém",
+        "logo": "/parceiros/bretas.png",
         "lat": -16.703573255689612,
         "lng": -49.268348485360946,
         "produtos": [
-            {
-                "nome": "Cremozinn"
-            }
+            "Cremozinn"
         ]
     },
     {
         "empresa": "Bretas",
         "endereco": "Morada do Sol - Finsocial",
+        "logo": "/parceiros/bretas.png",
         "lat": -16.61833714660194,
         "lng": -49.32181502952414,
         "produtos": [
-            {
-                "nome": "Cremozinn"
-            }
+            "Cremozinn"
         ]
     },
     {
         "empresa": "Bretas",
         "endereco": "Vila Pedroso - Vila Pedroso",
+        "logo": "/parceiros/bretas.png",
         "lat": -16.659386689687093,
         "lng": -49.187373509514615,
         "produtos": [
-            {
-                "nome": "Cremozinn"
-            }
+            "Cremozinn"
         ]
     },
     {
         "empresa": "Bretas",
         "endereco": "Bairro Goiás - Bairro Goiás",
+        "logo": "/parceiros/bretas.png",
         "lat": -16.680514274332168,
         "lng": -49.32760472985506,
         "produtos": [
-            {
-                "nome": "Cremozinn"
-            }
+            "Cremozinn"
         ]
     },
     {
         "empresa": "Bretas",
         "endereco": "Água Branca - Alphaville",
+        "logo": "/parceiros/bretas.png",
         "lat": -16.697943665663875,
         "lng": -49.21604107212367,
         "produtos": [
-            {
-                "nome": "Cremozinn"
-            }
+            "Cremozinn"
         ]
     },
     {
         "empresa": "Bretas",
         "endereco": "Vila Jaraguá - Vila Jaraguá",
+        "logo": "/parceiros/bretas.png",
         "lat": -16.653849694316925,
         "lng": -49.253629447926315,
         "produtos": [
-            {
-                "nome": "Cremozinn"
-            }
+            "Cremozinn"
         ]
     },
     {
         "empresa": "Bretas",
         "endereco": "Vila Legionárias - Laranjeiras",
+        "logo": "/parceiros/bretas.png",
         "lat": -16.730526727521163,
         "lng": -49.234123763166394,
         "produtos": [
-            {
-                "nome": "Cremozinn"
-            }
+            "Cremozinn"
         ]
     },
     {
         "empresa": "Bretas",
         "endereco": "Centro - Anhanguera",
+        "logo": "/parceiros/bretas.png",
         "lat": -16.67601167351888,
         "lng": -49.26302966926182,
         "produtos": [
-            {
-                "nome": "Cremozinn"
-            }
+            "Cremozinn"
         ]
     }
 ]
