@@ -21,32 +21,30 @@
               <v-list-item three-line>
                 <v-list-item-content>
                   <v-row>
-                    <v-col
-                      ><div class="text-overline mb-4">
-                        
-                      </div></v-col
-                    >
-                    <v-spacer></v-spacer>
                     <v-col>
                       <client-only placeholder="Carregando">
                         <div
-                          class="text-overline mb-4 text-right"
+                          class="text-overline"
                           v-if="locationGps"
                         >
-                          <h3>
+                          <div class="text-overline">
                             <span class="font-weight-black"
                               >~{{ distancia(id) }}</span
                             ><span class="grey--text">KM</span>
-                          </h3>
+                          </div>
                         </div>
-                      </client-only>
-                    </v-col>
+                      </client-only></v-col
+                    >
+                    <v-spacer></v-spacer>
+                    <v-col> </v-col>
                   </v-row>
 
                   <v-list-item-title class="text-h5 mb-1">
                     {{ location.endereco }}
                   </v-list-item-title>
-                  <v-list-item-subtitle>{{ location.empresa }}</v-list-item-subtitle>
+                  <v-list-item-subtitle>{{
+                    location.empresa
+                  }}</v-list-item-subtitle>
                 </v-list-item-content>
 
                 <v-list-item-avatar tile size="100">
@@ -108,6 +106,7 @@
             v-for="(location, id) in fornecedores"
             :key="id"
             :position="{ lat: location.lat, lng: location.lng }"
+            @click="position(location.lat, location.lng)"
             :options="{
               icon: hoverCard == id ? pins.selected : pins.notSelected,
             }"
@@ -150,6 +149,18 @@ export default {
       process.env.baseURL + "/onde-tem.json"
     );
     return { fornecedores };
+  },
+  head() {
+    return {
+      title: `Nós estamos presentes em todos os Estados do Brasil`,
+      meta: [
+        {
+          name: "keywords",
+          content:
+            "fábrica de alimentos congelados, cremozinn, cremosinho, pão de queijo, biscoito de queijo, biscoito suíço, salgados, coxinha, mini churros, risoles, kibes, iogurte congelado, goiania, goianira, brasília, palmas, brasil",
+        },
+      ],
+    };
   },
   mounted() {
     this.$store.commit("menuOpaque", false);
@@ -244,7 +255,7 @@ export default {
       }
     },
     position(lat, lng) {
-      this.center = { lat: lat, lng: lng }
+      this.center = { lat: lat, lng: lng };
       this.$refs.gMap.map.setCenter(this.center);
       this.$refs.gMap.map.setZoom(19);
       this.$vuetify.goTo("#map");

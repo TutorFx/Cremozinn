@@ -171,7 +171,7 @@
     },
     {
         "empresa": "Assaí Brasília Sul",
-        "endereco": "Trecho 10 Sia- Zona Industrial, s/n - Guará - Brasília, Distrito Federal - CEP 71200-110",
+        "endereco": "Trecho 10 Sia - Zona Industrial, s/n - Guará - Brasília, Distrito Federal - CEP 71200-110",
         "logo": "/parceiros/assai.png",
         "lat": -15.793175,
         "lng": -47.946297,
@@ -273,8 +273,8 @@
         "empresa": "Assaí Cabedelo",
         "endereco": "BR 230, S/N - Parque Boa Esperança - Cabedelo, Paraíba",
         "logo": "/parceiros/assai.png",
-        "lat": 0,
-        "lng": 0,
+        "lat": -7.08883313085229,
+        "lng": -34.849099466854994,
         "produtos": [
             "Cremozinn"
         ]
@@ -323,8 +323,8 @@
         "empresa": "Assaí Cabo de Santo Agostinho",
         "endereco": "Rodovia PE 60, 2520 - Garapu - Cabo de Santo Agostinho, Pernambuco - CEP 55565-000",
         "logo": "/parceiros/assai.png",
-        "lat": -8.291225,
-        "lng": -8.291225,
+        "lat": -8.287370, 
+        "lng": -35.035110,
         "produtos": [
             "Cremozinn"
         ]
@@ -433,8 +433,8 @@
         "empresa": "Assaí Aracaju",
         "endereco": "Rua Simeão Aguiar, 430 - Novo Paraíso - Aracaju, Sergipe - CEP 49085-410",
         "logo": "/parceiros/assai.png",
-        "lat": 90,
-        "lng": -24,
+        "lat": -10.90691377526682,
+        "lng": -37.08781128630028,
         "produtos": [
             "Cremozinn"
         ]
