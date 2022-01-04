@@ -1,5 +1,5 @@
 ---
-title: Pão de Queijo
+title: 'Nome do Produto'
 description: ''
 thumbnail: 'https://picsum.photos/500/300/?rando'
 sabores: [{nome:'tamarindo', cod:'7777'}]

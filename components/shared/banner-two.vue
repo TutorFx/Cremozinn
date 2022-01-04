@@ -32,7 +32,7 @@
           class="d-flex align-center justify-right"
         >
           <div class="text-center text-md-right">
-            <img width="400px" height="auto" contain class="mb-5" src="/icons/pdq.png">
+            <img style="max-width: 300px;" height="auto" contain class="mb-5" src="/icons/pdq.png">
             <h4
               class="
                 banner-subtitle
@@ -54,7 +54,7 @@
                 nuxt
                 large
                 dark
-                to="/fornecedores"
+                to="/produtos/pão-de-queijo"
                 elevation="0"
               >
                 Confira nosso catálogo

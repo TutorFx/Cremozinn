@@ -108,5 +108,355 @@
         "produtos": [
             "Cremozinn"
         ]
+    },
+    {
+        "empresa": "Assaí Rio Branco",
+        "endereco": "Rod. Br 364, 1897 (Ao lado do Shopping Via Verde) - Floresta Sul - Rio Branco, Acre - CEP 69907-701",
+        "logo": "/parceiros/assai.png",
+        "lat": -11.683103,
+        "lng": -61.1856,
+        "produtos": [
+            "Cremozinn"
+        ]
+    },
+    {
+        "empresa": "Assaí Arapiraca",
+        "endereco": "Rua Maria Genusir Soares, 308 (Rodovia AL, 220) - - Planalto - Arapiraca, Alagoas - CEP 57308-532",
+        "logo": "/parceiros/assai.png",
+        "lat": -9.750492,
+        "lng": -36.629773,
+        "produtos": [
+            "Cremozinn"
+        ]
+    },
+    {
+        "empresa": "Assaí Macapá ",
+        "endereco": "Rod. Juscelino Kubitschek - Lote 03 Jardim Marco Zero - Macapá, Amapá - CEP 68.903-193",
+        "logo": "/parceiros/assai.png",
+        "lat": -21.794257,
+        "lng": -55.721283,
+        "produtos": [
+            "Cremozinn"
+        ]
+    },
+    {
+        "empresa": "Assaí Manaus Grande Circular",
+        "endereco": "Avenida Autaz Mirim, 8.755 - Novo Aleixo - Manaus, Amazonas - CEP 69099-045",
+        "logo": "/parceiros/assai.png",
+        "lat": -3.039617,
+        "lng": -59.941656,
+        "produtos": [
+            "Cremozinn"
+        ]
+    },
+    {
+        "empresa": "Assaí Barreiras",
+        "endereco": "Av. Cleriston Andrade, nº 1897 - São Miguel - Barreiras, Bahia - CEP 47.800-390",
+        "logo": "/parceiros/assai.png",
+        "lat": -12.142296,
+        "lng": -44.9824,
+        "produtos": [
+            "Cremozinn"
+        ]
+    },
+    {
+        "empresa": "Assaí Bezerra M (Fortaleza) ",
+        "endereco": "Avenida Bezerra de Menezes, 571 - Farias de Brito - Fortaleza, Ceará - CEP 60325-003",
+        "logo": "/parceiros/assai.png",
+        "lat": -3.731521,
+        "lng": -38.541325,
+        "produtos": [
+            "Cremozinn"
+        ]
+    },
+    {
+        "empresa": "Assaí Brasília Sul",
+        "endereco": "Trecho 10 Sia- Zona Industrial, s/n - Guará - Brasília, Distrito Federal - CEP 71200-110",
+        "logo": "/parceiros/assai.png",
+        "lat": -15.793175,
+        "lng": -47.946297,
+        "produtos": [
+            "Cremozinn"
+        ]
+    },
+    {
+        "empresa": "Assaí Anápolis",
+        "endereco": "Avenida Universitária, 765 - Jardim Bandeirante - Anápolis, Goiás - CEP 75083-035",
+        "logo": "/parceiros/assai.png",
+        "lat": -21.758563,
+        "lng": -55.748726,
+        "produtos": [
+            "Cremozinn"
+        ]
+    },
+    {
+        "empresa": "Assaí Guajajaras",
+        "endereco": "Av. Guajajaras, 06 - São Bernardo - São Luís, Maranhão",
+        "logo": "/parceiros/assai.png",
+        "lat": -21.946501,
+        "lng": -55.861344,
+        "produtos": [
+            "Cremozinn"
+        ]
+    },
+    {
+        "empresa": "Assaí Coxipó",
+        "endereco": "Rua Fernando Corrêa da Costa, 4.875 - Coxipó - Cuiabá, Mato Grosso - CEP 78080300",
+        "logo": "/parceiros/assai.png",
+        "lat": -15.630102,
+        "lng": -56.0531,
+        "produtos": [
+            "Cremozinn"
+        ]
+    },
+    {
+        "empresa": "Assaí Acrissul",
+        "endereco": "Avenida Fábio Zahran, 7.919 - Jardim América - Campo Grande, Mato Grosso do Sul - CEP 79080-761",
+        "logo": "/parceiros/assai.png",
+        "lat": -20.489879,
+        "lng": -54.621,
+        "produtos": [
+            "Cremozinn"
+        ]
+    },
+    {
+        "empresa": "Assaí Campo Grande Aeroporto ",
+        "endereco": "Av. Duque de Caxias, 3200 (Próx. ao aeroporto) - Santo Antônio - Campo Grande, Mato Grosso do Sul - CEP 79101-000",
+        "logo": "/parceiros/assai.png",
+        "lat": -20.457593,
+        "lng": -54.665889,
+        "produtos": [
+            "Cremozinn"
+        ]
+    },
+    {
+        "empresa": "Assaí Contagem ",
+        "endereco": "Avenida João César de Oliveira, 4.321 - Novo Eldorado - Contagem, Minas Gerais - CEP 32341-000",
+        "logo": "/parceiros/assai.png",
+        "lat": -19.936917,
+        "lng": -44.059467,
+        "produtos": [
+            "Cremozinn"
+        ]
+    },
+    {
+        "empresa": "Assaí Sete Lagoas",
+        "endereco": "Av. Doutor Renato Azeredo, 2955, - Sete Lagoas, Minas Gerais",
+        "logo": "/parceiros/assai.png",
+        "lat": -19.466272,
+        "lng": -44.244,
+        "produtos": [
+            "Cremozinn"
+        ]
+    },
+    {
+        "empresa": "Assaí Ananindeua",
+        "endereco": "Rodovia BR 316 KM 9, 1.760 - Centro - Ananindeua, Pará - CEP 67030-007",
+        "logo": "/parceiros/assai.png",
+        "lat": -1.366274,
+        "lng": -48.368671,
+        "produtos": [
+            "Cremozinn"
+        ]
+    },
+    {
+        "empresa": "Assaí Batista Campos",
+        "endereco": "Av. Roberto Camelier, SN, (Esquina com Av. Conselheiro Furtado, Antiga Importadora de Veículos) - Batista Campos - Belém, Pará - CEP 66.025-160",
+        "logo": "/parceiros/assai.png",
+        "lat": -1.463966,
+        "lng": -48.49758,
+        "produtos": [
+            "Cremozinn"
+        ]
+    },
+    {
+        "empresa": "Assaí Cabedelo",
+        "endereco": "BR 230, S/N - Parque Boa Esperança - Cabedelo, Paraíba",
+        "logo": "/parceiros/assai.png",
+        "lat": 0,
+        "lng": 0,
+        "produtos": [
+            "Cremozinn"
+        ]
+    },
+    {
+        "empresa": "Assaí Campina Grande",
+        "endereco": "Avenida Jornalista Assis Chateaubriand (Prox ao carajás Home Center), s/n - Liberdade - Campina Grande, Paraíba - CEP 58414-500",
+        "logo": "/parceiros/assai.png",
+        "lat": -7.237757,
+        "lng": -35.88891,
+        "produtos": [
+            "Cremozinn"
+        ]
+    },
+    {
+        "empresa": "Assaí Atuba",
+        "endereco": "BR-476, 1801 - Atuba - Curitiba, Paraná - CEP 81.460-090",
+        "logo": "/parceiros/assai.png",
+        "lat": -25.39095,
+        "lng": -49.209487,
+        "produtos": [
+            "Cremozinn"
+        ]
+    },
+    {
+        "empresa": "Assaí Curitiba",
+        "endereco": "Rodovia BR -116, 18.580 (Linha Verde - ao lado do Terminal Pinherinho) - Pinheirinho - Curitiba, Paraná - CEP 81690-400",
+        "logo": "/parceiros/assai.png",
+        "lat": -25.514484,
+        "lng": -49.290801,
+        "produtos": [
+            "Cremozinn"
+        ]
+    },
+    {
+        "empresa": "Assaí Avenida Recife",
+        "endereco": "Av. Recife, Nº 5777 (Próximo ao Ceasa) - Jardim São Paulo - Recife, Pernambuco - CEP 50781-000",
+        "logo": "/parceiros/assai.png",
+        "lat": -8.077228,
+        "lng": -34.93792,
+        "produtos": [
+            "Cremozinn"
+        ]
+    },
+    {
+        "empresa": "Assaí Cabo de Santo Agostinho",
+        "endereco": "Rodovia PE 60, 2520 - Garapu - Cabo de Santo Agostinho, Pernambuco - CEP 55565-000",
+        "logo": "/parceiros/assai.png",
+        "lat": -8.291225,
+        "lng": -8.291225,
+        "produtos": [
+            "Cremozinn"
+        ]
+    },
+    {
+        "empresa": "Assaí Parnaíba",
+        "endereco": "BR-343 - Sabiazal - Parnaíba, Piauí - CEP 64212-293",
+        "logo": "/parceiros/assai.png",
+        "lat": -21.810514,
+        "lng": -55.733643,
+        "produtos": [
+            "Cremozinn"
+        ]
+    },
+    {
+        "empresa": "Assaí Picos",
+        "endereco": "Rodovia BR – 316 S/N - Belo Norte  (ao lado do Piauí Shopping) - Picos, Piauí - CEP 64600-000",
+        "logo": "/parceiros/assai.png",
+        "lat": -22.002862,
+        "lng": -55.889963,
+        "produtos": [
+            "Cremozinn"
+        ]
+    },
+    {
+        "empresa": "Assaí Alcântara",
+        "endereco": "Rua Doutor Alfredo Backer, 605 - Alcântara - São Gonçalo, Rio de Janeiro - CEP 24452-001",
+        "logo": "/parceiros/assai.png",
+        "lat": -22.820066,
+        "lng": -43.0041,
+        "produtos": [
+            "Cremozinn"
+        ]
+    },
+    {
+        "empresa": "Assaí Ayrton Senna ",
+        "endereco": "Avenida Ayrton Senna, 6.000 - Jacarepagua - Rio de Janeiro, Rio de Janeiro - CEP 22775-005",
+        "logo": "/parceiros/assai.png",
+        "lat": -22.960839,
+        "lng": -43.357242,
+        "produtos": [
+            "Cremozinn"
+        ]
+    },
+    {
+        "empresa": "Assaí Natal",
+        "endereco": "Avenida Dão Silveira, s/n - Pitimbu - Natal, Rio Grande do Norte - CEP 59000-000",
+        "logo": "/parceiros/assai.png",
+        "lat": -5.866983,
+        "lng": -35.21748,
+        "produtos": [
+            "Cremozinn"
+        ]
+    },
+    {
+        "empresa": "Assaí São Gonçalo do Amarante",
+        "endereco": "Avenida  Bacharel Tomaz Landim, s/n - Jardim Lola - Natal, Rio Grande do Norte - CEP 59290-000",
+        "logo": "/parceiros/assai.png",
+        "lat": -5.771151,
+        "lng": -35.2667,
+        "produtos": [
+            "Cremozinn"
+        ]
+    },
+    {
+        "empresa": "Assaí Porto Velho ",
+        "endereco": "Rua da Beira, 6881 - Lagoa (Em frente À Saga Volkswagen) - Porto Velho, Rondônia - CEP 76.812.241",
+        "logo": "/parceiros/assai.png",
+        "lat": -21.794682,
+        "lng": -55.725403,
+        "produtos": [
+            "Cremozinn"
+        ]
+    },
+    {
+        "empresa": "Assaí Boa Vista ",
+        "endereco": "Av. Brasil, nº 616 (BR-174) - - (em frente à Superintendência da Polícia Federal) - Boa Vista, Roraima - CEP 69309-575",
+        "logo": "/parceiros/assai.png",
+        "lat": 2.800786,
+        "lng": -60.698632,
+        "produtos": [
+            "Cremozinn"
+        ]
+    },
+    {
+        "empresa": "Assaí Águia de Haia",
+        "endereco": "Avenida Águia de Haia, 2.636 - Parque das Paineiras - São Paulo, São Paulo - CEP 03694-000",
+        "logo": "/parceiros/assai.png",
+        "lat": -23.523142,
+        "lng": -46.4751,
+        "produtos": [
+            "Cremozinn"
+        ]
+    },
+    {
+        "empresa": "Assaí Amoreiras",
+        "endereco": "Avenida Ruy Rodrigues, 1.400 - Amoreiras - Campinas, São Paulo - CEP 13060-192",
+        "logo": "/parceiros/assai.png",
+        "lat": -22.944982,
+        "lng": -47.1099,
+        "produtos": [
+            "Cremozinn"
+        ]
+    },
+    {
+        "empresa": "Assaí Aracaju",
+        "endereco": "Rua Simeão Aguiar, 430 - Novo Paraíso - Aracaju, Sergipe - CEP 49085-410",
+        "logo": "/parceiros/assai.png",
+        "lat": 90,
+        "lng": -24,
+        "produtos": [
+            "Cremozinn"
+        ]
+    },
+    {
+        "empresa": "Assaí Aracaju Sul ",
+        "endereco": "Avenida Melício Machado, 240 - Zona de Expansão - Aracaju, Sergipe - CEP 49.038-443",
+        "logo": "/parceiros/assai.png",
+        "lat": -21.798083,
+        "lng": -55.718536,
+        "produtos": [
+            "Cremozinn"
+        ]
+    },
+    {
+        "empresa": "Assaí Palmas",
+        "endereco": "Avenida Joaquim Teotônio Segurado - S/N - Palmas, Tocantins - CEP 77061-900",
+        "logo": "/parceiros/assai.png",
+        "lat": -10.250802,
+        "lng": -48.333348,
+        "produtos": [
+            "Cremozinn"
+        ]
     }
 ]

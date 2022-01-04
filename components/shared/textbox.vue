@@ -28,7 +28,7 @@
             <reveal>
               <v-card class="card-shadow">
                 <v-card-text>
-                  <div class="pa-10 text-center">
+                  <div class="pa-md-10 text-center">
                     <img width="180px" height="auto" contain class="mb-5" src="/icons/p1pt.png">
                     <p>
                       Estamos nas principais redes de supermercados do país,

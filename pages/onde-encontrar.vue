@@ -6,63 +6,77 @@
           class="p-3"
           style="height: calc(100vh - 95px) !important; overflow-y: auto"
         >
-          <v-card
-            class="mx-auto my-3 mr-3 filtro rounded-lg"
-            outlined
+          <v-lazy
             v-for="(location, id) in fornecedores"
             :key="id"
-            @mouseover="upCard(id, true)"
-            @mouseleave="upCard(id, false)"
+            transition="scroll-y-reverse-transition"
           >
-            <v-list-item three-line>
-              <v-list-item-content>
-                <v-row>
-                  <v-col
-                    ><div class="text-overline mb-4">
-                      {{ location.empresa }}
-                    </div></v-col
-                  >
-                  <v-spacer></v-spacer>
-                  <v-col>
-                    <client-only placeholder="Carregando">
-                      <div
-                        class="text-overline mb-4 text-right"
-                        v-if="locationGps"
-                      >
-                        <h3>
-                          <span class="font-weight-black">{{
-                            distancia(id)
-                          }}</span
-                          ><span class="grey--text">KM</span>
-                        </h3>
-                      </div>
-                    </client-only>
-                  </v-col>
-                </v-row>
+            <v-card
+              class="mx-auto my-3 mr-3 filtro rounded-lg"
+              outlined
+              @mouseover="upCard(id, true)"
+              @mouseleave="upCard(id, false)"
+              @click="position(location.lat, location.lng)"
+            >
+              <v-list-item three-line>
+                <v-list-item-content>
+                  <v-row>
+                    <v-col
+                      ><div class="text-overline mb-4">
+                        
+                      </div></v-col
+                    >
+                    <v-spacer></v-spacer>
+                    <v-col>
+                      <client-only placeholder="Carregando">
+                        <div
+                          class="text-overline mb-4 text-right"
+                          v-if="locationGps"
+                        >
+                          <h3>
+                            <span class="font-weight-black"
+                              >~{{ distancia(id) }}</span
+                            ><span class="grey--text">KM</span>
+                          </h3>
+                        </div>
+                      </client-only>
+                    </v-col>
+                  </v-row>
 
-                <v-list-item-title class="text-h5 mb-1">
-                  {{ location.endereco }}
-                </v-list-item-title>
-                <v-list-item-subtitle>Cremozinn</v-list-item-subtitle>
-              </v-list-item-content>
+                  <v-list-item-title class="text-h5 mb-1">
+                    {{ location.endereco }}
+                  </v-list-item-title>
+                  <v-list-item-subtitle>{{ location.empresa }}</v-list-item-subtitle>
+                </v-list-item-content>
 
-              <v-list-item-avatar tile size="100">
-                <v-img :src="location.logo"></v-img
-              ></v-list-item-avatar>
-            </v-list-item>
-            <v-card-actions>
-              <v-btn
-                outlined
-                rounded
-                small
-                text
-                :href="`https://maps.google.com/?q=${location.lat},${location.lng}`"
-                target="_blank"
-              >
-                Rota para mercado <v-icon class="ml-2">mdi-map</v-icon>
-              </v-btn>
-            </v-card-actions>
-          </v-card>
+                <v-list-item-avatar tile size="100">
+                  <v-img contain :src="location.logo"></v-img
+                ></v-list-item-avatar>
+              </v-list-item>
+              <v-card-actions>
+                <v-btn
+                  outlined
+                  rounded
+                  small
+                  text
+                  :href="`https://maps.google.com/?q=${location.lat},${location.lng}`"
+                  target="_blank"
+                >
+                  Rota para mercado <v-icon class="ml-2">mdi-map</v-icon>
+                </v-btn>
+                <v-btn
+                  outlined
+                  rounded
+                  small
+                  text
+                  @click="position(location.lat, location.lng)"
+                  target="_blank"
+                >
+                  Ver no mapa <v-icon class="ml-2">mdi-map-marker</v-icon>
+                </v-btn>
+              </v-card-actions>
+            </v-card>
+          </v-lazy>
         </div>
         <div v-if="false">
           <client-only placeholder="Loading...">
@@ -85,6 +99,7 @@
         <GMap
           ref="gMap"
           language="pt-BR"
+          id="map"
           :center="center"
           :options="{ fullscreenControl: false }"
           :zoom="13"
@@ -227,6 +242,12 @@ export default {
       } else {
         this.hoverCard = null;
       }
+    },
+    position(lat, lng) {
+      this.center = { lat: lat, lng: lng }
+      this.$refs.gMap.map.setCenter(this.center);
+      this.$refs.gMap.map.setZoom(19);
+      this.$vuetify.goTo("#map");
     },
     distancia(id) {
       if (this.locationGps === null || this.fornecedores[id] === undefined) {

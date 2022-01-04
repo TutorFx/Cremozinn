@@ -1,6 +1,6 @@
 <template>
   <div>
-    <slider />
+    <!-- <slider /> -->
     <banner-one />
     <banner-two />
     <banner-three />
