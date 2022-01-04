@@ -1,6 +1,6 @@
 <template>
   <v-card elevation="0" outlined class="row rounded-xl my-10">
-    <div class="pa-5" style="width: 100%">
+    <div class="pa-16" style="width: 100%">
       <h2 class="d-flex justify-center">
         <div class="mr-3">
           <svg
