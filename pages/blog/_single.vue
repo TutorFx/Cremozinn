@@ -39,7 +39,7 @@
                 small
                 target="_blank"
                 :href="`https://www.facebook.com/sharer/sharer.php?u=${
-                  'https://' + $store.state.domain + $route.path
+                  domain + $route.path
                 }`"
               >
                 <v-icon color="blue">mdi-facebook</v-icon>
@@ -50,7 +50,7 @@
                 small
                 target="_blank"
                 :href="`https://api.whatsapp.com/send?text=${
-                  'https://' + $store.state.domain + $route.path
+                  domain + $route.path
                 }`"
               >
                 <v-icon color="green">mdi-whatsapp</v-icon>
@@ -177,6 +177,11 @@ export default {
       ]
     };
   },
+  data(){
+    return {
+      domain: process.env.baseURL
+    }
+  }
 };
 </script>
 

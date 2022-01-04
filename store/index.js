@@ -9,7 +9,6 @@ export const state = () => ({
     ["Blog", "/blog"],
   ],
   isMenuOpaque: true,
-  domain: '',
 });
 export const mutations = {
   contatoToggle(state) {
@@ -18,15 +17,4 @@ export const mutations = {
   menuOpaque(state, payload) {
     state.isMenuOpaque = payload;
   },
-  setDomain(state, domain) {
-    state.domain = domain;
-  },
-};
-export const actions = {
-  nuxtServerInit(store, context) {
-      store.commit('setDomain', context.req.headers.host);
-  },
-};
-export const getters = {
-  domain: (state) => state.domain,
 };

@@ -73,17 +73,12 @@ export default {
   },
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
-  build: {
-  },
   loading: {
     color: '#c62828',
     height: '4px',
     continuous: true,
     duration: 1000,
     throttle: 0,
-  },
-  router: {
-    middleware: 'domain'
   },
   env: {
     baseURL: (process.env.NODE_ENV === 'production' ? 'https://cremozinn.vercel.app' : 'http://localhost:3000'),
