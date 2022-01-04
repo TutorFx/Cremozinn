@@ -4,6 +4,7 @@ description: 'Você vai adorar esta deliciosa receita de batida de Cremozinn™.
 description2: 'As batidas de Yougurt congelado são super cremosas e mais saudáveis ​​do que adicionar sorvete ao seu smoothie ou milkshake. Você pode comprar o Cremozinn™ em todos os estados do Brasil.'
 thumbnail: '/blog/frozen-yougurt/2.jpg'
 header: '/blog/frozen-yougurt/1.jpg'
+tags: 'receita, cremozinn, yougurt congelado, smoothie'
 ---
 
 Os smoothies vêm da tradição de misturar frutas frescas de países tropicais da América Latina. Essa tradição antiga se espalhou para os Estados Unidos e rapidamente se tornou moda. Esse conceito nasceu na Califórnia no final dos anos 1960, quando um grande número de pessoas acreditava que eram necessários cuidados pessoais e academias, bebidas energéticas e _calorias com baixo teor de gordura_. Os produtos que estavam na moda na época eram as bebidas "light", naturais e ecológicas. Os smoothies são um substituto energético e vitamínico para bebidas artificiais ou refrigerantes. No final da década de 1960, os smoothies eram populares nos Estados Unidos por lojas especializadas em produtos naturais e vendedores de sorvete como bebidas refrescantes. Como a demanda dos consumidores preocupados com a saúde por produtos naturais continua a crescer, os smoothies estão gradualmente entrando no gosto do povo.

@@ -154,6 +154,29 @@ export default {
       return now.getFullYear();
     },
   },
+  head() {
+    return {
+      title: this.articles.title,
+      meta: [
+        {
+          name: "description",
+          content: this.articles.description
+        },
+        {
+          name: "keywords",
+          content: this.articles.tags,
+        },
+        {
+          property: "og:image",
+          content: this.articles.thumbnail,
+        },
+        {
+          property: "og:url",
+          content: process.env.baseURL + this.$route.path,
+        }
+      ]
+    };
+  },
 };
 </script>
 
