@@ -10,9 +10,9 @@
         <v-row class="mt-13" justify="center">
           <v-col cols="12" md="6" lg="4" v-for="(post, i) in blog" :key="i">
             <v-card elevation="0" class="blog-card overflow-hidden">
-              <div class="position-relative mb-15">
+              <div class="position-relative mb-10">
                 <NuxtLink :to="post.path">
-                  <v-img :src="post.thumbnail" alt="blog" class="blog-img" />
+                  <v-img :aspect-ratio="14/9" :src="post.thumbnail" alt="blog" class="blog-img" />
                 </NuxtLink>
                 <div class="date-badge bg-info-grediant">
                   {{ month(post.createdAt)[0] }}
