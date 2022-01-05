@@ -50,7 +50,7 @@
             <div class="mt-16 pt-2">
               <v-btn
                 color="error"
-                class="mr-0 mr-md-8 mb-5 mb-md-0 btn-custom-md"
+                class="mr-0 mb-5 mb-md-0 btn-custom-md"
                 nuxt
                 large
                 dark
@@ -63,7 +63,7 @@
                 nuxt
                 large
                 @click="videoDetectado()"
-                class="btn-custom-md mb-5 mb-md-0"
+                class="btn-custom-md ml-md-8 mb-5 mb-md-0"
                 outlined
                 color="red"
                 elevation="0"

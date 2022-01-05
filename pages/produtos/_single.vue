@@ -21,9 +21,9 @@
             v-for="(produto, i) in produtos"
             :key="i"
             cols="12"
-            xl="2"
-            md="4"
-            lg="3"
+            xl="4"
+            md="6"
+            lg="4"
             sm="6"
           >
             <produto

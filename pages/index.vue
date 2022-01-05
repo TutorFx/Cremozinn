@@ -1,6 +1,7 @@
 <template>
   <div>
     <!-- <slider /> -->
+    <Overlay />
     <banner-one />
     <banner-two />
     <banner-three />
