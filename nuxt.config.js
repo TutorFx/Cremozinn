@@ -49,20 +49,16 @@ export default {
     hostname: process.env.baseURL,
     gzip: true,
     routes: async () => {
-<<<<<<< HEAD
-=======
-      if (process.env.NODE_ENV !== 'production') return
->>>>>>> parent of 00b4e3b (Debug sitemap)
-      
-      // ajuda => https://jackwhiting.co.uk/posts/generating-sitemap-entries-for-nuxt-content/
- 
+      // thanks for https://jackwhiting.co.uk/posts/generating-sitemap-entries-for-nuxt-content/
       const { $content } = require('@nuxt/content')
     
       const posts = await $content('blog').fetch()
       const produtos = await $content('produtos').fetch()
     
+      // Setup an empty array we will push to.
       const routes = []
     
+      // Add an entry for the item including lastmod and priorty
       produtos.forEach((w) =>
         routes.push({
           url: w.path,
