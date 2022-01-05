@@ -58,7 +58,7 @@ export default {
 
       const posts = await $content("blog").fetch();
       const produtos = await $content("produtos").fetch();
-      const pages = await $content("page").fetch();
+      const pages = await $content("pagina").fetch();
 
       // Setup an empty array we will push to.
       const routes = [];
