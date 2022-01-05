@@ -6,7 +6,7 @@
 export default {
   async asyncData({ $content, params, redirect }) {
     try {
-      const articles = await $content("page", params.single).fetch();
+      const articles = await $content("pagina", params.single).fetch();
       const [prev, next] = await $content("page")
         .only(["title", "slug"])
         .sortBy("updatedAt", "desc")
