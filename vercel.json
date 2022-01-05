@@ -9,7 +9,6 @@
           "package.json",
           ".nuxt/content/**",
           "content/**",
-          "sitemap.xml",
           "./.nuxt/dist/sitemap-routes.json"
         ],
         "internalServer": true
