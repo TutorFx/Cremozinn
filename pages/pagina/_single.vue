@@ -1,5 +1,5 @@
 <template>
-  <div><nuxt-content :document="articles" /></div>
+  <v-container><nuxt-content :document="articles" /></v-container>
 </template>
 
 <script>
