@@ -3,6 +3,7 @@
     <v-dialog
       v-model="lgpd"
       persistent
+      :hide-overlay="$route.path === '/pagina/politica-de-privacidade' || $route.path === '/pagina/politica-de-cookies'"
       max-width="800"
       origin="bottom center"
       content-class="lgpd-dialog"
@@ -11,7 +12,7 @@
         <v-card-title class="text-h5">
           Podemos usar seus dados?
         </v-card-title>
-        <v-card-text>Usamos cookies para permitir que o nosso website funcione corretamente, para personalizar conteúdo e anúncios, para proporcionar funcionalidades das redes sociais e para analisar o nosso tráfego. Também partilhamos informação com os nossos parceiros das redes sociais, de publicidade e de analítica sobre o seu uso do nosso website.</v-card-text>
+        <v-card-text>Usamos cookies para permitir que o nosso website funcione corretamente, para personalizar conteúdo e anúncios, para proporcionar funcionalidades das redes sociais e para analisar o nosso tráfego. Também partilhamos informação com os nossos parceiros das redes sociais, de publicidade e de analítica sobre o seu uso do nosso website. Leia nossa <N-Link to="/pagina/politica-de-cookies">política de cookies</N-Link> e também nossa <N-Link to="/pagina/politica-de-privacidade">política de privacidade</N-Link> </v-card-text>
         <v-card-actions>
           <v-spacer></v-spacer>
           <v-btn

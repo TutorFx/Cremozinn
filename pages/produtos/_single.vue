@@ -5,11 +5,37 @@
         <v-row align="center" justify="center">
           <v-col cols="12" md="6" lg="5" xl="3">
             <div class="rounded-lg">
-              <v-img :src="produto.thumbnail" :aspect-ratio="1 / 1"></v-img>
+              <v-carousel
+                height="auto"
+                class="px-0"
+                :continuous="false"
+                :cycle="true"
+                :show-arrows="true"
+                :hide-delimiters="true"
+                v-model="qual"
+                v-if="
+                  produto.thumbnail != null &&
+                  produto.thumbnail != undefined &&
+                  produto.thumbnail != [] &&
+                  produto.thumbnail != ''
+                "
+              >
+                <v-carousel-item
+                  v-for="(img, i) in produto.thumbnail"
+                  height="auto"
+                  class="mb-0"
+                  :key="i"
+                >
+                  <v-img contain :src="img" :aspect-ratio="1 / 1"></v-img>
+                </v-carousel-item>
+              </v-carousel>
             </div>
           </v-col>
           <v-col cols="12" md="6" lg="5" xl="3">
-            <h1 class="mb-3">{{ produto.title }}</h1><v-divider class="mb-3" /><nuxt-content :document="produto" />
+            <h1 class="mb-3">{{ produto.title }} {{produto.sabores[qual]}}</h1>
+            <v-divider class="mb-3" /><nuxt-content :document="produto" />
+            <span v-if="produto.cod_1">Codigo: {{ produto.cod_1 }}</span> <br />
+            <span v-if="produto.cod_2">NCM: {{ produto.cod_2 }}</span>
           </v-col>
         </v-row>
       </v-container>
@@ -31,6 +57,7 @@
               :subtitulo="produto.description"
               :thumbnail="produto.thumbnail"
               :link="produto.path"
+              :rank="produto.rank"
             >
             </produto>
           </v-col>
@@ -45,8 +72,8 @@ export default {
   async asyncData({ $content, params }) {
     let produto = await $content("produtos", params.single).fetch();
     let produtos = await $content("produtos")
-      .sortBy("updatedAt", "desc")
-      .only(["title", "description", "thumbnail", "path"])
+      .sortBy("rank", "asc")
+      .only(["title", "description", "thumbnail", "path", "rank"])
       .fetch();
 
     return {
@@ -57,6 +84,11 @@ export default {
   mounted() {
     this.$store.commit("menuOpaque", false);
   },
+  data(){
+    return{
+      qual: 0,
+    }
+  }
 };
 </script>
 
