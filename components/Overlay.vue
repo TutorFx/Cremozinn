@@ -1,4 +1,5 @@
 <template>
+<v-lazy>
   <div id="Overlay" class="the-video">
     <video
       playsinline="playsinline"
@@ -19,6 +20,7 @@
       </v-container>
     </div>
   </div>
+  </v-lazy>
 </template>
 
 <script>
