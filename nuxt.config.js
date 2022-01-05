@@ -22,7 +22,6 @@ export default {
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
   plugins: [
   ],
-
   // Auto import components: https://go.nuxtjs.dev/config-components
   components: true,
 
@@ -43,9 +42,44 @@ export default {
     ['nuxt-gmaps', {
       key: 'AIzaSyAnRCnSdRI8MS7AWWZIVeTSU93TeBpm4kI',
       libraries: ['places']
-    }]
+    }],
+    '@nuxtjs/sitemap'
   ],
-
+  sitemap: {
+    hostname: process.env.baseURL,
+    gzip: true,
+    routes: async () => {
+      if (process.env.NODE_ENV !== 'production') return
+      
+      // ajuda => https://jackwhiting.co.uk/posts/generating-sitemap-entries-for-nuxt-content/
+ 
+      const { $content } = require('@nuxt/content')
+    
+      const posts = await $content('blog').fetch()
+      const produtos = await $content('produtos').fetch()
+    
+      const routes = []
+    
+      produtos.forEach((w) =>
+        routes.push({
+          url: w.path,
+          priority: 0.8,
+          lastmod: w.updatedAt
+        })
+      )
+    
+      posts.forEach((p) =>
+        routes.push({
+          url: p.path,
+          priority: 0.8,
+          lastmod: p.updatedAt
+        })
+      )
+    
+      // return all routes
+      return routes
+    }
+  },
   // Axios module configuration: https://go.nuxtjs.dev/config-axios
   axios: {},
 
