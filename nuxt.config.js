@@ -49,6 +49,10 @@ export default {
     hostname: process.env.baseURL,
     gzip: true,
     routes: async () => {
+<<<<<<< HEAD
+=======
+      if (process.env.NODE_ENV !== 'production') return
+>>>>>>> parent of 00b4e3b (Debug sitemap)
       
       // ajuda => https://jackwhiting.co.uk/posts/generating-sitemap-entries-for-nuxt-content/
  
