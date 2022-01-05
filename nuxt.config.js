@@ -53,7 +53,6 @@ export default async () => {
       hostname: process.env.baseURL,
       gzip: true,
       routes: async () => {
-        if (process.env.NODE_ENV !== 'production') return
         
         // ajuda => https://jackwhiting.co.uk/posts/generating-sitemap-entries-for-nuxt-content/
   
