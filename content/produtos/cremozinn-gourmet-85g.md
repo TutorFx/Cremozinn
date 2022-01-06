@@ -10,6 +10,7 @@ thumbnail:
     "/produtos/cremozinn-gourmet-sabor-ninho-85g.png",
     "/produtos/cremozinn-gourmet-sabor-pacoquinha-85g.png",
   ]
+tag: cremozinn
 sabores: ["Chocotine", "Coco-branco", "Morango", "Ninho", "Paçoquinha"]
 ---
 

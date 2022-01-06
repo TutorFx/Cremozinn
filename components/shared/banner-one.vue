@@ -20,10 +20,10 @@
                 nuxt
                 large
                 dark
-                to="/produtos/cremozin"
+                to="/produtos/?tag=cremozinn"
                 elevation="0"
               >
-                Confira nosso catálogo
+                Ver catálogo
               </v-btn>
               <v-btn
                 nuxt

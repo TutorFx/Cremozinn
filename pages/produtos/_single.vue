@@ -32,7 +32,9 @@
             </div>
           </v-col>
           <v-col cols="12" md="6" lg="5" xl="3">
-            <h1 class="mb-3">{{ produto.title }} {{produto.sabores[qual]}}</h1>
+            <h1 class="mb-3">
+              {{ produto.title }} {{ produto.sabores[qual] }}
+            </h1>
             <v-divider class="mb-3" /><nuxt-content :document="produto" />
             <span v-if="produto.cod_1">Codigo: {{ produto.cod_1 }}</span> <br />
             <span v-if="produto.cod_2">NCM: {{ produto.cod_2 }}</span>
@@ -42,6 +44,16 @@
     </div>
     <div class="py-16" style="background-color: #ededed">
       <v-container>
+        <v-chip
+          class="ma-2"
+          v-if="$route.query.filtro != undefined && $route.query.filtro != ''"
+          close
+          color="blue"
+          text-color="white"
+          @click:close="$nuxt.$options.router.push('/produtos/'); this.$nuxt.refresh()"
+        >
+          Filtro Aplicado
+        </v-chip>
         <v-row>
           <v-col
             v-for="(produto, i) in produtos"
@@ -69,13 +81,14 @@
 
 <script>
 export default {
-  async asyncData({ $content, params }) {
+  async asyncData({ $content, params, query }) {
     let produto = await $content("produtos", params.single).fetch();
     let produtos = await $content("produtos")
       .sortBy("rank", "asc")
       .only(["title", "description", "thumbnail", "path", "rank"])
+      .search(query.filtro != undefined ? "title" : undefined, query.filtro)
+      .where(query.tag != undefined ? {tag: query.tag} : undefined)
       .fetch();
-
     return {
       produtos,
       produto,
@@ -84,11 +97,16 @@ export default {
   mounted() {
     this.$store.commit("menuOpaque", false);
   },
-  data(){
-    return{
+  methods: {
+  },
+  data() {
+    return {
       qual: 0,
-    }
-  }
+    };
+  },
+  watch: {
+    $route(to, from) {},
+  },
 };
 </script>
 

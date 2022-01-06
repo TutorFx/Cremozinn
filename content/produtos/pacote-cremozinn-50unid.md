@@ -2,6 +2,7 @@
 title: 'Pacote de Cremozinn 50unid'
 description: ''
 thumbnail: ['/produtos/pacote-cremozinn-50unid.png']
+tag: cremozinn
 sabores: []
 cod_1: '2200'
 cod_2: '21050010'

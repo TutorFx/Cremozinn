@@ -54,10 +54,10 @@
                 nuxt
                 large
                 dark
-                to="/produtos/pão-de-queijo"
+                to="/produtos/?tag=pao-de-queijo"
                 elevation="0"
               >
-                Confira nosso catálogo
+                Ver catálogo
               </v-btn>
               <v-btn
                 nuxt

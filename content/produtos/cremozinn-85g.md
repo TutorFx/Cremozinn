@@ -16,6 +16,7 @@ thumbnail:
     "/produtos/cremozinn-sabor-uva-85g.png",
     "/produtos/cremozinn-sabor-cupuacu-85g.png"
   ]
+tag: cremozinn
 sabores:
   [
     "Blue Ice",

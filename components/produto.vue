@@ -21,7 +21,7 @@
           class="mb-0"
           :key="i"
         >
-          <v-img contain :src="img" height="200px"></v-img>
+          <v-img contain :src="img" :aspect-ratio="1/1"></v-img>
         </v-carousel-item>
       </v-carousel>
     </div>

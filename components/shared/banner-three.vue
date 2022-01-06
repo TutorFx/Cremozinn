@@ -20,10 +20,10 @@
                 nuxt
                 large
                 dark
-                to="/produtos/salgados"
+                to="/produtos/?tag=salgados"
                 elevation="0"
               >
-                Confira nosso catálogo
+                Ver catálogo
               </v-btn>
               <v-btn
                 nuxt
