@@ -210,6 +210,16 @@ $container-max-widths: map-deep-merge(
   $container-max-widths
 );
 
+@media only screen and (min-width: map-get($grid-breakpoints, 'lg')) {
+  .container {
+    max-width: 1140px;
+  }
+}
+@media only screen and (min-width: map-get($grid-breakpoints, 'xl')) {
+  .container {
+    max-width: 1170px;
+  }
+}
 // ==================================== //
 // Card
 // ==================================== //

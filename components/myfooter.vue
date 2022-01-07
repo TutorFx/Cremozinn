@@ -8,16 +8,17 @@
         <!-- -----------------------------------------------
         First Column
       ----------------------------------------------- -->
-        <v-col cols="12" sm="12" md="12" lg="3" >
+        <v-col cols="12" sm="12" md="12" lg="3">
           <h4 class="font-weight-regular font-18">Endereço</h4>
           <p class="mt-10">
-            José Peixoto da Silveira QD. 52, LT 05, Rua 89 - CORA CORALINA, Goianira - GO, 75370-000
+            José Peixoto da Silveira QD. 52, LT 05, Rua 89 - CORA CORALINA,
+            Goianira - GO, 75370-000
           </p>
         </v-col>
         <!-- -----------------------------------------------
         Second Column
       ----------------------------------------------- -->
-        <v-col cols="12" sm="12" md="12" lg="3" >
+        <v-col cols="12" sm="12" md="12" lg="3">
           <h4 class="font-weight-regular font-18">Telefones</h4>
           <p class="mt-10 mb-0">Luziânia : +55 (61) 99644-2450</p>
           <p>Goianira : +55 (62) 3516-3297</p>
@@ -25,10 +26,11 @@
         <!-- -----------------------------------------------
         Third Column
       ----------------------------------------------- -->
-        <v-col cols="12" sm="12" md="12" lg="3" >
+        <v-col cols="12" sm="12" md="12" lg="3">
           <h4 class="font-weight-regular font-18">Email</h4>
           <p class="mt-10 mb-0">
-            Escritório : <a class="dark-link" href="/">cremozinn@cremozinn.com.br</a>
+            Escritório :
+            <a class="dark-link" href="/">cremozinn@cremozinn.com.br</a>
           </p>
           <p>
             Site :
@@ -40,24 +42,39 @@
         <!-- -----------------------------------------------
         Fourth Column
       ----------------------------------------------- -->
-        <v-col cols="12" sm="12" md="12" lg="3" >
+        <v-col cols="12" sm="12" md="12" lg="3">
           <h4 class="font-weight-regular font-18">Social</h4>
 
           <div class="social-icons mt-10">
-            <a href="#">
+            <a
+              target="_blank"
+              :href="`https://www.facebook.com/sharer/sharer.php?u=${
+                domain + $route.path
+              }`"
+            >
               <i class="mdi mdi-facebook"></i>
             </a>
-            <a href="#">
+            <a
+              target="_blank"
+              :href="`http://www.twitter.com/share?url=${domain + $route.path}`"
+            >
               <i class="mdi mdi-twitter"></i>
             </a>
-            <a href="#">
-              <i class="mdi mdi-google-plus"></i>
+            <a
+              target="_blank"
+              :href="`https://api.whatsapp.com/send?text=${
+                domain + $route.path
+              }`"
+            >
+              <i class="mdi mdi-whatsapp"></i>
             </a>
-            <a href="#">
-              <i class="mdi mdi-youtube"></i>
-            </a>
-            <a href="#">
-              <i class="mdi mdi-instagram"></i>
+            <a
+              target="_blank"
+              :href="`https://www.linkedin.com/shareArticle?mini=true&url=${
+                domain + $route.path
+              }`"
+            >
+              <i class="mdi mdi-linkedin"></i>
             </a>
           </div>
         </v-col>
@@ -70,25 +87,31 @@
           </p>
           <div class="ml-auto">
             <div class="d-flex align-center">
-              <NLink to="/pagina/politica-de-privacidade" class="link px-4">Termos de uso</NLink>
-              <NLink to="/pagina/politica-de-privacidade" class="link px-4">Aviso legal</NLink>
-              <NLink to="/pagina/politica-de-privacidade" class="link px-4">Políticas de privacidade</NLink>
+              <NLink to="/pagina/politica-de-privacidade" class="link px-4"
+                >Termos de uso</NLink
+              >
+              <NLink to="/pagina/politica-de-privacidade" class="link px-4"
+                >Aviso legal</NLink
+              >
+              <NLink to="/pagina/politica-de-privacidade" class="link px-4"
+                >Políticas de privacidade</NLink
+              >
             </div>
           </div>
         </div>
       </div>
     </v-container>
-    
   </v-footer>
 </template>
 
 <script>
 export default {
-  data(){
-    return{
-    }
-  }
-}
+  data() {
+    return {
+      domain: process.env.baseURL,
+    };
+  },
+};
 </script>
 
 <style lang="scss">
@@ -119,5 +142,4 @@ export default {
 .footer {
   padding: 45px 0;
 }
-
 </style>

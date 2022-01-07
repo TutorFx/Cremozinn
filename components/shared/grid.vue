@@ -8,7 +8,7 @@
               <v-img
                 style="cursor: pointer"
                 height="300"
-                src="https://picsum.photos/500/500/?rando"
+                src="/grid/fábrica.jpg"
               >
                 <v-expand-transition>
                   <v-card
@@ -41,7 +41,7 @@
               <v-img
                 style="cursor: pointer"
                 height="300"
-                src="https://picsum.photos/500/500/?rando"
+                src="/grid/eventos.jpg"
               >
                 <v-expand-transition>
                   <v-card
@@ -109,7 +109,7 @@
               <v-img
                 style="cursor: pointer"
                 height="300"
-                src="https://picsum.photos/500/500/?rando"
+                src="/grid/programa-social.jpg"
               >
                 <v-expand-transition>
                   <v-card

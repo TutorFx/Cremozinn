@@ -1,6 +1,6 @@
 <template>
-  <v-container fluid style="background-color: #ededed">
-    <v-row class="pa-0 px-md-16 mx-md-16 ma-0">
+  <div style="background-color: #ededed">
+    <v-row class="pa-0 px-lg-10 ma-0">
       <v-col cols="12" md="4" class="pa-0 ma-0">
         <div
           class="p-3"
@@ -61,7 +61,7 @@
                   target="_blank"
                 >
                   Rota para mercado <v-icon class="ml-2">mdi-map</v-icon>
-                </v-btn>
+                </v-btn> 
                 <v-btn
                   outlined
                   rounded
@@ -139,7 +139,7 @@
         </v-btn>
       </template>
     </v-snackbar>
-  </v-container>
+  </div>
 </template>
 
 <script>

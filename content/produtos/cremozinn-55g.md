@@ -1,7 +1,7 @@
 ---
-title: "Cremozinn 55g"
+title: "Sabores 55g"
 description: ""
-rank: 0
+rank: 0.6
 thumbnail:
   [
     "/produtos/cremozinn-sabor-blue-ice-55g.png",

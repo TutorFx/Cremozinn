@@ -27,7 +27,7 @@
     </div>
 
     <div
-      :style="`background-color: ${['#057DC1', '#FF6060', '#FF8000'][rank]}`"
+      :style="`background-color: ${['#057DC1', '#FF6060', '#FF8000'][Math.trunc(rank)]}`"
     >
       <v-card-title>
         <h3 class="white--text">{{ titulo }}</h3>

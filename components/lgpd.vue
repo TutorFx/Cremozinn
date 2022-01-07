@@ -9,11 +9,11 @@
       content-class="lgpd-dialog"
     >
       <v-card class="pa-4">
-        <v-card-title class="text-h5">
-          Podemos usar seus dados?
-        </v-card-title>
-        <v-card-text>Usamos cookies para permitir que o nosso website funcione corretamente, para personalizar conteúdo e anúncios, para proporcionar funcionalidades das redes sociais e para analisar o nosso tráfego. Também partilhamos informação com os nossos parceiros das redes sociais, de publicidade e de analítica sobre o seu uso do nosso website. Leia nossa <N-Link to="/pagina/politica-de-cookies">política de cookies</N-Link> e também nossa <N-Link to="/pagina/politica-de-privacidade">política de privacidade</N-Link> </v-card-text>
-        <v-card-actions>
+        <v-row>
+          <span>Atualizamos a <N-Link to="/pagina/politica-de-cookies">política de cookies</N-Link> e também nossa <N-Link to="/pagina/politica-de-privacidade">política de privacidade</N-Link> do site. Ao continuar navegando, entendemos que você está ciente e de acordo </span>
+          <v-col><v-btn color="primary" @click="lgpd = false" depressed> Pode usar </v-btn></v-col>
+        </v-row>
+        <v-card-actions v-if="false">
           <v-spacer></v-spacer>
           <v-btn
             color="primary"

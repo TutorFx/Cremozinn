@@ -1,7 +1,7 @@
 ---
-title: "Cremozinn Gourmet 85g"
+title: "Sabores Gourmet 85g"
 description: ""
-rank: 0
+rank: 0.5
 thumbnail:
   [
     "/produtos/cremozinn-gourmet-sabor-chocotine-85g.png",
