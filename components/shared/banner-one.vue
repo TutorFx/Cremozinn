@@ -1,10 +1,10 @@
 <template>
-  <div class="banner-wrapper" style="background-color: #6666ff">
+  <div class="banner-wrapper py-none" style="background-color: #6666ff">
     <v-container>
       <!-- -----------------------------------------------
             Start Banner
         ----------------------------------------------- -->
-      <v-row justify="center">
+      <v-row justify="center" align="center">
         <v-col cols="12" md="6" lg="6" xl="6" class="d-flex align-center justify-center">
           <div class="text-center text-md-left ">
             <img style="max-width: 300px;" class="mb-5" src="/icons/c.png">

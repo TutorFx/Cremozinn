@@ -8,7 +8,7 @@
         ----------------------------------------------- -->
     <v-row justify="start" class="py-0 my-0 mx-0" style="min-height: 700px">
       <v-col class="pa-0" cols="12" md="4" lg="6" xl="6">
-        <Overlay1 />
+        <Overlay1 src="/pao-de-queijo.mp4" />
       </v-col>
       <v-col
         cols="12"
@@ -20,12 +20,12 @@
         <v-container>
           <div class="text-center text-md-right">
             <img
-              style="max-width: 300px"
+              style="max-width: 270px;"
               height="auto"
               contain
               class="mb-5"
               src="/icons/pdq.png"
-            />
+            >
             <h4
               class="
                 banner-subtitle

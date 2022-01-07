@@ -225,7 +225,7 @@ export default {
     rua: "",
     numero: "",
     stepper: 1,
-    select: [{text: 'Seja um distribuidor', img: '1', url: 'https://i.imgur.com/wkXITtC.jpg'}, {text: 'Seja um Representante', img: '2', url: 'https://i.imgur.com/vmyPKPc.jpg'}, {text: 'Seja um P. de Vendas', img: '3', url: 'https://i.imgur.com/MrlObvt.jpg'}],
+    select: [{text: 'Seja um distribuidor', img: '1', url: '/dialog/Distribuidor_.png'}, {text: 'Seja um Representante', img: '2', url: '/dialog/Revendedores.png'}, {text: 'Seja um P. de Vendas', img: '3', url: '/dialog/Ponto_de_Vendas.png'}, {text: 'Já sou Parceiro Cremozinn', img: '4', url: '/dialog/Parceiro_Cremozinn.png'}],
     selected: [],
   }),
   methods: {

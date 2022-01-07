@@ -5,14 +5,14 @@
       :show-arrows="true"
       :hide-delimiters="true"
       height="auto"
-
+      class="rounded-lg"
     >
       <v-carousel-item
         v-for="(slide, i) in data"
         :key="i"
       >
         <v-img
-        :aspect-ratio="5.2/1"
+        :aspect-ratio="46/8"
         :src="slide.url"
         >
         </v-img>
@@ -34,11 +34,6 @@
           'yellow darken-4',
         ],
         cycle: true,
-        slides: [
-          'https://i.imgur.com/wkXITtC.jpg',
-          'https://i.imgur.com/wkXITtC.jpg',
-          'https://i.imgur.com/vmyPKPc.jpg',
-        ],
       }
     },
     props: {

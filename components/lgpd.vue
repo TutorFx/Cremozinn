@@ -9,10 +9,10 @@
       content-class="lgpd-dialog"
     >
       <v-card class="pa-4">
-        <v-row>
-          <span>Atualizamos a <N-Link to="/pagina/politica-de-cookies">política de cookies</N-Link> e também nossa <N-Link to="/pagina/politica-de-privacidade">política de privacidade</N-Link> do site. Ao continuar navegando, entendemos que você está ciente e de acordo </span>
-          <v-col><v-btn color="primary" @click="lgpd = false" depressed> Pode usar </v-btn></v-col>
-        </v-row>
+        <div :class="!$vuetify.breakpoint.mobile?'d-flex':''" class="align-center overflow-hidden">
+          <div class="my-3">Atualizamos a <N-Link to="/pagina/politica-de-cookies">política de cookies</N-Link> e também nossa <N-Link to="/pagina/politica-de-privacidade">política de privacidade</N-Link> do site. Ao continuar navegando, entendemos que você está ciente e de acordo </div>
+          <v-btn color="primary" @click="lgpd = false" depressed> Pode usar </v-btn>
+        </div>
         <v-card-actions v-if="false">
           <v-spacer></v-spacer>
           <v-btn

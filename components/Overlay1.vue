@@ -7,7 +7,7 @@
       :muted="!som ? 'muted' : undefined"
       type="video/mp4"
       loop="loop"
-      src="/pao-de-queijo.mp4"
+      :src="src"
     ></video>
     <div class="shade"></div>
     <div class="overlay">
@@ -23,6 +23,9 @@ export default {
       som: false,
     };
   },
+  props: [
+    'src'
+  ]
 };
 </script>
 
