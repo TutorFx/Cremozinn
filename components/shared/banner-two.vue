@@ -1,38 +1,31 @@
 <template>
-  <div class="banner-wrapper" style="background-color: #efe9d0">
-    <v-container>
-      <!-- -----------------------------------------------
+  <div
+    class="banner-wrapper py-0"
+    style="background-color: #efe9d0; min-height: 700px"
+  >
+    <!-- -----------------------------------------------
             Start Banner
         ----------------------------------------------- -->
-      <v-row justify="center">
-        <v-col cols="12" md="6" lg="6" xl="6">
-          <div class="video-wrapper">
-            <video
-              id="video"
-              v-intersect="onIntersect"
-              ref="videoCima"
-              playsinline="true"
-              muted
-              autoplay
-            >
-              <source
-                src="1.mp4"
-                style="width: 100%"
-                type="video/mp4"
-                id="video"
-              />
-            </video>
-          </div>
-        </v-col>
-        <v-col
-          cols="12"
-          md="6"
-          lg="6"
-          xl="6"
-          class="d-flex align-center justify-right"
-        >
+    <v-row justify="start" class="py-0 my-0 mx-0" style="min-height: 700px">
+      <v-col class="pa-0" cols="12" md="4" lg="6" xl="6">
+        <Overlay1 />
+      </v-col>
+      <v-col
+        cols="12"
+        md="7"
+        lg="4"
+        xl="3"
+        class="d-flex align-center justify-right py-16 py-md-0"
+      >
+        <v-container>
           <div class="text-center text-md-right">
-            <img style="max-width: 300px;" height="auto" contain class="mb-5" src="/icons/pdq.png">
+            <img
+              style="max-width: 300px"
+              height="auto"
+              contain
+              class="mb-5"
+              src="/icons/pdq.png"
+            />
             <h4
               class="
                 banner-subtitle
@@ -72,13 +65,13 @@
               </v-btn>
             </div>
           </div>
-        </v-col>
-      </v-row>
+        </v-container>
+      </v-col>
+    </v-row>
 
-      <!-- -----------------------------------------------
+    <!-- -----------------------------------------------
             End Banner
         ----------------------------------------------- -->
-    </v-container>
   </div>
 </template>
 

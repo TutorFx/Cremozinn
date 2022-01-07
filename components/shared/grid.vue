@@ -17,7 +17,7 @@
                     v-if="!hover"
                     class="rounded-0 transition-fast-in-fast-out"
                   >
-                    <v-container class="fill-height white--text pa-5">
+                    <v-container class="fill-height white--text pa-10">
                       <div style="max-width: 300px; position: absolute">
                         <h2 class="font-weight-light white--text">
                           Nossa história
@@ -50,7 +50,7 @@
                     v-if="!hover"
                     class="rounded-0 transition-fast-in-fast-out"
                   >
-                    <v-container class="fill-height white--text pa-5">
+                    <v-container class="fill-height white--text pa-10">
                       <div style="max-width: 300px; position: absolute">
                         <h2 class="font-weight-light white--text">
                           Eventos
@@ -85,7 +85,7 @@
                     v-if="!hover"
                     class="rounded-0 transition-fast-in-fast-out"
                   >
-                    <v-container class="fill-height white--text pa-5">
+                    <v-container class="fill-height white--text pa-10">
                       <div style="max-width: 300px; position: absolute">
                         <h2 class="font-weight-light white--text">
                           Blog
@@ -118,7 +118,7 @@
                     v-if="!hover"
                     class="rounded-0 transition-fast-in-fast-out"
                   >
-                    <v-container class="fill-height white--text pa-5">
+                    <v-container class="fill-height white--text pa-10">
                       <div style="max-width: 300px; position: absolute">
                         <h2 class="font-weight-light white--text">
                           Programa Social

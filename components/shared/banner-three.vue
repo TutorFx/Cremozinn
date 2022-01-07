@@ -4,8 +4,8 @@
       <!-- -----------------------------------------------
             Start Banner
         ----------------------------------------------- -->
-      <v-row justify="center">
-        <v-col cols="12" md="6" lg="6" xl="6" class="d-flex align-center">
+      <v-row justify="center" class="d-flex flex-row-reverse flex-md-row">
+        <v-col cols="12" md="6" lg="6" xl="6" class="d-flex align-center py-sm-16">
           <div class="text-center text-md-left">
             <img style="max-width: 300px;" height="auto" contain class="mb-5" src="/icons/sgd.png">
             <h4 class="banner-subtitle white--text font-weight-regular">
