@@ -1,0 +1,25 @@
+[
+    {
+        "local": "Goianira - GO",
+        "type": "Fábrica e Distribuidora",
+        "ddd": "62",
+        "whatsapp": "984230368",
+        "endereco": "José Peixoto da Silveira QD. 52, LT 05, Rua 89 - CORA CORALINA, Goianira - GO. CEP: 75.370-000",
+        "lat": "-16.54275252141508",
+        "lng": "-49.398953598654835"
+    },
+    {
+        "local": "Brasília - DF",
+        "type": "Distribuidora",
+        "ddd": "61",
+        "whatsapp": "34341716",
+        "endereco": "Qnp 01 , Módulo E Box 7, Feira Do Produtor, Ceilândia, Brasília - DF. CEP: 72.240-100"
+    },
+    {
+        "local": "Palmas - TO",
+        "type": "Distribuidora",
+        "ddd": "63",
+        "whatsapp": "991339861",
+        "endereco": "Q 1112 Sul Avenida LO 27 QID, LOTE 15 - Plano Diretor Sul, Palmas - TO. CEP: 77.156-024"
+    }
+]
