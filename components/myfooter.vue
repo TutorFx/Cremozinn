@@ -8,41 +8,37 @@
         <!-- -----------------------------------------------
         First Column
       ----------------------------------------------- -->
-        <v-col cols="12" sm="12" md="12" lg="3">
-          <h4 class="font-weight-regular font-18">Endereço</h4>
-          <p class="mt-10">
-            José Peixoto da Silveira QD. 52, LT 05, Rua 89 - CORA CORALINA,
-            Goianira - GO, 75370-000
-          </p>
+        <v-col cols="12" sm="12" md="12" lg="4">
+          <h4 class="font-weight-regular font-18 mb-10">Produto</h4>
+          <n-link to="/pagina/fabrica" class="mt-10 dark-link"> Nossa Fábrica </n-link> <br>
+          <n-link to="/produtos/?tag=cremozinn" class="mt-10 dark-link"> Iogurte gelado </n-link> <br>
+          <n-link to="/produtos/?tag=pao-de-queijo" class="mt-10 dark-link"> Pão de queijo </n-link> <br>
+          <n-link to="/produtos/?tag=salgados" class="mt-10 dark-link"> Salgado </n-link> <br>
         </v-col>
         <!-- -----------------------------------------------
         Second Column
       ----------------------------------------------- -->
-        <v-col cols="12" sm="12" md="12" lg="3">
-          <h4 class="font-weight-regular font-18">Telefones</h4>
-          <p class="mt-10 mb-0">Luziânia : +55 (61) 99644-2450</p>
-          <p>Goianira : +55 (62) 3516-3297</p>
+        <v-col cols="12" sm="12" md="12" lg="4">
+        <h4 class="font-weight-regular font-18 mb-10"> Links Úteis </h4>
+        <n-link to="/onde-encontrar" class="mt-10 dark-link"> Clientes </n-link> <br>
+        <n-link to="/downloads" class="mt-10 dark-link"> Campanhas </n-link> <br>
+        <n-link to="/downloads" class="mt-10 dark-link"> Downloads </n-link> <br>
+        <n-link to="/blog" class="mt-10 dark-link"> Blog </n-link> <br>
         </v-col>
         <!-- -----------------------------------------------
         Third Column
       ----------------------------------------------- -->
-        <v-col cols="12" sm="12" md="12" lg="3">
-          <h4 class="font-weight-regular font-18">Email</h4>
-          <p class="mt-10 mb-0">
-            Escritório :
-            <a class="dark-link" href="/">cremozinn@cremozinn.com.br</a>
-          </p>
-          <p>
-            Site :
-            <a class="dark-link" href="http://www.cremozinn.com.br/"
-              >www.cremozinn.com.br</a
-            >
-          </p>
+        <v-col cols="12" sm="12" md="12" lg="4">
+          <h4 class="font-weight-regular font-18 mb-10">Contato</h4>
+          <n-link to="/onde-encontrar" class="mt-10 dark-link"> Onde encontrar </n-link> <br>
+          <a @click="$store.commit('contatoToggle')" class="mt-10 dark-link"> Seja um parceiro </a> <br>
+          <p class="mb-0">Email: <a class="dark-link" href="mailto:cremozinn@gmail.com" target="_blank">cremozinn@gmail.com</a></p>
+          <p>SAC: (62)3516-3297 / (62)98423-0368 </p>
         </v-col>
         <!-- -----------------------------------------------
         Fourth Column
       ----------------------------------------------- -->
-        <v-col cols="12" sm="12" md="12" lg="3">
+        <v-col cols="12" sm="12" md="12" lg="3" v-if="false">
           <h4 class="font-weight-regular font-18">Social</h4>
 
           <div class="social-icons mt-10">

@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="bg-extra-light">
     <div class="banner2-component">
       <v-container>
         <!-- -----------------------------------------------
