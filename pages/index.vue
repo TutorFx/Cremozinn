@@ -6,7 +6,7 @@
     <banner-two />
     <banner-three />
     <textbox />
-    <bannerform />
+    <bannerform :distribuidores="distribuidores" />
     <grid />
     <provasocial />
   </div>
@@ -14,11 +14,13 @@
 
 <script>
 export default {
-  async asyncData({ $content }) {
+  async asyncData({ $content, $axios }) {
     const articles = await $content("blog").limit(3).sortBy('updatedAt', 'desc').fetch();
-
+    const distribuidores = await $axios.$get(
+      process.env.baseURL + "/distribuidores.json"
+    );
     return {
-      articles,
+      articles, distribuidores
     };
   },
   components: {
@@ -47,7 +49,7 @@ export default {
   },
   mounted(){
     this.$store.commit('menuOpaque', true);
-  }
+  },
 }
 </script>
 

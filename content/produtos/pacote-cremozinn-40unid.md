@@ -1,5 +1,5 @@
 ---
-title: 'Pacote de Cremozinn 40unid'
+title: 'Pacote de Cremozinn 40 unidades'
 description: ''
 thumbnail: ['/produtos/pacote-cremozinn-40unid.png']
 tag: cremozinn

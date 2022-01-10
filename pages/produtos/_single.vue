@@ -41,7 +41,7 @@
               <span v-if="produto.cod_2">NCM: {{ produto.cod_2 }}</span>
             </div>
             <v-row>
-              <v-col v-if="produto.cod_1"><v-btn outlined :block="produto.cod_1 != undefined" to="/distribuidores" color="primary">Distribuidores</v-btn></v-col>
+              <v-col v-if="produto.cod_1"><v-btn outlined :block="produto.cod_1 != undefined" :to="'/distribuidores/'+produto.cod_1" color="primary">Distribuidores</v-btn></v-col>
               <v-col><v-btn outlined :block="produto.cod_1 != undefined" to="/onde-encontrar" color="primary">Mercados</v-btn></v-col>
             </v-row>
           </v-col>

@@ -47,17 +47,10 @@
                     </v-btn>
                   </template>
                   <v-list>
-                    <v-list-item>
-                      <v-list-item-title>Goianira - GO</v-list-item-title>
-                    </v-list-item>
-                    <v-list-item>
-                      <v-list-item-title>Brasília - DF</v-list-item-title>
-                    </v-list-item>
-                    <v-list-item>
-                      <v-list-item-title>Caldas Novas - GO</v-list-item-title>
-                    </v-list-item>
-                    <v-list-item>
-                      <v-list-item-title>Palmas - TO</v-list-item-title>
+                    <v-list-item v-for="(distribuidor, i) in distribuidores" :key="i">
+                      <v-list-item-title>
+                        <v-btn text block :href="`https://api.whatsapp.com/send?phone=${distribuidor.ddd + distribuidor.whatsapp}&text=Olá, desejo ser um ponto de venda`"> {{distribuidor.local}} </v-btn>
+                      </v-list-item-title>
                     </v-list-item>
                   </v-list>
                 </v-menu>
@@ -80,5 +73,6 @@ export default {
     return {};
   },
   methods: {},
+  props: ["distribuidores"],
 };
 </script>

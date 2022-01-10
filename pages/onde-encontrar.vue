@@ -1,13 +1,14 @@
 <template>
   <div style="background-color: #ededed">
     <v-row class="pa-0 px-lg-10 ma-0">
-      <v-col cols="12" md="4" class="pa-0 ma-0">
+      <v-col cols="12" md="4" xl="3" class="pa-0 ma-0">
+        <!-- <v-text-field v-model="filtro"></v-text-field> -->
         <div
           class="p-3"
           style="height: calc(100vh - 95px) !important; overflow-y: auto"
         >
           <v-lazy
-            v-for="(location, id) in fornecedores"
+            v-for="(location, id) in pesquisa(filtro)"
             :key="id"
             transition="scroll-y-reverse-transition"
           >
@@ -23,10 +24,7 @@
                   <v-row>
                     <v-col>
                       <client-only placeholder="Carregando">
-                        <div
-                          class="text-overline"
-                          v-if="locationGps"
-                        >
+                        <div class="text-overline" v-if="locationGps">
                           <div class="text-overline">
                             <span class="font-weight-black"
                               >~{{ distancia(id) }}</span
@@ -61,7 +59,7 @@
                   target="_blank"
                 >
                   Rota para mercado <v-icon class="ml-2">mdi-map</v-icon>
-                </v-btn> 
+                </v-btn>
                 <v-btn
                   outlined
                   rounded
@@ -93,7 +91,7 @@
           </client-only>
         </div>
       </v-col>
-      <v-col cols="12" md="8" class="pa-0 ma-0">
+      <v-col cols="12" md="8" xl="9" class="pa-0 ma-0">
         <GMap
           ref="gMap"
           language="pt-BR"
@@ -103,7 +101,7 @@
           :zoom="13"
         >
           <GMapMarker
-            v-for="(location, id) in fornecedores"
+            v-for="(location, id) in pesquisa(filtro)"
             :key="id"
             :position="{ lat: location.lat, lng: location.lng }"
             @click="position(location.lat, location.lng)"
@@ -288,10 +286,31 @@ export default {
     deg2rad(deg) {
       return deg * (Math.PI / 180);
     },
+    pesquisa(content) {
+      let pesquisaTexto = this.fornecedores;
+      let a = content;
+      // if (content != "" && content != null) {
+      //   // pesquisa = pesquisa.filter(function(item){
+      //   //   return item.nome.toLowerCase().includes(a.toLowerCase())
+      //   // })
+      //   pesquisaTexto.filter(function (el) {
+      //     console.log(
+      //       el.empresa.toLowerCase().includes(a.toLowerCase()) ||
+      //         el.endereco.toLowerCase().includes(a.toLowerCase())
+      //     );
+      //     return (
+      //       el.empresa.toLowerCase().includes(a.toLowerCase()) ||
+      //       el.endereco.toLowerCase().includes(a.toLowerCase())
+      //     );
+      //   });
+      // }
+      return pesquisaTexto;
+    },
   },
   data() {
     return {
       currentLocation: {},
+      filtro: "",
       delay: false,
       snackbar: false,
       locationGps: null,

@@ -1,7 +1,7 @@
 ---
 title: 'Risole de Carne 800G'
 description: ''
-rank: 2
+rank: 1.1
 thumbnail: ['/produtos/SALGADOS/SALGADO%20-%20RISOLE%20-%20800G.png']
 tag: salgados
 sabores: []

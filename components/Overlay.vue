@@ -7,7 +7,7 @@
       :muted="!som ? 'muted' : undefined"
       type="video/mp4"
       loop="loop"
-      src="/2.mp4"
+      src="/hero-banner.mp4"
     ></video>
     <div class="shade"></div>
     <div class="overlay">

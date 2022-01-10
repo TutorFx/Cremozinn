@@ -1,5 +1,5 @@
 ---
-title: "Suiço 5kg"
+title: "Biscoto Suiço 5kg"
 description: ""
 rank: 1
 thumbnail:
