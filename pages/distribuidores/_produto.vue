@@ -11,7 +11,7 @@
           </div>
         </v-card-text>
         <v-card-actions>
-          <v-btn text color="#00C853 #00C853" :href="`https://api.whatsapp.com/send?phone=${distribuidor.ddd + distribuidor.whatsapp}${$route.params.produto ? '&text=Olá, eu gostaria de saber mais sobre o produto id:'+$route.params.produto:undefined}`" target="_blank"><v-icon size="14px" class="mr-1">mdi-whatsapp</v-icon> WhatsApp</v-btn>
+          <v-btn text color="#00C853" :href="`https://api.whatsapp.com/send?phone=${distribuidor.ddd + distribuidor.whatsapp}${$route.params.produto ? '&text=Olá, eu gostaria de saber mais sobre o produto id:'+$route.params.produto:undefined}`" target="_blank"><v-icon size="14px" class="mr-1">mdi-whatsapp</v-icon> WhatsApp</v-btn>
           <v-btn v-if="distribuidor.lat && distribuidor.lng" text color="#FF1744" :href="`https://maps.google.com/?q=${distribuidor.lat +','+ distribuidor.lng}`" target="_blank"><v-icon size="14px" class="mr-1">mdi-google-maps</v-icon>Google Maps</v-btn>
         </v-card-actions>
       </v-card>
