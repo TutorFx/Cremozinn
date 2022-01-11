@@ -24,7 +24,7 @@
               height="auto"
               contain
               class="mb-5"
-              src="/icons/pdq.png"
+              src="/icons/pdq.webp"
             >
             <h4
               class="

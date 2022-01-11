@@ -18,7 +18,7 @@
             height="auto"
             contain
             class="mb-5"
-            src="/icons/sgd.png"
+            src="/icons/sgd.webp"
           />
           <h4 class="banner-subtitle white--text font-weight-regular">
             Experimente nosso mix de salgados congelados. Tem coxinha, risoles,
