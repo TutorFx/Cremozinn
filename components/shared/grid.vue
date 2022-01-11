@@ -76,7 +76,7 @@
               <v-img
                 style="cursor: pointer"
                 height="300"
-                src="https://picsum.photos/500/500/?rando"
+                src="/grid/Blog.jpg"
               >
                 <v-expand-transition>
                   <v-card

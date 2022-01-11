@@ -33,6 +33,7 @@
           <n-link to="/onde-encontrar" class="mt-10 dark-link"> Onde encontrar </n-link> <br>
           <a @click="$store.commit('contatoToggle')" class="mt-10 dark-link"> Seja um parceiro </a> <br>
           <p class="mb-0">Email: <a class="dark-link" href="mailto:cremozinn@gmail.com" target="_blank">cremozinn@gmail.com</a></p>
+          <p>SAC: <a class="dark-link" href="tel:+556235163297">(62)3516-3297</a></p>
         </v-col>
         <!-- -----------------------------------------------
         Fourth Column

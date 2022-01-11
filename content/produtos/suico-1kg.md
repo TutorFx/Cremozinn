@@ -4,10 +4,10 @@ description: ""
 rank: 1.2
 thumbnail:
   [
-    "/produtos/BISCOITOS%20DE%20QUEIJO/BISCOITO%20DE%20QUEIJO%20-%20SUI%C3%87O%205KG.png",
+    "/produtos/P%C3%83ES%20DE%20QUEIJO/pacote-de-biscoito-suico-1kg.png",
   ]
 tag: pao-de-queijo
-cod_1: 2602
+cod_1: 2600
 cod_2: 19011030
 sabores: []
 ---

@@ -50,7 +50,7 @@ export default {
     "@nuxtjs/sitemap",
   ],
   sitemap: {
-    hostname: process.env.baseURL,
+    hostname: 'https://cremozinn.vercel.app/',
     gzip: true,
     routes: async () => {
       // thanks for https://jackwhiting.co.uk/posts/generating-sitemap-entries-for-nuxt-content/
