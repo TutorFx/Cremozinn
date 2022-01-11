@@ -30,8 +30,8 @@ export default {
   buildModules: [
     // https://go.nuxtjs.dev/vuetify
     "@nuxtjs/vuetify",
+    '@nuxtjs/pwa',
   ],
-
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [
     // https://go.nuxtjs.dev/axios
@@ -48,6 +48,8 @@ export default {
       },
     ],
     "@nuxtjs/sitemap",
+    '@nuxtjs/onesignal',
+    '@nuxtjs/pwa'
   ],
   sitemap: {
     hostname: 'https://cremozinn.vercel.app/',
@@ -98,10 +100,20 @@ export default {
   // PWA module configuration: https://go.nuxtjs.dev/pwa
   pwa: {
     manifest: {
-      lang: "en",
-    },
+      name: 'Cremozinn',
+      lang: 'pt-BR',
+      useWebmanifestExtension: false
+    }
   },
-
+  oneSignal: {
+    init: {
+      appId: 'aad2be59-2982-4075-a528-e3cc60f5b598',
+      allowLocalhostAsSecureOrigin: true,
+      welcomeNotification: {
+          disable: false
+      }
+    }
+  },
   // Content module configuration: https://go.nuxtjs.dev/config-content
   content: {},
 
