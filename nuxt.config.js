@@ -117,6 +117,9 @@ export default {
     init: {
       appId: 'bd3c1ed2-cd17-464e-a334-843de03e24b5',
       allowLocalhostAsSecureOrigin: true,
+      welcomeNotification: {
+          disable: true
+      }
     }
   },
   // Content module configuration: https://go.nuxtjs.dev/config-content
