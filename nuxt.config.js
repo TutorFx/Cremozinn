@@ -105,13 +105,18 @@ export default {
       useWebmanifestExtension: false
     }
   },
+    workbox : {
+      dev: true,
+      debug: true
+  },
+  manifest : {
+      viewport: 'width=device-width, initial-scale=1',
+      theme_color: '#fff'
+  },
   oneSignal: {
     init: {
-      appId: 'ZDg2YTVmZTUtYjgwNC00YTM5LWFlZjctNWFlYTc3MGNhYTll',
+      appId: 'bd3c1ed2-cd17-464e-a334-843de03e24b5',
       allowLocalhostAsSecureOrigin: true,
-      welcomeNotification: {
-          disable: false
-      }
     }
   },
   // Content module configuration: https://go.nuxtjs.dev/config-content
