@@ -44,33 +44,27 @@
           <div class="social-icons mt-10">
             <a
               target="_blank"
-              :href="`https://www.facebook.com/sharer/sharer.php?u=${
-                domain + $route.path
-              }`"
+              :href="`https://www.instagram.com/cremozinn_original/?hl=pt-br`"
+            >
+              <i class="mdi mdi-instagram"></i>
+            </a>
+            <a
+              target="_blank"
+              :href="`https://www.facebook.com/cremozinn`"
             >
               <i class="mdi mdi-facebook"></i>
             </a>
             <a
               target="_blank"
-              :href="`http://www.twitter.com/share?url=${domain + $route.path}`"
-            >
-              <i class="mdi mdi-twitter"></i>
-            </a>
-            <a
-              target="_blank"
-              :href="`https://api.whatsapp.com/send?text=${
-                domain + $route.path
-              }`"
-            >
-              <i class="mdi mdi-whatsapp"></i>
-            </a>
-            <a
-              target="_blank"
-              :href="`https://www.linkedin.com/shareArticle?mini=true&url=${
-                domain + $route.path
-              }`"
+              :href="`https://www.linkedin.com/company/cremozinn-goianira/`"
             >
               <i class="mdi mdi-linkedin"></i>
+            </a>
+            <a
+              target="_blank"
+              :href="`https://www.youtube.com/channel/UCXO3orIYpjwveg23Q3FuRPA`"
+            >
+              <i class="mdi mdi-youtube"></i>
             </a>
           </div>
         </v-col>
