@@ -13,7 +13,7 @@
         class="d-flex align-center justify-right py-16 py-md-0"
       >
         <div class="text-center text-md-left">
-          <img
+          <nuxt-img
             style="max-width: 300px"
             height="auto"
             contain
