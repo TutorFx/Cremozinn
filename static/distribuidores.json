@@ -20,6 +20,8 @@
         "type": "Distribuidora",
         "ddd": "63",
         "whatsapp": "991339861",
-        "endereco": "Q 1112 Sul Avenida LO 27 QID, LOTE 15 - Plano Diretor Sul, Palmas - TO. CEP: 77.156-024"
+        "endereco": "Q 1112 Sul Avenida LO 27 QID, LOTE 15 - Plano Diretor Sul, Palmas - TO. CEP: 77.156-024",
+        "lat": "-10.254811925510168", 
+        "lng": "-48.3167925"
     }
 ]

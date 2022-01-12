@@ -29,14 +29,15 @@
     <div
       :style="`background-color: ${['#057DC1', '#FF6060', '#FF8000'][Math.trunc(rank)]}`"
     >
-      <v-card-title>
-        <h3 class="white--text" style="word-break: normal;">{{ titulo }}</h3>
-      </v-card-title>
+      <div style="height: 64px">
+        <v-card-title>
+          <h3 class="white--text" style="word-break: normal;">{{ titulo }}</h3>
+        </v-card-title>
 
-      <v-card-subtitle style="color: white !important">
-        {{ subtitulo }}
-      </v-card-subtitle>
-
+        <v-card-subtitle style="color: white !important">
+          {{ subtitulo }}
+        </v-card-subtitle>
+      </div>
       <v-card-actions>
         <v-spacer></v-spacer>
         <client-only template="">

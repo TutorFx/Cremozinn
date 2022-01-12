@@ -106,8 +106,8 @@ export default {
     }
   },
     workbox : {
-      dev: true,
-      debug: true
+      dev: false,
+      debug: false
   },
   manifest : {
       viewport: 'width=device-width, initial-scale=1',
@@ -118,7 +118,7 @@ export default {
       appId: 'bd3c1ed2-cd17-464e-a334-843de03e24b5',
       allowLocalhostAsSecureOrigin: true,
       welcomeNotification: {
-          disable: true
+          disable: false
       }
     }
   },
