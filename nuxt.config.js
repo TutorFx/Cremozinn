@@ -1,5 +1,5 @@
 import colors from "vuetify/es5/util/colors";
-
+import minifyTheme from 'minify-css-string'
 export default {
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
@@ -129,6 +129,7 @@ export default {
   vuetify: {
     customVariables: ["~/assets/variables.scss"],
     theme: {
+      options: { minifyTheme },
       dark: false,
       themes: {
         light: {
