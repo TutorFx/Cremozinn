@@ -14,7 +14,7 @@
 
 <script>
 export default {
-  async asyncData({ $content, $axios }) {
+  async asyncData({ $content }) {
     const articles = await $content("blog")
       .limit(3)
       .sortBy("updatedAt", "desc")
