@@ -34,7 +34,7 @@
                   “Produto muito bom, recomendo!”
                 </p>
                 <div class="bottom-bar d-flex align-center">
-                  <img
+                  <nuxt-img
                     src="https://nextkit-nuxtjs-free-uikit.vercel.app/_nuxt/img/1.2e14a06.jpg"
                     alt="Testimonial"
                     class="testimonial-img rounded-circle"
@@ -73,7 +73,7 @@
                   gostei muito.”
                 </p>
                 <div class="bottom-bar d-flex align-center">
-                  <img
+                  <nuxt-img
                     src="https://nextkit-nuxtjs-free-uikit.vercel.app/_nuxt/img/2.128dd6c.jpg"
                     alt="Testimonial"
                     class="testimonial-img rounded-circle"
@@ -111,7 +111,7 @@
                   “Caraca, o sabor do cremozinn é muito top.”
                 </p>
                 <div class="bottom-bar d-flex align-center">
-                  <img
+                  <nuxt-img
                     src="https://nextkit-nuxtjs-free-uikit.vercel.app/_nuxt/img/3.58e07d7.jpg"
                     alt="Testimonial"
                     class="testimonial-img rounded-circle"
@@ -149,7 +149,7 @@
                   “Sou salgadeiro há muitos anos e me impressionei com a qualidade do mini churros de vocês..”
                 </p>
                 <div class="bottom-bar d-flex align-center">
-                  <img
+                  <nuxt-img
                     src="https://nextkit-nuxtjs-free-uikit.vercel.app/_nuxt/img/3.58e07d7.jpg"
                     alt="Testimonial"
                     class="testimonial-img rounded-circle"
@@ -187,7 +187,7 @@
                   “Eu adoro o cremozinn de morango. 💖”
                 </p>
                 <div class="bottom-bar d-flex align-center">
-                  <img
+                  <nuxt-img
                     src="https://nextkit-nuxtjs-free-uikit.vercel.app/_nuxt/img/3.58e07d7.jpg"
                     alt="Testimonial"
                     class="testimonial-img rounded-circle"
@@ -225,7 +225,7 @@
                   “O pão de queijo que vocês fazem é igualzinho os que a minha vó fazia, simplesmente maravilhoso.”
                 </p>
                 <div class="bottom-bar d-flex align-center">
-                  <img
+                  <nuxt-img
                     src="https://nextkit-nuxtjs-free-uikit.vercel.app/_nuxt/img/3.58e07d7.jpg"
                     alt="Testimonial"
                     class="testimonial-img rounded-circle"
@@ -263,7 +263,7 @@
                   “Moro aqui no Acre, quando vai chegar na minha região?”
                 </p>
                 <div class="bottom-bar d-flex align-center">
-                  <img
+                  <nuxt-img
                     src="https://nextkit-nuxtjs-free-uikit.vercel.app/_nuxt/img/3.58e07d7.jpg"
                     alt="Testimonial"
                     class="testimonial-img rounded-circle"
