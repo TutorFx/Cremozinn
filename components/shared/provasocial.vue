@@ -35,7 +35,7 @@
                 </p>
                 <div class="bottom-bar d-flex align-center">
                   <nuxt-img
-                    src="https://nextkit-nuxtjs-free-uikit.vercel.app/_nuxt/img/1.2e14a06.jpg"
+                    src="testi/1.jpg"
                     alt="Testimonial"
                     class="testimonial-img rounded-circle"
                   />
@@ -74,7 +74,7 @@
                 </p>
                 <div class="bottom-bar d-flex align-center">
                   <nuxt-img
-                    src="https://nextkit-nuxtjs-free-uikit.vercel.app/_nuxt/img/2.128dd6c.jpg"
+                    src="testi/1.jpg"
                     alt="Testimonial"
                     class="testimonial-img rounded-circle"
                   />
@@ -112,7 +112,7 @@
                 </p>
                 <div class="bottom-bar d-flex align-center">
                   <nuxt-img
-                    src="https://nextkit-nuxtjs-free-uikit.vercel.app/_nuxt/img/3.58e07d7.jpg"
+                    src="testi/1.jpg"
                     alt="Testimonial"
                     class="testimonial-img rounded-circle"
                   />
@@ -150,7 +150,7 @@
                 </p>
                 <div class="bottom-bar d-flex align-center">
                   <nuxt-img
-                    src="https://nextkit-nuxtjs-free-uikit.vercel.app/_nuxt/img/3.58e07d7.jpg"
+                    src="testi/1.jpg"
                     alt="Testimonial"
                     class="testimonial-img rounded-circle"
                   />
@@ -188,7 +188,7 @@
                 </p>
                 <div class="bottom-bar d-flex align-center">
                   <nuxt-img
-                    src="https://nextkit-nuxtjs-free-uikit.vercel.app/_nuxt/img/3.58e07d7.jpg"
+                    src="testi/1.jpg"
                     alt="Testimonial"
                     class="testimonial-img rounded-circle"
                   />
@@ -226,7 +226,7 @@
                 </p>
                 <div class="bottom-bar d-flex align-center">
                   <nuxt-img
-                    src="https://nextkit-nuxtjs-free-uikit.vercel.app/_nuxt/img/3.58e07d7.jpg"
+                    src="testi/1.jpg"
                     alt="Testimonial"
                     class="testimonial-img rounded-circle"
                   />
@@ -264,7 +264,7 @@
                 </p>
                 <div class="bottom-bar d-flex align-center">
                   <nuxt-img
-                    src="https://nextkit-nuxtjs-free-uikit.vercel.app/_nuxt/img/3.58e07d7.jpg"
+                    src="testi/1.jpg"
                     alt="Testimonial"
                     class="testimonial-img rounded-circle"
                   />
