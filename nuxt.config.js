@@ -30,7 +30,7 @@ export default {
   buildModules: [
     // https://go.nuxtjs.dev/vuetify
     "@nuxtjs/vuetify",
-    '@nuxtjs/pwa',
+    "@nuxtjs/pwa",
   ],
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [
@@ -48,11 +48,11 @@ export default {
       },
     ],
     "@nuxtjs/sitemap",
-    '@nuxtjs/onesignal',
-    '@nuxtjs/pwa'
+    "@nuxtjs/onesignal",
+    "@nuxtjs/pwa",
   ],
   sitemap: {
-    hostname: 'https://cremozinn.vercel.app/',
+    hostname: "https://cremozinn.vercel.app/",
     gzip: true,
     routes: async () => {
       // thanks for https://jackwhiting.co.uk/posts/generating-sitemap-entries-for-nuxt-content/
@@ -100,27 +100,27 @@ export default {
   // PWA module configuration: https://go.nuxtjs.dev/pwa
   pwa: {
     manifest: {
-      name: 'Cremozinn',
-      lang: 'pt-BR',
-      useWebmanifestExtension: false
-    }
+      name: "Cremozinn",
+      lang: "pt-BR",
+      useWebmanifestExtension: false,
+    },
   },
-    workbox : {
-      dev: false,
-      debug: false
+  workbox: {
+    dev: false,
+    debug: false,
   },
-  manifest : {
-      viewport: 'width=device-width, initial-scale=1',
-      theme_color: '#fff'
+  manifest: {
+    viewport: "width=device-width, initial-scale=1",
+    theme_color: "#fff",
   },
   oneSignal: {
     init: {
-      appId: 'bd3c1ed2-cd17-464e-a334-843de03e24b5',
+      appId: "bd3c1ed2-cd17-464e-a334-843de03e24b5",
       allowLocalhostAsSecureOrigin: true,
       welcomeNotification: {
-          disable: false
-      }
-    }
+        disable: false,
+      },
+    },
   },
   // Content module configuration: https://go.nuxtjs.dev/config-content
   content: {},
@@ -139,6 +139,25 @@ export default {
   },
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
+  build: {
+    html: {
+      minify: {
+        collapseBooleanAttributes: true,
+        decodeEntities: true,
+        minifyCSS: true,
+        minifyJS: true,
+        processConditionalComments: true,
+        removeEmptyAttributes: true,
+        removeRedundantAttributes: true,
+        trimCustomFragments: true,
+        useShortDoctype: true,
+        minifyURLs: true,
+        removeComments: true,
+        removeEmptyElements: true,
+      },
+    },
+  },
+
   loading: {
     color: "#c62828",
     height: "4px",
