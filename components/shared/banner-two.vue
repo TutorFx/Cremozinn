@@ -19,13 +19,13 @@
       >
         <v-container>
           <div class="text-center text-md-right">
-            <nuxt-img
+            <img
               style="max-width: 270px;"
               height="auto"
               contain
               class="mb-5"
               src="/icons/pdq.webp"
-            />
+            >
             <h4
               class="
                 banner-subtitle

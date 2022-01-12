@@ -29,7 +29,7 @@
               <v-card class="card-shadow">
                 <v-card-text>
                   <div class="pa-md-10 text-center">
-                    <nuxt-img width="180px" height="auto" contain class="mb-5" src="/icons/p1pt.webp" />
+                    <img width="180px" height="auto" contain class="mb-5" src="/icons/p1pt.webp">
                     <p>
                       Estamos nas principais redes de supermercados do país,
                       presentes em vários mercadinhos, quiosques, lanchonetes e
