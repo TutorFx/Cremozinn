@@ -15,12 +15,12 @@
 <script>
 export default {
   async asyncData({ $content, $axios }) {
-    const articles = await $content("blog").limit(3).sortBy('updatedAt', 'desc').fetch();
-    const distribuidores = await $axios.$get(
-      process.env.baseURL + "/distribuidores.json"
-    );
+    const articles = await $content("blog")
+      .limit(3)
+      .sortBy("updatedAt", "desc")
+      .fetch();
     return {
-      articles, distribuidores
+      articles,
     };
   },
   components: {
@@ -38,19 +38,43 @@ export default {
       meta: [
         {
           name: "description",
-          content: "Testimonial"
+          content: "Testimonial",
         },
         {
           name: "keywords",
-          content: "fábrica de alimentos congelados, cremozinn, cremosinho, pão de queijo, biscoito de queijo, biscoito suíço, salgados, coxinha, mini churros, risoles, kibes, iogurte congelado, goiania, goianira, brasília, palmas, brasil"
-        }
-      ]
+          content:
+            "fábrica de alimentos congelados, cremozinn, cremosinho, pão de queijo, biscoito de queijo, biscoito suíço, salgados, coxinha, mini churros, risoles, kibes, iogurte congelado, goiania, goianira, brasília, palmas, brasil",
+        },
+      ],
     };
   },
-  mounted(){
-    this.$store.commit('menuOpaque', true);
+  mounted() {
+    this.$store.commit("menuOpaque", true);
+    setTimeout(() => {
+      this.distribuidoresStart();
+    }, 5000);
   },
-}
+  methods: {
+    distribuidoresStart() {
+      this.$axios
+        .$get(process.env.baseURL + "/distribuidores.json")
+        .then((response) => {
+          this.distribuidores = response;
+          this.distribuidoresError = false;
+        })
+        .catch((error) => {
+          this.distribuidoresError = true;
+          distribuidoresStatus = error;
+        });
+    },
+  },
+  data() {
+    return {
+      distribuidores: [],
+      distribuidoresError: false,
+    };
+  },
+};
 </script>
 
 <style lang="scss">
@@ -82,5 +106,4 @@ export default {
     }
   }
 }
-
 </style>
