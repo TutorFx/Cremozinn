@@ -16,7 +16,7 @@
     "@nuxtjs/sitemap": "^2.4.0",
     "core-js": "^3.15.1",
     "minify-css-string": "^1.0.0",
-    "node-sass": "^7.0.0",
+    "node-sass": "^7.0.1",
     "nuxt": "^2.15.7",
     "nuxt-gmaps": "^1.2.10",
     "sass-loader": "10",
