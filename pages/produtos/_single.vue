@@ -2,7 +2,7 @@
   <div>
     <div class="py-5" v-if="$route.params.single">
       <v-container>
-        <v-row align="center" justify="center">
+        <v-row align="start" justify="center">
           <v-col cols="12" md="6" lg="5" xl="5">
             <div class="rounded-lg">
               <v-carousel

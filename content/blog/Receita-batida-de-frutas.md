@@ -14,7 +14,7 @@ Os smoothies vêm da tradição de misturar frutas frescas de países tropicais 
     '3 morangos frescos de tamanho médio (sem as folhas verdes, é claro, se você não conseguir encontrar outros frescos, você pode congelá-los)',
     '1/2 xícara de suco de laranja (cubos de suco de laranja também funcionam bem nesta receita)'
 ]"></ingredientes>
-<preparo :data="[
+<preparo preparo="Preparo" :data="[
     'Jogue tudo no liquidificador',
     'Misture até obter uma consistência suave',
     'Aproveite sua deliciosa batida de Cremozinn™'
