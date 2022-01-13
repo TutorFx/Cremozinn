@@ -20,7 +20,7 @@
         <v-container>
           <div class="text-center text-md-right">
             <img
-              style="max-width: 270px;"
+              style="width: 270px;"
               height="auto"
               contain
               class="mb-5"

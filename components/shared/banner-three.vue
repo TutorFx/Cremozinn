@@ -14,7 +14,7 @@
       >
         <div class="text-center text-md-left">
           <img
-            style="max-width: 300px"
+            style="width: 300px"
             height="auto"
             contain
             class="mb-5"

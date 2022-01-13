@@ -7,7 +7,7 @@
       <v-row justify="center" align="center">
         <v-col cols="12" md="6" lg="6" xl="6" class="d-flex align-center justify-center">
           <div class="text-center text-md-left ">
-            <img style="max-width: 300px;" class="mb-5" src="/icons/c.webp">
+            <img style="width: 300px;" class="mb-5" src="/icons/c.webp">
             <h4 class="banner-subtitle white--text font-weight-regular">
               Somos a marca líder na fabricação e distribuição de iogurte
               congelado.<br> São deliciosos tradicionais e ainda temos os sabores
