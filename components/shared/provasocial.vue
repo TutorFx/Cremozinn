@@ -38,6 +38,7 @@
                     src="https://nextkit-nuxtjs-free-uikit.vercel.app/_nuxt/img/1.2e14a06.jpg"
                     alt="Testimonial"
                     class="testimonial-img rounded-circle"
+                    max-width="60" max-height="60"
                   />
                   <div class="ml-10">
                     <h6 class="text-uppercase font-weight-medium font-14">
@@ -77,6 +78,7 @@
                     src="https://nextkit-nuxtjs-free-uikit.vercel.app/_nuxt/img/2.128dd6c.jpg"
                     alt="Testimonial"
                     class="testimonial-img rounded-circle"
+                    max-width="60" max-height="60"
                   />
                   <div class="ml-10">
                     <h6 class="text-uppercase font-weight-medium font-14">
@@ -111,10 +113,11 @@
                   “Caraca, o sabor do cremozinn é muito top.”
                 </p>
                 <div class="bottom-bar d-flex align-center">
-                  <img
+                  <v-img
                     src="https://nextkit-nuxtjs-free-uikit.vercel.app/_nuxt/img/3.58e07d7.jpg"
                     alt="Testimonial"
                     class="testimonial-img rounded-circle"
+                    max-width="60" max-height="60"
                   />
                   <div class="ml-10">
                     <h6 class="text-uppercase font-weight-medium font-14">
@@ -153,6 +156,7 @@
                     src="https://nextkit-nuxtjs-free-uikit.vercel.app/_nuxt/img/3.58e07d7.jpg"
                     alt="Testimonial"
                     class="testimonial-img rounded-circle"
+                    max-width="60" max-height="60"
                   />
                   <div class="ml-10">
                     <h6 class="text-uppercase font-weight-medium font-14">
@@ -187,10 +191,11 @@
                   “Eu adoro o cremozinn de morango. 💖”
                 </p>
                 <div class="bottom-bar d-flex align-center">
-                  <img
+                  <v-img
                     src="https://nextkit-nuxtjs-free-uikit.vercel.app/_nuxt/img/3.58e07d7.jpg"
                     alt="Testimonial"
                     class="testimonial-img rounded-circle"
+                    max-width="60" max-height="60"
                   />
                   <div class="ml-10">
                     <h6 class="text-uppercase font-weight-medium font-14">
@@ -229,7 +234,8 @@
                     src="https://nextkit-nuxtjs-free-uikit.vercel.app/_nuxt/img/3.58e07d7.jpg"
                     alt="Testimonial"
                     class="testimonial-img rounded-circle"
-                  >
+                    max-width="60" max-height="60"
+                  />
                   <div class="ml-10">
                     <h6 class="text-uppercase font-weight-medium font-14">
                       Amanda Gomes
@@ -267,7 +273,8 @@
                     src="https://nextkit-nuxtjs-free-uikit.vercel.app/_nuxt/img/3.58e07d7.jpg"
                     alt="Testimonial"
                     class="testimonial-img rounded-circle"
-                  >
+                    max-width="60" max-height="60"
+                  />
                   <div class="ml-10">
                     <h6 class="text-uppercase font-weight-medium font-14">
                       Lucas Almeida
