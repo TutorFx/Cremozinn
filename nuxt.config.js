@@ -1,5 +1,5 @@
 import colors from "vuetify/es5/util/colors";
-import minifyTheme from 'minify-css-string'
+import minifyTheme from "minify-css-string";
 export default {
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
@@ -11,11 +11,21 @@ export default {
       {
         hid: "description",
         name: "description",
-        content: `Veja onde estamos presentes no Mapa`,
+        content: `Se comprar agora com o preço promocional direto da fábrica, lucre de até 100%. Postamos sua entrega em 24 horas.`,
       },
       { name: "format-detection", content: "telephone=no" },
     ],
-    link: [{ rel: "icon", type: "image/x-icon", href: "/favicon.ico" }],
+    link: [
+      { rel: "icon", type: "image/x-icon", href: "/favicon.ico" },
+      {
+        rel: "preconnect",
+        href: "https://fonts.googleapis.com",
+      },
+      // {
+      //   rel: "dns-prefetch",
+      //   href: "https://www.googletagmanager.com",
+      // },
+    ],
   },
   ssr: true,
   // Global CSS: https://go.nuxtjs.dev/config-css
@@ -155,8 +165,24 @@ export default {
         minifyURLs: true,
         removeComments: true,
         removeEmptyElements: true,
+        aggressiveCodeRemoval: true,
       },
     },
+  },
+  features: {
+    store: true,
+    layouts: true,
+    meta: true,
+    middleware: true,
+    transitions: false,
+    deprecations: false,
+    validate: false,
+    asyncData: true,
+    fetch: false,
+    clientOnline: true,
+    clientPrefetch: true,
+    componentAliases: true,
+    componentClientOnly: true,
   },
 
   loading: {

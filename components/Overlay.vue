@@ -1,28 +1,25 @@
 <template>
   <div>
-    <v-lazy v-model="active">
-      <div id="Overlay" class="the-video">
-        <video
-          playsinline="playsinline"
-          autoplay="autoplay"
-          :muted="!som ? 'muted' : undefined"
-          type="video/mp4"
-          loop="loop"
-          src="/hero-banner.mp4"
-        ></video>
-        <div class="shade"></div>
-        <div class="overlay">
-          <v-container style="height: 100%">
-            <v-row align="end" justify="center" style="height: 100%">
-              <v-col class="texto-cta-overlay">
-                <div></div>
-              </v-col>
-            </v-row>
-          </v-container>
-        </div>
+    <div id="Overlay" class="the-video">
+      <video
+        playsinline="playsinline"
+        autoplay="autoplay"
+        :muted="!som ? 'muted' : undefined"
+        type="video/mp4"
+        loop="loop"
+        src="/hero-banner.mp4"
+      ></video>
+      <div class="shade"></div>
+      <div class="overlay">
+        <v-container style="height: 100%">
+          <v-row align="end" justify="center" style="height: 100%">
+            <v-col class="texto-cta-overlay">
+              <div></div>
+            </v-col>
+          </v-row>
+        </v-container>
       </div>
-    </v-lazy>
-    <v-card color="#6666ff" :elevation="0" v-if="!active" class="the-video"></v-card>
+    </div>
   </div>
 </template>
 
@@ -31,7 +28,6 @@ export default {
   data() {
     return {
       som: false,
-      active: false,
     };
   },
 };
