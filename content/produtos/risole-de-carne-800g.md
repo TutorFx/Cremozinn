@@ -7,8 +7,48 @@ tag: salgados
 sabores: []
 cod_1: '2703'
 cod_2: '19022000'
+perc: ['85', 'g']
+nutricional:
+  [
+          {
+            name: 'Valor Energético',
+            calories: '201Kcal=843KJ',
+            percent: 10.0,
+          },
+          {
+            name: 'Proteínas',
+            calories: 6.5,
+            percent: 9,
+          },
+          {
+            name: 'Carboidratos',
+            calories: 28,
+            percent: 9,
+          },
+          {
+            name: 'Gorduras Totais',
+            calories: 7,
+            percent: 5,
+          },
+          {
+            name: 'Gorduras Saturada',
+            calories: 0.7,
+            percent: 3,
+          },
+          {
+            name: 'Gorduras Trans',
+            calories: 0,
+            percent: '**',
+          },
+          {
+            name: 'Sódio',
+            calories: 0.38,
+            percent: 2,
+          }
+  ]
+infoNutri: 'Não contém quantidade significativa de gordura saturada, gordura trans e fibra alimentar.
+%Valores Diários com base em uma dieta de 2.000 kcal ou 8.400 KJ. Seus valores diários podem ser maiores ou menores dependendo de suas necessidades energéticas.'
 ---
-<!-- Colocar informação nutricional -->
   <v-expansion-panels accordion class="mb-6 elevation-0">
     <v-expansion-panel>
       <v-expansion-panel-header>Ingredientes</v-expansion-panel-header>
