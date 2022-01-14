@@ -63,7 +63,6 @@ export default {
     ],
     "@nuxtjs/sitemap",
     "@nuxtjs/onesignal",
-    "@nuxtjs/pwa",
   ],
   sitemap: {
     hostname: "https://cremozinn.vercel.app/",
