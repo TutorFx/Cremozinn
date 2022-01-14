@@ -4,7 +4,7 @@ description: "50G a unidade"
 rank: 1.083
 thumbnail:
   [
-    "/produtos/P%C3%83ES%20DE%20QUEIJO/pacote-de-pao-de-queijo-cremozinn-5kg-50g-unid.png",
+    "/produtos/P%C3%83ES%20DE%20QUEIJO/pacote-de-pao-de-queijo-cremozinn-1kg-50g-unid.png",
   ]
 tag: pao-de-queijo
 sabores: []

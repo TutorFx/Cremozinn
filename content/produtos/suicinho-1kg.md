@@ -4,7 +4,7 @@ description: ""
 rank: 1.9
 thumbnail:
   [
-    "/produtos/BISCOITOS%20DE%20QUEIJO/BISCOITO%20DE%20QUEIJO%20-%20SUICINHO%201KG.png",
+    "/produtos/BISCOITOS%20DE%20QUEIJO/pacote-de-biscoito-suicinho-1kg.png",
   ]
 tag: pao-de-queijo
 cod_1: 2601
