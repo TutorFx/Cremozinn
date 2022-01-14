@@ -23,15 +23,6 @@ export default {
       articles,
     };
   },
-  components: {
-    bannerOne: () => import("../components/shared/banner-one"),
-    bannerTwo: () => import("../components/shared/banner-two"),
-    bannerThree: () => import("../components/shared/banner-three"),
-    bannerform: () => import("../components/shared/bannerform"),
-    textbox: () => import("../components/shared/textbox"),
-    provasocial: () => import("../components/shared/provasocial"),
-    grid: () => import("../components/shared/grid"),
-  },
   head() {
     return {
       title: "Cremozinn Goianira, o Original do Bonezinho Azul!",
