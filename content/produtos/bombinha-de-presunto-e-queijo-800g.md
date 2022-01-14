@@ -7,6 +7,50 @@ tag: salgados
 sabores: []
 cod_1: '2706'
 cod_2: '19022000'
+perc: ['60', 'g']
+nutricional:
+  [
+          {
+            name: 'Valor Energético',
+            calories: '1,399Kcal=722KJ',
+            percent: 7,
+          },
+          {
+            name: 'Carboidratos',
+            calories: 19,
+            percent: 6,
+          },
+          {
+            name: 'Proteínas',
+            calories: 10,
+            percent: 14,
+          },
+          {
+            name: 'Gorduras Totais',
+            calories: 6,
+            percent: 11,
+          },
+          {
+            name: 'Gorduras Saturada',
+            calories: 0,
+            percent: 0,
+          },
+          {
+            name: 'Gorduras Trans',
+            calories: 0,
+            percent: '**',
+          },
+          {
+            name: 'Fibra Alimentar',
+            calories: 1.1,
+            percent: 4,
+          }
+          {
+            name: 'Sódio',
+            calories: 0.460,
+            percent: 19,
+          }
+  ]
 ---
   <panels>
     <panel>
