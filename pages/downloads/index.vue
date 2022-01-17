@@ -54,6 +54,11 @@ export default {
           texto: "Mockup Embalagem",
           icone: "mdi-folder",
           link: "https://drive.google.com/drive/folders/1JI6KP6cOamE28A2J0qxzA6VmGhemv0ZU?usp=sharing",
+        },
+        {
+          texto: "Fachada",
+          icone: "mdi-folder",
+          link: "https://drive.google.com/drive/folders/1y4kvmDVfEQbkfL_-cycFR8bxc2T00xz4?usp=sharing"
         }
       ],
     };
