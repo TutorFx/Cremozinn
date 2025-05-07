@@ -44,7 +44,7 @@ nutricional:
             name: 'Fibra Alimentar',
             calories: 1.1,
             percent: 4,
-          }
+          },
           {
             name: 'Sódio',
             calories: 0.460,
