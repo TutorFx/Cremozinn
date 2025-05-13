@@ -41,8 +41,11 @@
             </h2>
             <v-divider class="mb-3" />
             <div class="mb-3">
-              <span v-if="produto.cod_1">Codigo: {{ produto.cod_1 }}</span>
-              <span v-if="produto.cod_2">NCM: {{ produto.cod_2 }}</span>
+              <span class="mr-3" v-if="produto.cod_1">Codigo: {{ produto.cod_1 }}</span>
+              <span class="mr-3" v-if="produto.cod_2">NCM: {{ produto.cod_2 }}</span>
+              <span v-if="produto.comprimento || produto.largura || produto.altura">Dimensões:
+                <span v-if="produto.comprimento">{{produto.comprimento}}cm (C)</span> <span v-if="produto.largura">{{produto.largura}}cm (L)</span> <span v-if="produto.altura">{{produto.altura}}cm (A)</span>
+              </span>
             </div>
             <nuxt-content :document="produto" />
             <v-row class="mb-3">

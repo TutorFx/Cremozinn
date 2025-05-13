@@ -59,6 +59,26 @@ export default {
           texto: "Fachada",
           icone: "mdi-folder",
           link: "https://drive.google.com/drive/folders/1y4kvmDVfEQbkfL_-cycFR8bxc2T00xz4?usp=sharing"
+        },
+        {
+          texto: "Post Feed",
+          icone: "mdi-folder",
+          link: "https://drive.google.com/drive/folders/193NWzMEOListRkum2maYzHAQNgJd04eA?usp=sharing"
+        }, 
+        {
+          texto: "Post Stories",
+          icone: "mdi-folder",
+          link: "https://drive.google.com/drive/folders/1GonvLLxquVTlVeC5vBxn2S6OUYUbNRV7?usp=sharing"
+        },
+        {
+          texto: "TV",
+          icone: "mdi-folder",
+          link: "https://drive.google.com/drive/folders/1VXrcdRUtfsmyp-EdHa4T968IEgljVtyi?usp=sharing"
+        },
+        {
+          texto: "Midia PDV",
+          icone: "mdi-folder",
+          link: "https://drive.google.com/drive/folders/19ElORpjt7XmRIg0D2KB8h7M7EK77C7L7?usp=sharing"
         }
       ],
     };
