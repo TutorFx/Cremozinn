@@ -3,13 +3,13 @@
   "version": "1.0.0",
   "private": true,
   "engines": {
-    "node": "16.x"
+    "node": "18.x"
   },
   "scripts": {
-    "dev": "nuxt",
-    "build": "nuxt build",
-    "start": "nuxt start",
-    "generate": "nuxt generate"
+    "dev": "cross-env NODE_OPTIONS=--openssl-legacy-provider nuxt",
+    "build": "cross-env NODE_OPTIONS=--openssl-legacy-provider nuxt build",
+    "start": "cross-env NODE_OPTIONS=--openssl-legacy-provider nuxt start",
+    "generate": "cross-env NODE_OPTIONS=--openssl-legacy-provider nuxt generate"
   },
   "dependencies": {
     "@nuxt/content": "^1.14.0",
@@ -18,14 +18,16 @@
     "@nuxtjs/pwa": "^3.3.5",
     "@nuxtjs/sitemap": "^2.4.0",
     "core-js": "^3.15.1",
+    "cross-env": "^7.0.3",
     "minify-css-string": "^1.0.0",
     "node-sass": "^7.0.0",
     "nuxt": "^2.15.7",
     "nuxt-gmaps": "^1.2.10",
-    "sass-loader": "10",
+    "sass-loader": "^10.5.2",
     "swiper": "^7.4.1",
     "vue-gallery-slideshow": "^1.5.2",
-    "vuetify": "^2.5.5"
+    "vuetify": "^2.5.5",
+    "yarn": "^1.22.22"
   },
   "devDependencies": {
     "@nuxtjs/vuetify": "^1.12.1",
