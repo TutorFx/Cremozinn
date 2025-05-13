@@ -58,8 +58,9 @@
                   <v-text-field
                     filled
                     dense
-                    name="cep"
+                    name="CEP"
                     label="CEP"
+                    data-field="CEP"
                     color="secondary"
                     v-model="cep"
                     :rules="cepRules"
@@ -75,6 +76,8 @@
                   item-value="img"
                   item-text="text"
                   :return-object="true"
+                  name="industry"
+                  data-field="industry"
                   filled
                   chips
                   dense
@@ -88,6 +91,7 @@
                     filled
                     dense
                     name="state"
+                    data-field="state"
                     label="Estado"
                     color="secondary"
                     v-model="uf"
@@ -99,6 +103,7 @@
                     filled
                     dense
                     name="city"
+                    data-field="city"
                     label="Cidade"
                     color="secondary"
                     v-model="cidade"
@@ -110,6 +115,7 @@
                     filled
                     dense
                     name="district"
+                    data-field="district"
                     label="Bairro"
                     color="secondary"
                     v-model="bairro"
@@ -121,6 +127,7 @@
                     filled
                     dense
                     name="street"
+                    data-field="street"
                     label="Rua"
                     color="secondary"
                     v-model="rua"
@@ -131,7 +138,8 @@
                   <input
                     filled
                     dense
-                    name="numero da rua"
+                    name="address"
+                    data-field="address"
                     label="Número"
                     color="secondary"
                     v-model="numero"
@@ -146,6 +154,7 @@
                 dense
                 height="70"
                 name="message"
+                data-field="message"
                 label="Mensagem"
                 color="secondary"
                 required
@@ -283,7 +292,7 @@ export default {
       script: [
         {
           hid: "hs-script-loader",
-          src: "//js.hs-scripts.com/7236089.js",
+          src: "//js.hs-scripts.com/21541614.js",
           defer: true,
           async: true,
         },

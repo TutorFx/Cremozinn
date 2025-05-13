@@ -5,17 +5,23 @@
             Start Banner
         ----------------------------------------------- -->
       <v-row justify="center" align="center">
-        <v-col cols="12" md="6" lg="6" xl="6" class="d-flex align-center justify-center">
-          <div class="text-center text-md-left ">
-            <img style="width: 300px;" class="mb-5" src="/icons/c.webp">
+        <v-col
+          cols="12"
+          md="6"
+          lg="6"
+          xl="6"
+          class="d-flex align-center justify-center"
+        >
+          <div class="text-center text-md-left">
+            <img style="width: 300px" class="mb-5" src="/icons/c.webp" />
             <h4 class="banner-subtitle white--text font-weight-regular">
               Somos a marca líder na fabricação e distribuição de iogurte
-              congelado.<br> São deliciosos tradicionais e ainda temos os sabores
-              gourmet
+              congelado.<br />
+              São deliciosos tradicionais e ainda temos os sabores gourmet
             </h4>
             <div class="mt-16 pt-2">
               <v-btn
-                color="error"
+                color="#5555D4"
                 class="mr-0 mr-md-8 mb-5 mb-md-0 btn-custom-md"
                 nuxt
                 large
@@ -25,40 +31,44 @@
               >
                 Ver catálogo
               </v-btn>
-              <v-btn
-                nuxt
-                large
-                @click="videoDetectado()"
-                class="btn-custom-md mb-5 mb-md-0"
-                outlined
-                color="white"
-                elevation="0"
-              >
-                Fabricação
-              </v-btn>
+              <v-dialog v-model="dialog" max-width="1000px" min-width="500">
+                <template v-slot:activator="{ on, attrs }">
+                  <v-btn
+                    nuxt
+                    large
+                    class="btn-custom-md mb-5 mb-md-0"
+                    outlined
+                    color="white"
+                    elevation="0"
+                    v-bind="attrs"
+                    v-on="on"
+                  >
+                    Fabricação
+                  </v-btn>
+                </template>
+                <v-card>
+                  <v-responsive :aspect-ratio="16 / 9">
+                    <v-btn @click="dialog = !dialog" small fab absolute top right class="mt-10" elevation="0"
+                      ><v-icon>mdi-close</v-icon></v-btn
+                    >
+                    <iframe
+                      v-if="dialog"
+                      style="width: 100%; height: 100%"
+                      src="https://www.youtube.com/embed/AGvRNdVdjKo?autoplay=1"
+                      title="YouTube video player"
+                      frameborder="0"
+                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                      allowfullscreen
+                    ></iframe>
+                  </v-responsive>
+                </v-card>
+              </v-dialog>
             </div>
           </div>
         </v-col>
         <v-col cols="12" md="6" lg="6" xl="6">
-          <v-lazy>
-            <div class="video-wrapper">
-              <video
-                id="video"
-                v-intersect="onIntersect"
-                ref="videoCima"
-                playsinline="true"
-                muted
-                autoplay
-              >
-                <source
-                  src="1.mp4"
-                  style="width: 100%"
-                  type="video/mp4"
-                  id="video"
-                />
-              </video>
-            </div>
-          </v-lazy>
+          <v-img src="/gif/cremozinn.gif" lazy contain>
+          </v-img>
         </v-col>
       </v-row>
 
@@ -237,20 +247,8 @@ export default {
 
   data() {
     return {
-      isIntersecting: false,
+      dialog: false,
     };
-  },
-  methods: {
-    videoDetectado() {
-      this.$refs.videoCima.play();
-    },
-    onIntersect(entries, observer) {
-      entries.forEach((entry) => {
-        if (entry.isIntersecting) {
-          this.videoDetectado();
-        }
-      });
-    },
   },
 };
 </script>

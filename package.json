@@ -1,7 +1,10 @@
 {
-  "name": "cremozin",
+  "name": "Cremozin",
   "version": "1.0.0",
   "private": true,
+  "engines": {
+    "node": "16.x"
+  },
   "scripts": {
     "dev": "nuxt",
     "build": "nuxt build",
@@ -16,16 +19,18 @@
     "@nuxtjs/sitemap": "^2.4.0",
     "core-js": "^3.15.1",
     "minify-css-string": "^1.0.0",
+    "node-sass": "^7.0.0",
     "nuxt": "^2.15.7",
     "nuxt-gmaps": "^1.2.10",
     "sass-loader": "10",
-    "vue": "^2.6.14",
+    "swiper": "^7.4.1",
+    "vue-gallery-slideshow": "^1.5.2",
     "vuetify": "^2.5.5"
   },
   "devDependencies": {
     "@nuxtjs/vuetify": "^1.12.1",
     "pug": "^3.0.2",
     "pug-plain-loader": "^1.1.0",
-    "sass": "^1.87.0"
+    "sass": "^1.44.0"
   }
 }

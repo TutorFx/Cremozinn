@@ -1,11 +1,12 @@
 ---
-title: 'Pacote de Cremozinn 40 unidades'
+title: 'Pacote de Cremozinn 40 unidades 55g'
 description: ''
 thumbnail: ['/produtos/CREMOZINN%20ATACADO/Cremozinn%2040%20UN.png']
 tag: cremozinn
 sabores: []
-
-
+comprimento: 44
+largura: 20
+altura: 7
 rank: 0.1
 ---
 Peso 55g a unidade.

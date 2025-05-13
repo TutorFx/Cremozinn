@@ -1,7 +1,7 @@
 <template>
   <div>
-    <!-- <slider /> -->
-    <Overlay />
+    <slider />
+    <!-- <Overlay /> -->
     <banner-one />
     <banner-two />
     <banner-three />
@@ -40,7 +40,7 @@ export default {
     };
   },
   mounted() {
-    this.$store.commit("menuOpaque", true);
+    this.$store.commit("menuOpaque", false);
     setTimeout(() => {
       this.distribuidoresStart();
     }, 5000);
@@ -63,7 +63,7 @@ export default {
     return {
       distribuidores: [],
       distribuidoresError: false,
-    };
+    }
   },
 };
 </script>

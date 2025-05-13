@@ -1,6 +1,7 @@
 <template>
   <v-app>
     <myheader />
+    <loader />
     <Nuxt />
     <myfooter />
     <lgpd />
@@ -9,9 +10,5 @@
 </template>
 
 <script>
-import dialogs from '../components/dialogs.vue'
-export default {
-}
-</script>
 
-Dialogs
+</script>

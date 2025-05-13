@@ -49,7 +49,7 @@
                   <v-list>
                     <v-list-item v-for="(distribuidor, i) in distribuidores" :key="i">
                       <v-list-item-title>
-                        <v-btn text block :href="`https://api.whatsapp.com/send?phone=${distribuidor.ddd + distribuidor.whatsapp}&text=Olá, desejo ser um ponto de venda`"> {{distribuidor.local}} </v-btn>
+                        <v-btn text block :href="`https://api.whatsapp.com/send?phone=+55${distribuidor.ddd + distribuidor.whatsapp}&text=Olá, desejo ser um ponto de venda`"> {{distribuidor.local}} </v-btn>
                       </v-list-item-title>
                     </v-list-item>
                   </v-list>

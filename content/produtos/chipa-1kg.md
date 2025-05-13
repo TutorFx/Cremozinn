@@ -51,7 +51,7 @@ sabores: []
             'Retire a quantidade certa do produto que deseja preparar, guardando rapidamente o que não será utilizado.',
             'Coloque-os em uma assadeira, deixando 2 cm de espaço entre eles; Leve ao forno preaquecido deixando por aproximadamente 30 minutos ou até que fiquem dourados.'
             ]"></preparo>
-           Como existem diferenças entre os fornos, podem ocorrer variações com o tempo sugerido.
+          Como existem diferenças entre os fornos, podem ocorrer variações com o tempo sugerido.
       </panel-content>
     </panel>
   </panels>

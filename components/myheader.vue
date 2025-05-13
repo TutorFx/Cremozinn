@@ -22,7 +22,7 @@
         </v-btn>
         <!-- Desktop view Navigation -->
         <div class="navigation" v-else>
-          <div style="height: 75px" class="navbar-nav">
+          <div style="height: 75px" class="navbar-nav pr-0">
             <li class="nav-item" text v-for="(item, i) in $store.state.menu" :key="i">
               <n-link class="nav-link" :style="isontop || !$store.state.isMenuOpaque ? 'color: black!important;' : undefined" nuxt :to="item[1]">
                 {{item[0]}}

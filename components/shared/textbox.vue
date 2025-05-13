@@ -12,7 +12,7 @@
                 :style="`min-${
                   $vuetify.breakpoint.mobile ? 'width' : 'height'
                 }: 100%`"
-                playsinline="true"
+                playsinline
                 muted
                 autoplay
                 loop

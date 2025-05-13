@@ -1,18 +1,16 @@
 ---
-title: 'Pacote de Cremozinn 20 unidades'
+title: 'Pacote de Cremozinn 20 unidades 55g'
 description: ''
-thumbnail: ['/produtos/CREMOZINN%20ATACADO/Cremozinn%2020%20UN.png']
+thumbnail: ['/produtos/CREMOZINN%20ATACADO/Cremozinn%20Laranjinha%2020%20Unidades.png']
 tag: cremozinn
 sabores: []
-cod_1: '2100'
-cod_2: '21050010'
-comprimento: 35
-largura: 25
+comprimento: 44
+largura: 20
 altura: 7
-rank: 0
+rank: 0.1
 ---
-Peso 85g a unidade.
-Peso 1.700kg a embalagem.
+Peso 55g a unidade.
+Peso 2.200kg a embalagem.
 
 Sorvete Sabor de Iogurte
 Colorido artificialmente
@@ -49,4 +47,3 @@ Aromatizado artificialmente
         </panel-content>
     </panel>
 </panels>
-

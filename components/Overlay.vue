@@ -3,9 +3,9 @@
     <v-lazy v-model="active">
       <div id="Overlay" class="the-video">
         <video
-          playsinline="playsinline"
-          autoplay="autoplay"
-          :muted="!som ? 'muted' : undefined"
+          playsinline
+          autoplay
+          muted
           type="video/mp4"
           loop="loop"
           src="/hero-banner.mp4"

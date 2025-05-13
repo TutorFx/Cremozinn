@@ -2,9 +2,9 @@
 <v-lazy>
   <div class="the-video">
     <video
-      playsinline="playsinline"
-      autoplay="autoplay"
-      :muted="!som ? 'muted' : undefined"
+      playsinline
+      autoplay
+      muted
       type="video/mp4"
       loop="loop"
       :src="src"

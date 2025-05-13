@@ -9,8 +9,8 @@
         First Column
       ----------------------------------------------- -->
         <v-col cols="12" sm="12" md="12" lg="3">
-          <h4 class="font-weight-regular font-18 mb-10">Produto</h4>
-          <n-link to="/pagina/fabrica" class="mt-10 dark-link"> Nossa Fábrica </n-link> <br>
+          <h4 class="font-weight-regular font-18 mb-10">Produtos</h4>
+          <n-link to="/quem-somos" class="mt-10 dark-link"> Nossa Fábrica </n-link> <br>
           <n-link to="/produtos/?tag=cremozinn" class="mt-10 dark-link"> Iogurte gelado </n-link> <br>
           <n-link to="/produtos/?tag=pao-de-queijo" class="mt-10 dark-link"> Pão de queijo </n-link> <br>
           <n-link to="/produtos/?tag=salgados" class="mt-10 dark-link"> Salgado </n-link> <br>
@@ -21,7 +21,7 @@
         <v-col cols="12" sm="12" md="12" lg="3">
         <h4 class="font-weight-regular font-18 mb-10"> Links Úteis </h4>
         <n-link to="/onde-encontrar" class="mt-10 dark-link"> Clientes </n-link> <br>
-        <n-link to="/downloads" class="mt-10 dark-link"> Campanhas </n-link> <br>
+        <a href="https://drive.google.com/drive/folders/1vtHAxu5_1oGw7sGyKRi7_iO81YCihJKZ?usp=sharing" class="mt-10 dark-link"> Campanhas </a> <br>
         <n-link to="/downloads" class="mt-10 dark-link"> Downloads </n-link> <br>
         <n-link to="/blog" class="mt-10 dark-link"> Blog </n-link> <br>
         </v-col>
@@ -29,7 +29,7 @@
         Third Column
       ----------------------------------------------- -->
         <v-col cols="12" sm="12" md="12" lg="3">
-          <h4 class="font-weight-regular font-18 mb-10">Contato</h4>
+          <h4 class="font-weight-regular font-18 mb-10">Contatos</h4>
           <n-link to="/onde-encontrar" class="mt-10 dark-link"> Onde encontrar </n-link> <br>
           <a @click="$store.commit('contatoToggle')" class="mt-10 dark-link"> Seja um parceiro </a> <br>
           <p class="mb-0">Email: <a class="dark-link" href="mailto:cremozinn@gmail.com" target="_blank">cremozinn@gmail.com</a></p>

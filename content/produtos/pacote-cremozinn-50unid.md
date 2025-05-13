@@ -4,6 +4,9 @@ description: ''
 thumbnail: ['/produtos/CREMOZINN%20ATACADO/Cremozinn%2050%20UN.png']
 tag: cremozinn
 sabores: []
+comprimento: 43
+largura: 35
+altura: 7
 cod_1: '2200'
 cod_2: '21050010'
 rank: 0

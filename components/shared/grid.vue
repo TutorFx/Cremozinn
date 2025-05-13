@@ -36,7 +36,7 @@
           </NuxtLink>
         </v-col>
         <v-col cols="12" md="6">
-          <NuxtLink to="/eventos">
+          <a href="https://drive.google.com/drive/folders/1vtHAxu5_1oGw7sGyKRi7_iO81YCihJKZ?usp=sharing">
             <v-hover v-slot="{ hover }">
               <v-img
                 style="cursor: pointer"
@@ -66,7 +66,7 @@
                 </v-expand-transition>
               </v-img>
             </v-hover>
-          </NuxtLink>
+          </a>
         </v-col>
       </v-row>
       <v-row>

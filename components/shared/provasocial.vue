@@ -35,7 +35,7 @@
                 </p>
                 <div class="bottom-bar d-flex align-center">
                   <v-img
-                    src="https://nextkit-nuxtjs-free-uikit.vercel.app/_nuxt/img/1.2e14a06.jpg"
+                    src="/provaSocial/1.jpg"
                     alt="Testimonial"
                     class="testimonial-img rounded-circle"
                     max-width="60" max-height="60"
@@ -75,7 +75,7 @@
                 </p>
                 <div class="bottom-bar d-flex align-center">
                   <v-img
-                    src="https://nextkit-nuxtjs-free-uikit.vercel.app/_nuxt/img/2.128dd6c.jpg"
+                    src="/provaSocial/2.jpg"
                     alt="Testimonial"
                     class="testimonial-img rounded-circle"
                     max-width="60" max-height="60"
@@ -114,14 +114,14 @@
                 </p>
                 <div class="bottom-bar d-flex align-center">
                   <v-img
-                    src="https://nextkit-nuxtjs-free-uikit.vercel.app/_nuxt/img/3.58e07d7.jpg"
+                    src="/provaSocial/3.JPG"
                     alt="Testimonial"
                     class="testimonial-img rounded-circle"
                     max-width="60" max-height="60"
                   />
                   <div class="ml-10">
                     <h6 class="text-uppercase font-weight-medium font-14">
-                      Michael Arantes
+                      Michele Arantes
                     </h6>
                     <div class="d-flex align-center font-13">
                       <a href="/" class="error--text">
@@ -153,7 +153,7 @@
                 </p>
                 <div class="bottom-bar d-flex align-center">
                   <v-img
-                    src="https://nextkit-nuxtjs-free-uikit.vercel.app/_nuxt/img/3.58e07d7.jpg"
+                    src="/provaSocial/4.jpg"
                     alt="Testimonial"
                     class="testimonial-img rounded-circle"
                     max-width="60" max-height="60"
@@ -192,7 +192,7 @@
                 </p>
                 <div class="bottom-bar d-flex align-center">
                   <v-img
-                    src="https://nextkit-nuxtjs-free-uikit.vercel.app/_nuxt/img/3.58e07d7.jpg"
+                    src="/provaSocial/5.jpg"
                     alt="Testimonial"
                     class="testimonial-img rounded-circle"
                     max-width="60" max-height="60"
@@ -231,7 +231,7 @@
                 </p>
                 <div class="bottom-bar d-flex align-center">
                   <v-img
-                    src="https://nextkit-nuxtjs-free-uikit.vercel.app/_nuxt/img/3.58e07d7.jpg"
+                    src="/provaSocial/6.jpg"
                     alt="Testimonial"
                     class="testimonial-img rounded-circle"
                     max-width="60" max-height="60"
@@ -254,45 +254,6 @@
                         <i class="mdi mdi-star"></i
                       ></a>
                       <a href="/" class="error--text">
-                        <i class="mdi mdi-star"></i
-                      ></a>
-                    </div>
-                  </div>
-                </div>
-              </v-card-text>
-            </v-card>
-          </v-col>
-                    <v-col cols="12" md="6" lg="4">
-            <v-card class="testimonial-card card-shadow">
-              <v-card-text>
-                <p class="font-weight-light mb-15">
-                  “Moro aqui no Acre, quando vai chegar na minha região?”
-                </p>
-                <div class="bottom-bar d-flex align-center">
-                  <v-img
-                    src="https://nextkit-nuxtjs-free-uikit.vercel.app/_nuxt/img/3.58e07d7.jpg"
-                    alt="Testimonial"
-                    class="testimonial-img rounded-circle"
-                    max-width="60" max-height="60"
-                  />
-                  <div class="ml-10">
-                    <h6 class="text-uppercase font-weight-medium font-14">
-                      Lucas Almeida
-                    </h6>
-                    <div class="d-flex align-center font-13">
-                      <a href="/" class="error--text">
-                        <i class="mdi mdi-star"></i
-                      ></a>
-                      <a href="/" class="error--text">
-                        <i class="mdi mdi-star"></i
-                      ></a>
-                      <a href="/" class="error--text">
-                        <i class="mdi mdi-star"></i
-                      ></a>
-                      <a href="/" class="error--text">
-                        <i class="mdi mdi-star"></i
-                      ></a>
-                      <a href="/" class="grey--text">
                         <i class="mdi mdi-star"></i
                       ></a>
                     </div>

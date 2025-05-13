@@ -66,10 +66,9 @@ export default {
       },
     ],
     "@nuxtjs/sitemap",
-    "@nuxtjs/onesignal",
   ],
   sitemap: {
-    hostname: "https://cremozinn.vercel.app/",
+    hostname: "https://cremozinn.com.br/",
     gzip: true,
     routes: async () => {
       // thanks for https://jackwhiting.co.uk/posts/generating-sitemap-entries-for-nuxt-content/
@@ -130,15 +129,6 @@ export default {
     viewport: "width=device-width, initial-scale=1",
     theme_color: "#fff",
   },
-  oneSignal: {
-    init: {
-      appId: "bd3c1ed2-cd17-464e-a334-843de03e24b5",
-      allowLocalhostAsSecureOrigin: true,
-      welcomeNotification: {
-        disable: false,
-      },
-    },
-  },
   // Content module configuration: https://go.nuxtjs.dev/config-content
   content: {},
 
@@ -157,25 +147,25 @@ export default {
   },
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
-  // build: {
-  //   html: {
-  //     minify: {
-  //       collapseBooleanAttributes: true,
-  //       decodeEntities: true,
-  //       minifyCSS: true,
-  //       minifyJS: true,
-  //       processConditionalComments: true,
-  //       removeEmptyAttributes: true,
-  //       removeRedundantAttributes: true,
-  //       trimCustomFragments: true,
-  //       useShortDoctype: true,
-  //       minifyURLs: true,
-  //       removeComments: true,
-  //       removeEmptyElements: true,
-  //       aggressiveCodeRemoval: true,
-  //     },
-  //   },
-  // },
+  build: {
+    html: {
+      minify: {
+        collapseBooleanAttributes: true,
+        decodeEntities: true,
+        minifyCSS: true,
+        minifyJS: true,
+        processConditionalComments: true,
+        removeEmptyAttributes: true,
+        removeRedundantAttributes: true,
+        trimCustomFragments: true,
+        useShortDoctype: true,
+        minifyURLs: true,
+        removeComments: true,
+        removeEmptyElements: true,
+        aggressiveCodeRemoval: true,
+      },
+    },
+  },
   features: {
     store: true,
     layouts: true,
@@ -202,7 +192,7 @@ export default {
   env: {
     baseURL:
       process.env.NODE_ENV === "production"
-        ? "https://cremozinn.vercel.app"
+        ? "https://cremozinn.com.br/"
         : "http://localhost:3000",
     googlekey: "AIzaSyAnRCnSdRI8MS7AWWZIVeTSU93TeBpm4kI",
   },

@@ -1,5 +1,5 @@
 <template>
-    <v-expansion-panels accordion class="mb-6 elevation-0">
+    <v-expansion-panels flat accordion class="mb-6">
         <slot></slot>
     </v-expansion-panels>
 </template>

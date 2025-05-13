@@ -54,6 +54,7 @@ nutricional:
 infoNutri: 'Não contém quantidade significativa de gordura saturada, gordura trans e fibra alimentar.
 %Valores Diários com base em uma dieta de 2.000 kcal ou 8.400 KJ. Seus valores diários podem ser maiores ou menores dependendo de suas necessidades energéticas.'
 ---
+
   <panels>
     <panel>
       <panel-title>Ingredientes</panel-title>

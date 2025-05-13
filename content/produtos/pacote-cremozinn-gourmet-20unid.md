@@ -6,6 +6,9 @@ tag: cremozinn
 sabores: []
 cod_1: '2400'
 cod_2: '21050010'
+comprimento: 35
+largura: 25
+altura: 7
 rank: 0
 ---
 Peso 85g a unidade.
