@@ -73,9 +73,42 @@ export default {
     model: 0,
     transition: true,
     slides: [
-            {lg:"/slider/Cremozinn-Desktop.webp", mb:"/slider/Cremozinn-Mobile.webp", sigla:"CRE", text:["O original do <br> bonezinho azul!", "#fff"]},
-      {lg:"/slider/Churros-Desktop.webp", mb:"/slider/Churros-Mobile-.webp", sigla:"MO", text:["Fica pronto em <br> alguns minutos!", "#649F04"]},
-      {lg:"/slider/Pão-de-queijo-Desktop.webp", mb:"/slider/Pão-de-queijo-Mobile.webp", sigla:"ZINN", text:["Toda hora <br> pede um!", "#321D10"]},
+      // New Slides based on the provided image list
+      {
+        lg: "/slider/1 Cremozinn - Desktop.png",
+        mb: "/slider/1 Cremozinn - Mobile.png",
+        sigla: "CRE",
+        // Reusing original Cremozinn text/color - adjust if needed based on new image content
+        text: ["", "#fff"]
+      },
+      {
+        lg: "/slider/2 Açaí - Desktop.png",
+        mb: "/slider/2 Açaí - Mobile.png",
+        sigla: "AÇAÍ", // New sigla
+        // Placeholder text/color for Açaí - adjust as needed
+        text: ["", "#000"]
+      },
+      {
+        lg: "/slider/3 Sorvete - Desktop.png",
+        mb: "/slider/3 Sorvete - Mobile.png",
+        sigla: "SORV", // New sigla
+        // Placeholder text/color for Sorvete - adjust as needed
+        text: ["", "#000"]
+      },
+      {
+        lg: "/slider/4 Pão de queijo - Desktop.png",
+        mb: "/slider/4 Pão de queijo - Mobile.png",
+        sigla: "PÃO", // Changed sigla from "ZINN" to "PÃO" for clarity
+        // Reusing original Pão de Queijo text/color - adjust if needed based on new image content
+        text: ["", "#321D10"]
+      },
+      {
+        lg: "/slider/5 Café - Desktop.png",
+        mb: "/slider/5 Café - Mobile.png",
+        sigla: "CAFÉ", // New sigla
+        // Placeholder text/color for Café - adjust as needed
+        text: ["", "#000"]
+      }
     ],
   }),
   watch:{
