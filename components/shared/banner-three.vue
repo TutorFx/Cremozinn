@@ -1,11 +1,23 @@
 <template>
-  <div class="banner-wrapper py-0" style="background-color: #edb338">
+  <div class="banner-wrapper py-0" style="background-color: #A020F0">
     <!-- -----------------------------------------------
             Start Banner
         ----------------------------------------------- -->
     <v-container>
       <v-row justify="start" class="py-0 my-0 mx-0" style="min-height: 700px">
         <v-spacer></v-spacer>
+
+        <v-col class="pa-0" cols="12" md="6" lg="6" xl="6">
+          <!-- <Overlay1 src="/salgados.mp4" /> -->
+          <v-img
+            class="mx-auto"
+            src="/update-1-jul/acai.png"
+            lazy
+            contain
+            height="100%"
+            width="100%"
+          />
+        </v-col>
         <v-col
           cols="12"
           md="6"
@@ -13,27 +25,25 @@
           xl="6"
           class="d-flex align-center justify-right py-16 py-md-0"
         >
-          <div class="text-center text-md-left">
+          <div class="text-center text-md-right">
             <img
               style="width: 300px"
               height="auto"
               contain
               class="mb-5"
-              src="/icons/sgd.webp"
+              src="/update-1-jul/id-açaí-cremozinn.png"
             />
-            <h4 class="banner-subtitle white--text font-weight-regular">
-              Experimente nosso mix de salgados congelados. Tem coxinha,
-              risoles, kibes, mini churros e muito mais. Além de muito saborosos
-              é tudo fácil e rápido de preparar.
+            <h4 class="banner-subtitle white--text font-weight-regular mr-0">
+              Sinta o verdadeiro gostinho da fruta, com opções para todos os gostos e tamanhos.<br><br>O Açaí Cremozinn é puro sabor e energia para o seu dia!
             </h4>
             <div class="mt-16 pt-2">
               <v-btn
-                color="#FCC03D"
+                color="#6C0BA9"
                 class="mr-0 mr-md-8 mb-5 mb-md-0 btn-custom-md"
                 nuxt
                 large
                 dark
-                to="/produtos/?tag=salgados"
+                to="/produtos/?tag=acai"
                 elevation="0"
               >
                 Ver catálogo
@@ -64,17 +74,6 @@
               </v-dialog>
             </div>
           </div>
-        </v-col>
-        <v-col class="pa-0" cols="12" md="6" lg="6" xl="6">
-          <!-- <Overlay1 src="/salgados.mp4" /> -->
-          <v-img
-            class="mx-auto"
-            src="/gif/salgados.gif"
-            lazy
-            contain
-            height="100%"
-            width="100%"
-          />
         </v-col>
       </v-row>
     </v-container>

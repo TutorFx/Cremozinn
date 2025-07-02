@@ -10,7 +10,7 @@
       <v-row justify="start" class="py-0 my-0 mx-0" style="min-height: 700px">
         <v-col class="pa-0" cols="12" md="6" lg="6" xl="6">
           <!-- <Overlay1 src="/pao-de-queijo.mp4" /> -->
-          <v-img height="100%" contain width="100%" src="/gif/pdq.gif" lazy></v-img>
+          <v-img height="100%" contain width="100%" src="/update-1-jul/pdq.png" lazy></v-img>
         </v-col>
         <v-col
           cols="12"
@@ -26,7 +26,7 @@
                 height="auto"
                 contain
                 class="mb-5"
-                src="/icons/pdq.webp"
+                src="/update-1-jul/pdq-id.png"
               />
               <h4
                 class="

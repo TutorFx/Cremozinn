@@ -15,9 +15,7 @@
           <div class="text-center text-md-left">
             <img style="width: 300px" class="mb-5" src="/icons/c.webp" />
             <h4 class="banner-subtitle white--text font-weight-regular">
-              Somos a marca líder na fabricação e distribuição de iogurte
-              congelado.<br />
-              São deliciosos tradicionais e ainda temos os sabores gourmet
+              Somos a marca líder na fabricação e distribuição de iogurte congelado.
             </h4>
             <div class="mt-16 pt-2">
               <v-btn

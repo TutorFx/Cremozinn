@@ -3,8 +3,10 @@
     <slider />
     <!-- <Overlay /> -->
     <banner-one />
-    <banner-two />
     <banner-three />
+    <banner-sorvete />
+    <banner-two />
+    <banner-cafe />
     <textbox />
     <bannerform :distribuidores="distribuidores" />
     <grid />
