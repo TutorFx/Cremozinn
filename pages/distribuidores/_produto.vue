@@ -1,6 +1,6 @@
 <template>
   <v-container class="py-16 my-16">
-    <v-row justify="center gutter">
+    <v-row>
       <v-card v-for="(distribuidor, i) in distribuidores" :key="i" class="mx-3 mb-6" max-width="344">
         <v-card-text>
           <div>{{distribuidor.type}}</div>
