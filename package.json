@@ -2,9 +2,6 @@
   "name": "Cremozin",
   "version": "1.0.0",
   "private": true,
-  "engines": {
-    "node": "22.x"
-  },
   "scripts": {
     "dev": "cross-env NODE_OPTIONS=--openssl-legacy-provider nuxt",
     "build": "cross-env NODE_OPTIONS=--openssl-legacy-provider nuxt build",
